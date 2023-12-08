@@ -14,7 +14,9 @@
     "node": ">=21.4.0"
   },
   "scripts": {
-  "build": "webpack"
+    "build": "babel src -d lib",
+    "test": "jest"
   }
+
 
 }
