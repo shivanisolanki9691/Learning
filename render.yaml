@@ -1,0 +1,18 @@
+databases:
+  - name: shivani
+    databaseName: shivani_pzf6
+    user: shivani_pzf6_user
+
+services:
+  - type: web
+    name: shivani
+    runtime: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: shivani_pzf6
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
