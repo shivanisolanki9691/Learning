@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   resources :repos
   get 'home', to: 'repos#home',as: 'home'
   get 'allcourses', to: 'repos#allcourses', as: 'allcourses'
+  get 'services', to: 'repos#services', as: 'services'
+  get 'software_training', to: 'repos#software_training', as: "software_training"
+  get 'Software_trainers_profile', to: 'repos#Software_trainers_profile', as: "Software_trainers_profile"
 end
