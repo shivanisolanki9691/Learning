@@ -16,5 +16,8 @@ class ReposController < ApplicationController
 
   def Software_trainers_profile
   end
+
+  def trainars_profile
+  end
 end
 

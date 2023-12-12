@@ -1,15 +1,5 @@
 <%= render "header" %>
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    {
-      width: 100%;
-      height: 100vh;
-    }
-
     .course-card {
         margin-bottom: 20px;
     }
@@ -36,82 +26,111 @@
     h3{
         color: red;
     }
-    h3.font {
-    margin-left: 342px;
-    font-size: 13px;
-    }
     h4{
         font-size: 1.5rem;
         margin-top: 102px;
         font-size: 20px;
         font-weight: bold;
     }
-    a1{
+    a1, td {
         color: red;
+    }
+    table .td{
+        color: black;
+    }
+    .text-black {
+        color: black !important;
     }
     .star{
         margin-left: 210px;
     }
-    p{
-        margin-top: 20px;
-    }
 </style>
 <body>
 <div class="row">
-
+<!-- Left Box -->
 <div class="col-md-6">
     <div class="left-box">
-        <h class="services" style="font-size: 24px; font-weight: bold;">Software Training</h>
-        <p class="paragrap" style="margin-top: 76px; word-spacing: 2px;">In line with vision of the Founder Shri. N. Naresh in offering Job oriented technical education, has started unique and intensive short term courses in Java, NET, WCF, Asp.Net MVC, Silverlight, Hadoop, MSBI, PHP, Oracle, Android, iOS arena which complement each other.</p>
-    </div>
-    <div class="left-box">
-        <h2>Software Training Courses</h2>
-        <p class="training" style="word-spacing: 2px;">In this era of globalization and free trade, India has to be as competitive as any other country in the world in the areas of technology, quality, cost and service. As such the Software Companies are forced to adopt modern technology and concepts in order to be competitive globally.</p>
-        <p>To surge with the leaps in technology, offers unique & intensive short term courses in Java, NET, WCF, Asp.Net MVC, Silverlight, Hadoop, MSBI, PHP, Oracle, Android, iOS that would bring the best in engineering student and software aspirants.</p>
-        
-    </div>
-    <div class="left-box">
-        <h1>Course Material & Certificate</h1>
-        <p class="training" style="word-spacing: 2px;">We provide Authorized certificates for the successful candidates completing the courses.All the courses well prepared and simple course material</p>
-    </div>
-    <div class="left-box">
-        <h1>Placement Assistance</h1>
-        <p class="training" style="word-spacing: 2px;">As there is a great shortage of qualified and trained professionals in J2EE, .NET and PHP platform unlimited employment opportunities are awaiting the successful candidates in India and abroad.</p>
-        <p>We extend Placement Assistance for the candidates after completion of their training by referring to the various Software Companies all over India. So many students had completed our various Software Training Courses and most of them are placed in leading Software/Telecom Companies in India and Abroad.</p>
-    </div>
-    <div class="left-box">
-        <h1>Software Training Highlights @ NareshIT</h1>
-        <p class="training" style="word-spacing: 2px;">
-            Authorized Training using education/development licenses of software.<br>
-            Practical oriented training focused towards industrial applications.<br>
-            Highly experienced & well trained faculty team.<br>
-            Live projects in Development, Testing and Administration.<br>
-            Hands-on training in real life, production software.<br>
-            Live Project with real time exposure in J2EE and .NET<br>
-            Coverage of Reverse Engineering methodology.<br>
-            Allocation of project work for the final year students.<br>
-            Convenient batch timings for Regular / Fasttrack / Weekend<br>
-            24×7 World-Class Software Lab Facility<br>
-            Placement assistance by referring to various Software Companies across India.<br>
-        </p>  
-    </div>
+        <h2>Register for Course!</h3><br>
         <form class="border-top border-bottom">
             <br>
-            <a href="/Software_trainers_profile" style="color: red;">Software Trainers Profile</a>
+        <a1>webmaster</a1>
+        </form>
+        <br>
+        <p>Learn from the Real-Time Experts</p>
+        <br>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="firstName">First Name<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="lastName">Last Name<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="email">Email<span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="phone">Phone<span class="text-danger">*</span></label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="state">State</label>
+                        <input type="tel" class="form-control" id="state" placeholder="Enter your phone number">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="modeOfTraining">Mode of Training<span class="text-danger">*</span></label>
+                    <select id="modeOfTraining" class="form-control">
+                        <option selected>Online Training</option>
+                        <option selected>Classroom Training</option>
+                        <option selected>Weekend Training</option>
+                        <option selected>Project Training</option>
+                        <option selected>Intership Training</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="course">Course</label>
+                    <select id="course" class="form-control">
+                        <option selected>Select Course</option>
+                        <option selected>Python</option>
+                        <option selected>Java</option>
+                        <option selected>C++</option>
+                        <option selected>C#</option>
+                        <option selected>JavaScript</option>
+                        <option selected>Ruby</option>
+                        <option selected>Swift</option>
+                        <option selected>Kotlin</option>
+                        <option selected>Data Science</option>
+                        <option selected>Machine Learning</option>
+                        <option selected>Deep Learning</option>
+                        <option selected>Natural Language Processing (NLP)</option>
+                        <option selected>TensorFlow</option>
+                        <option selected>PyTorch</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        <form class="border-top border-bottom">
+            <br>
+            <h8>Categories: <a1>Classroom Training</a1></h8>
             <br>
         </form>
-        <form class="border-top border-bottom">
-            <h1 class="schedule" style="font-size: 24px;">Course Schedule</h1><br>
-            <a1>Regular / Fast-track / Weekend batches are available as per the students choice.</a1>
-        </form>
+    </div>
 </div>
-
-
 <div class="col-md-6">
     <div class="right-box">
-        <h3 class="font"><a href="http://localhost:3000/home" style=" color: red;"> Home </a><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+        <h3><a href="http://localhost:3000/home" style=" color: red;"> Home </a><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
-            <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/></svg> SOFTWARE TRAINING</h3><br><br>
+            <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+        </svg> CLASSROOM TRAINING <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+            <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+        </svg>ALL COURSES </h3><br><br>
         <div class="star">
         <span><a>Rating of      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-star" viewBox="0 0 16 16">
             <polygon points="8 0 10 5 15 5 11.25 8.75 12.5 14.5 8 11 3.5 14.5 4.75 8.75 1 5" />
@@ -275,3 +294,4 @@
 </div>
 </body>
 <%= render "footer" %>
+
