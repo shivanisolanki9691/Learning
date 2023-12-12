@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # get 'courses/hadoop'
   # # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  # root 'repos#index'
+  root 'repos#index'
   resources :repos
   # resources :courses
   get 'home', to: 'repos#home',as: 'home'
