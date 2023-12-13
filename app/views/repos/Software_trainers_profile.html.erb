@@ -1,17 +1,68 @@
-<style type="text/css">
-	page-title {
-    font-size: 20px;
-    font-weight: 600;
-    margin: 0;
-    padding: 20px 0;
-    padding: 2rem 0;
-    }
-    .border-bottom {
-            border-bottom: 3px solid black;
-            padding-bottom: 5px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Sections Page</title>
+    <style>
+        /* Add your CSS styles here */
+        /* For example: */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
         }
-</style>
-<div class="page-title">
-	<h1 class="border-bottom pb-2">Software Trainers Profile</h1><br>
-</div>
 
+        /* Style for the left section */
+        .left-section {
+            width: 45%; /* Adjust width as needed */
+        }
+
+        /* Style for the right section */
+        .right-section {
+            width: 45%; /* Adjust width as needed */
+        }
+
+        /* Apply additional styling as required */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-section">
+        <h2>Table Section</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data 1</td>
+                    <td>Data 2</td>
+                    <td>Data 3</td>
+                </tr>
+                <!-- Add more table rows as needed -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="right-section">
+        <h2>Paragraph Section</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor justo id tortor feugiat, eget consectetur magna consequat.</p>
+        <p>Nullam suscipit mauris ut vestibulum volutpat. Suspendisse potenti. Donec sodales urna in eleifend auctor.</p>
+        <!-- Add more paragraphs or content as needed -->
+    </div>
+</body>
+</html>
