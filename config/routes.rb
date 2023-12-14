@@ -15,6 +15,10 @@ Rails.application.routes.draw do
   get 'trainers_profile', to: "repos#trainers_profile", as: "trainers_profile"
   get "student_enquiry", to: "repos#student_enquiry", as: "student_enquiry" 
   get "corporate_training", to: "repos#corporate_training", as: "corporate_training"
+  get "feedback", to: "repos#feedback", as: "feedback"
+  get "post_testimonials", to: "repos#post_testimonials", as: "post_testimonials"
+  get "contact", to: "repos#contact", as: "contact"
+
 
   resources :courses
   get 'hadoop', to: 'courses#hadoop', as: "hadoop"

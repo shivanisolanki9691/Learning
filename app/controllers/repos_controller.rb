@@ -25,6 +25,15 @@ class ReposController < ApplicationController
 
   def corporate_training
   end
+
+  def feedback
+  end
+
+  def post_testimonials
+  end
+
+  def contact
+  end
   
 end
 
