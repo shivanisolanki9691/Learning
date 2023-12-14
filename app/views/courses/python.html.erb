@@ -1,18 +1,25 @@
 <%= render "header" %>
 <style>
+    h{
+        font-weight: bold;
+    }pr li{
+    margin-left: 35px;
+    font-size: 12px;
+    font-style: italic;
+    }
     .course-card {
         margin-bottom: 20px;
     }
     .left-box {
         padding: 20px;
-        width: 120%;
-        margin-top: 49px;
+/*        width: 120%;*/
     }
 
     .right-box {
         padding: 20px;
         margin-top: 20px;
     }
+
     
     h1 {
         font-weight: bold;
@@ -50,8 +57,10 @@
     p{
         font-size: 12px
     }
-    thead{
-        background-color: lightblue
+    .ser {
+        font-size: 12px;
+        font-weight: bold;
+        margin: 16px;
     }
 </style>
 <body>
@@ -59,287 +68,231 @@
 <!-- Left Box -->
 <div class="col-md-6">
     <div class="left-box">
-        <h4>All Courses</h4>
-        <form class="border-top border-bottom"><br>
-        <a1>webmaster</a1><br><br>
-        </form>
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>Course Name</th>
-                <th>Course Content</th>
-                <th>Register Now</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td class="text-black">Data Science</td>
-                <td><a href="/view_courses" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-               <td class="text-black">Hadoop</td>
-                <td><a href="/hadoop" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">AWS</td>
-                <td><a href="/AWS" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">DevOps</td>
-                <td><a href="/dev" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Salesforce</td>
-                <td><a href="/sale" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Python</td>
-                <td><a href="/python" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Selenium</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">C Language</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">C++</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Data Structure</td>
-                <td>View Course</td>
-                <td>SignUp !</td>
-            </tr>
-            <tr>
-                <td class="text-black">Core Java</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Advanced Java</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Spring</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Hibernate</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Web Services</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Struts</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">XML</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">C#.NET</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">ASP.NET</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">SQL Server</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Android</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">iPhone</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">IoT</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">RPA</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Automation Anywhere</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Blue Prism</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Spring Boot</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">CRT</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Unix/Linux</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Digital Marketing</td>
-                <td>View Course</td>
-                <td>SignUp !</td>
-            </tr>
-            <tr>
-                <td class="text-black">PHP with MySQL</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">ASP.NET MVC</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Java Training</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>>
-            </tr>
-            <tr>
-                <td class="text-black">HTML5 CSS3</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">HTML/JavaScript</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">jQuery</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">UI UX</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Ui Technologies</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">AngularJS</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular2</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular4</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular6</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular7</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular8</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">NodeJS</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">ReactJS</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Artificial Intelligence</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Apache Spark</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Blockchain</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-             <tr>
-                <td class="text-black">Full Stack Web Development Course</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            </tbody>
-        </table>
+        <h4 class="border-bottom pb-2">Python Training</h4>
+        <a1 class="border-bottom pb-2">Webmaster</a1>
+        <div class="left-box">
+            <h class="services" style="font-size: 12px; font-weight: bold;">Python Training Overview</h>
+            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;">Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. Python has been one of the premier, flexible, and powerful open-source language that is easy to learn, easy to use, and has powerful libraries for data manipulation and analysis</p>
+        </div>
+        <div class="left-box">
+            <h class="services" style="font-size: 12px; font-weight: bold;">What are the Python Course Pre-requisites</h>
+            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;">There are no hard pre-requisites. Basic understanding of Computer Programming terminologies is sufficient. Also, basic concepts related to Programming and <a1>Database</a1> is beeficial but not mandatory.</p>
+        </div>
+        <h2 class="ser">Objectives of the Course</h2>
+        <pr><li>To understand the concepts and constructs of Python</li>
+        <li>To create own Python programs, know the machine learning algorithms in Python and work on a real-time project running on Python</li></pr><br>
+
+        <h2 class="ser">Who should do the course</h2>
+        <pr><li>Big Data Professionals</li>
+        <li>IT Developers</li>
+        <li>Those who are showing interest to build their career in Python</li></pr><br>
+
+        <h2 class="ser">Python Training Course Duration</h2>
+        <pr><li>35 Days, Daily 1 Hour</li><pr><br>
+
+        <h2 class="ser">Python Course Content</h2><br>
+        <h2 class="ser">Core Python</h2><br>
+        <h2 class="ser">Introduction to Languages</h2>
+        <pr><li>What is Language?</li>
+        <li>Types of languages</li>
+        <li>Introduction to Translators</li>
+        <li>Compiler</li>
+        <li>Interpreter</li>
+        <li>What is Scripting Language?</li>
+        <li>Types of Script</li>
+        <li>Programming Languages v/s Scripting Languages</li>
+        <li>Difference between Scripting and Programming languages</li>
+        <li>What is programming paradigm?</li>
+        <li>Procedural programming paradigm</li>
+        <li>Object Oriented Programming paradigm</li></pr><br>
+
+        <h2 class="ser">Introduction to Python</h2>
+        <pr><li>What is Python?</li>
+        <li>WHY PYTHON?</li>
+        <li>History</li>
+        <li>Features – Dynamic, Interpreted, Object oriented, Embeddable, Extensible, Large standard libraries, Free and Open source</li>
+        <li>Why Python is General Language?</li>
+        <li>Limitations of Python</li>
+        <li>What is PSF?</li>
+        <li>Python implementations</li>
+        <li>Python applications</li>
+        <li>Python versions</li>
+        <li>PYTHON IN REALTIME INDUSTRY</li>
+        <li>Difference between Python 2.x and 3.x</li>
+        <li>Difference between Python 3.7 and 3.8</li>
+        <li>Software Development Architectures</li></pr><br>
+
+        <h2 class="ser">Python Software’s</h2>
+        <pr><li>Python Distributions</li>
+        <li>Download &Python Installation Process in Windows, Unix, Linux and Mac</li>
+        <li>Online Python IDLE</li>
+        <li>Python Real-time IDEs like Spyder, Jupyter Note Book, PyCharm, Rodeo, Visual Studio Code, ATOM, PyDevetc</li></pr><br>
+
+        <h2 class="ser">Python Language Fundamentals</h2>
+        <pr><li>Python Implementation Alternatives/Flavors</li>
+        <li>Keywords</li>
+        <li>Identifiers</li>
+        <li>Constants / Literals</li>
+        <li>Data types</li>
+        <li>Python VS JAVA</li>
+        <li>Python Syntax</li></pr><br>
+
+        <h2 class="ser">Different Modes of Python</h2>
+        <pr><li>Interactive Mode</li>
+        <li>Scripting Mode</li>
+        <li>Programming Elements</li>
+        <li>Structure of Python program</li>
+        <li>First Python Application</li>
+        <li>Comments in Python</li>
+        <li>Python file extensions</li>
+        <li>Setting Path in Windows</li>
+        <li>Edit and Run python program without IDE</li>
+        <li>Edit and Run python program using IDEs</li>
+        <li>INSIDE PYTHON</li>
+        <li>Programmers View of Interpreter</li>
+        <li>Inside INTERPRETER</li>
+        <li>What is Byte Code in PYTHON?</li>
+        <li>Python Debugger</li></pr><br>
+
+        <h2 class="ser">Python Variables</h2>
+        <pr><li>bytes Data Type</li>
+        <li>byte array</li>
+        <li>String Formatting in Python</li>
+        <li>Math, Random, Secrets Modules</li>
+        <li>Introduction</li>
+        <li>Initialization of variables</li>
+        <li>Local variables</li>
+        <li>Global variables</li>
+        <li>‘global’ keyword</li>
+        <h2 class="ser">Input and Output operations</h2>
+        <pr><li>Data conversion functions – int(), float(), complex(), str(), chr(), ord()</li>
+        <li>Operators</li>
+        <li>Arithmetic Operators</li>
+        <li>Comparison Operators</li>
+        <li>Python Assignment Operators</li>
+        <li>Logical Operators</li>
+        <li>Bitwise Operators</li>
+        <li>Shift operators</li>
+        <li>Membership Operators</li>
+        <li>Identity Operators</li>
+        <li>Ternary Operator</li>
+        <li>Operator precedence</li>
+        <li>Difference between “is” vs “==”</li>
+        <li>Input & Output Operators</li>
+        <li>Print</li>
+        <li>Input</li>
+        <li>Command-line arguments</li></pr><br>
+        <h2 class="ser">Control Statements</h2>
+        <pr><li>Conditional control statements</li>
+        <li>If</li>
+        <li>If-else</li>
+        <li>If-elif-else</li>
+        <li>Nested-if</li>
+        <li>Loop control statements</li>
+        <li>for</li>
+        <li>while</li>
+        <li>Nested loops</li>
+        <li>Branching statements</li>
+        <li>Break</li>
+        <li>Continue</li>
+        <li>Pass</li>
+        <li>Return</li>
+        <li>Case studies</li>
+        <h2 class="ser">Data Structures or Collections</h2>
+        <pr><li>Introduction</li>
+        <li>Importance of Data structures</li>
+        <li>Applications of Data structures</li>
+        <li>Types of Collections</li>
+        <li>Sequence</li>
+        <li>Strings, List, Tuple, range</li>
+        <li>Non sequence</li>
+        <li>Set, Frozen set, Dictionary</li>
+        <li>Strings</li>
+        <li>What is string</li>
+        <li>Representation of Strings</li>
+        <li>Processing elements using indexing</li>
+        <li>Processing elements using Iterators</li>
+        <li>Manipulation of String using Indexing and Slicing</li>
+        <li>String operators</li>
+        <li>Methods of String object</li>
+        <li>String Formatting</li>
+        <li>String functions</li>
+        <li>String Immutability</li>
+        <li>Case studies</li></pr><br>
+        <h2 class="ser">List Collection</h2>
+        <pr><li>What is List</li>
+        <li>Need of List collection</li>
+        <li>Different ways of creating List</li>
+        <li>List comprehension</li>
+        <li>List indices</li>
+        <li>Processing elements of List through Indexing and Slicing</li>
+        <li>List object methods</li>
+        <li>List is Mutable</li>
+        <li>Mutable and Immutable elements of List</li>
+        <li>Nested Lists</li>
+        <li>List_of_lists</li>
+        <li>Hardcopy, shallowCopy and DeepCopy</li>
+        <li>zip() in Python</li>
+        <li>How to unzip?</li>
+        <li>Python Arrays:</li>
+        <li>Case studies</li></pr><br>
+        <h2 class="ser">Tuple Collection</h2>
+        <pr><li>What is tuple?</li>
+        <li>Different ways of creating Tuple</li>
+        <li>Method of Tuple object</li>
+        <li>Tuple is Immutable</li>
+        <li>Mutable and Immutable elements of Tuple</li>
+        <li>Process tuple through Indexing and Slicing</li>
+        <li>List v/s Tuple</li>
+        <li>Case studies</li></pr><br>
+        <h2 class="ser">Set Collection</h2>
+        <pr><li>What is set?</li>
+        <li>Different ways of creating set</li>
+        <li>Difference between list and set</li>
+        <li>Iteration Over Sets</li>
+        <li>Accessing elements of set</li>
+        <li>Python Set Methods</li>
+        <li>Python Set Operations</li>
+        <li>Union of sets</li>
+        <li>functions and methods of set</li>
+        <li>Python Frozen set</li>
+        <li>Difference between set and frozenset ?</li>
+        <li>Case study</li>
+        <li>Dictionary Collection</li>
+        <li>What is dictionary?</li>
+        <li>Difference between list, set and dictionary</li>
+        <li>How to create a dictionary?</li>
+        <li>PYTHON HASHING?</li>
+        <li>Accessing values of dictionary</li>
+        <li>Python Dictionary Methods</li>
+        <li>Copying dictionary</li>
+        <li>Updating Dictionary</li>
+        <li>Reading keys from Dictionary</li>
+        <li>Reading values from Dictionary</li>
+        <li>Reading items from Dictionary</li>
+        <li>Delete Keys from the dictionary</li>
+        <li>Sorting the Dictionary</li>
+        <li>Python Dictionary Functions and methods</li>
+        <li>Dictionary comprehension</li></pr><br>
+ 
         <form class="border-top border-bottom">
             <br>
-            <h8>Categories: <a1>Classroom Training</a1></h8>
+            <h8>Click Here For<a1>  Python Online Training</a1></h8><br><br>
+            <h8>Categories:<a1>Online Training -- <h8 class="color" style='color: black;'>Tags:</h8> Chennai, Hyderabad</a1></h8>
             <br>
         </form>
     </div>
 </div>
+
 <div class="col-md-6 px-4">
         <div class="right-box">
             <h3><a href="http://localhost:3000/home" style=" color: red;"> Home </a><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
                 <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg> CLASSROOM TRAINING <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+            </svg> ONLINE TRAINING <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
                 <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg>ALL COURSES </h3><br><br>
+            </svg> Python Training </h3><br><br>
             <div class="star">
             <span class="Rating"><a>Rating of &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="yellow" class="bi bi-star" viewBox="0 0 16 16">
                 <polygon points="8 0 10 5 15 5 11.25 8.75 12.5 14.5 8 11 3.5 14.5 4.75 8.75 1 5" />
@@ -507,5 +460,5 @@
            </div>
         </div>
     </div>
-<%= render "footer" %>
-
+</body>
+<%= render "fooder" %>

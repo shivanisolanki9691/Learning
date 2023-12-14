@@ -24,5 +24,7 @@ Rails.application.routes.draw do
   get 'hadoop', to: 'courses#hadoop', as: "hadoop"
   get 'AWS', to: 'courses#AWS', as: "AWS"
   get 'dev', to: 'courses#dev', as: "dev"
+  get 'sale', to: 'courses#sale', as: "sale"
+  get 'python', to: 'courses#python', as: "python"
 
 end

@@ -7,5 +7,11 @@ class CoursesController < ApplicationController
 
   def dev
   end
+
+  def sale
+  end
+
+  def python
+  end
   
 end
