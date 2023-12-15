@@ -26,5 +26,7 @@ Rails.application.routes.draw do
   get 'dev', to: 'courses#dev', as: "dev"
   get 'sale', to: 'courses#sale', as: "sale"
   get 'python', to: 'courses#python', as: "python"
+  get 'selenium', to: 'courses#selenium', as: "selenium"
+  get 'language', to: 'courses#language', as: "language"
 
 end

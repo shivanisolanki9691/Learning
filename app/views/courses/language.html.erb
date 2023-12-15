@@ -1,18 +1,25 @@
 <%= render "header" %>
 <style>
+    h{
+        font-weight: bold;
+    }pr li{
+    margin-left: 35px;
+    font-size: 12px;
+    font-style: italic;
+    }
     .course-card {
         margin-bottom: 20px;
     }
     .left-box {
         padding: 20px;
-        width: 120%;
-        margin-top: 49px;
+/*        width: 120%;*/
     }
 
     .right-box {
         padding: 20px;
         margin-top: 20px;
     }
+
     
     h1 {
         font-weight: bold;
@@ -50,8 +57,10 @@
     p{
         font-size: 12px
     }
-    thead{
-        background-color: lightblue
+    .ser {
+        font-size: 12px;
+        font-weight: bold;
+        margin: 16px;
     }
 </style>
 <body>
@@ -59,287 +68,252 @@
 <!-- Left Box -->
 <div class="col-md-6">
     <div class="left-box">
-        <h4>All Courses</h4>
-        <form class="border-top border-bottom"><br>
-        <a1>webmaster</a1><br><br>
-        </form>
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>Course Name</th>
-                <th>Course Content</th>
-                <th>Register Now</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td class="text-black">Data Science</td>
-                <td><a href="/view_courses" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-               <td class="text-black">Hadoop</td>
-                <td><a href="/hadoop" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">AWS</td>
-                <td><a href="/AWS" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">DevOps</td>
-                <td><a href="/dev" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Salesforce</td>
-                <td><a href="/sale" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Python</td>
-                <td><a href="/python" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Selenium</td>
-                <td><a href="/selenium" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">C Language</td>
-                <td><a href="/language" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">C++</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Data Structure</td>
-                <td>View Course</td>
-                <td>SignUp !</td>
-            </tr>
-            <tr>
-                <td class="text-black">Core Java</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Advanced Java</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Spring</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Hibernate</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Web Services</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Struts</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">XML</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">C#.NET</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">ASP.NET</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">SQL Server</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Android</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">iPhone</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">IoT</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">RPA</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Automation Anywhere</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Blue Prism</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Spring Boot</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">CRT</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Unix/Linux</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Digital Marketing</td>
-                <td>View Course</td>
-                <td>SignUp !</td>
-            </tr>
-            <tr>
-                <td class="text-black">PHP with MySQL</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">ASP.NET MVC</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Java Training</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>>
-            </tr>
-            <tr>
-                <td class="text-black">HTML5 CSS3</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">HTML/JavaScript</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">jQuery</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">UI UX</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Ui Technologies</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">AngularJS</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular2</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular4</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular6</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular7</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular8</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">NodeJS</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">ReactJS</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Artificial Intelligence</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Apache Spark</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Blockchain</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-             <tr>
-                <td class="text-black">Full Stack Web Development Course</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            </tbody>
-        </table>
+        <h4 class="border-bottom pb-2">C Language Training</h4>
+        <a1 class="border-bottom pb-2">NIT Manager</a1>
+        <div class="left-box">
+            <h class="services" style="font-size: 12px; font-weight: bold;">About C-Language Training</h>
+            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;">C is an basic building block for every languages. It is a general Purpose Language.  To develop the programming skills ‘C’ is the only platform for to develop programming techniques for any type languages. It is an Mid-level programming language for systems programming very widely used, relatively low-level, weakly typed, systems programming language associated with Unix and through that with Linux and the open source movement Performance becomes somewhat portable. Many Applications Like System Software, Application Software, Embedded Systems, Cool Games, Mobile applications, Device Drivers Programming etc of the World applications written in C and the List continues…C Designed and implemented by Dennis Ritchie 1972.</p>
+        </div>
+        <div class="left-box">
+            <h class="services" style="font-size: 12px; font-weight: bold;">C Training Course Objective</h>
+            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;">C is an basic building block for every languages. It is a general Purpose Language.  To develop the programming skills ‘C’ is the only platform for to develop programming techniques for any type languages. It is an Mid-level programming language for systems programming very widely used, relatively low-level, weakly typed, systems programming language associated with Unix and through that with Linux and the open source movement Performance becomes somewhat portable. Many Applications Like System Software, Application Software, Embedded Systems, Cool Games, Mobile applications, Device Drivers Programming etc of the World applications written in C and the List continues…C Designed and implemented by Dennis Ritchie 1972.</p>
+        </div>
+        <div class="left-box">
+            <h class="services" style="font-size: 12px; font-weight: bold;">Why This Course is Required</h>
+            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;">One thing we can speak without C Knowledge there is no Programming Logics to learn any language. There is no interviews for a Fresher without C language. To learn Java, .Net, Databases the list continues so many we require “C” Knowledge  for a student  Finally to tell many languages are internally Programmed by only C Language.</p>
+        </div>
+        <h2 class="ser">C  Training Course Overview</h2>
+
+        <h2 class="ser">Fundamentals in C</h2>
+        <pr>
+            <li>Program</li>
+            <li>Programming</li>
+            <li>Programming Languages</li>
+            <li>Types of Software</li>
+            <li>Introduction to C</li>
+            <li>History of C</li>
+            <li>Features of C</li>
+            <li>Applications of C</li>
+            <li>Character Set, ASCII Table</li>
+            <li>Tokens</li>
+            <li>Keywords</li>
+            <li>Identifiers & Naming Rules</li>
+            <li>Constants</li>
+            <li>Data Types</li>
+            <li>Type Qualifiers</li>
+            <li>How data is stored in Computer Memory</li>
+            <li>Variables</li>
+            <li>Variable Declaration</li>
+            <li>Variable Assignment</li>
+            <li>Variable Initialization</li>
+            <li>Comments</li>
+            <li>Defining Constants</li>
+            <li>MCQs</li>
+        </pr><br>
+
+        <h2 class="ser">Operators and Expressions</h2>
+        <pr>
+            <li>Arithmetic operators</li>
+            <li>Arithmetic expressions</li>
+            <li>Evaluation of expressions</li>
+            <li>Relational operators</li>
+            <li>Logical operators</li>
+            <li>Assignment operators</li>
+            <li>Increment & decrement operators</li>
+            <li>Conditional operator</li>
+            <li>Bitwise operators</li>
+            <li>Type casting</li>
+            <li>Sizeof operator</li>
+            <li>Comma operator</li>
+            <li>Operators Precedence and Associativity</li>
+            <li>Expressions</li>
+            <li>Evaluation of Expressions</li>
+            <li>MCQs</li>
+        </pr><br>
+
+        <h2 class="ser">Input-Output Functions</h2>
+        <pr>
+            <li>Input-Output Library Functions</li>
+            <li>Non-formatted Input and Output</li>
+            <li>Character-oriented Library functions</li>
+            <li>Formatted Library Functions</li>
+        </pr><br>
+
+        <h2 class="ser">Compiler, Linker and Loader</h2>
+        <pr>
+            <li>Compiler, Linker, and Loader</li>
+            <li>Program execution phases</li>
+        </pr><br>
+
+        <h2 class="ser">Mathematical Library Functions</h2>
+        <pr>
+            <li>Mathematical Library Functions</li>
+            <li>Structure of a C Program</li>
+            <li>IDE (Integrated Development Environment)</li>
+            <li>Basic programs</li>
+            <li>MCQs</li>
+        </pr><br>
+
+        <h2 class="ser">Arrays</h2>
+        <pr>
+            <li>One-dimensional arrays</li>
+            <pr>
+                <li>Declaration of 1D arrays</li>
+                <li>Initialization of 1D arrays</li>
+                <li>Accessing elements of 1D arrays</li>
+                <li>Reading and displaying elements</li>
+                <li>Programs on 1D Arrays</li>
+            </pr>
+            <li>Two-dimensional arrays</li>
+            <pr>
+                <li>Declaration of 2D arrays</li>
+                <li>Initialization of 2D arrays</li>
+                <li>Accessing elements of 2D arrays</li>
+                <li>Reading and displaying elements</li>
+                <li>Programs on 2D Arrays</li>
+            </pr>
+            <li>Three-dimensional arrays</li>
+        </pr><br>
+
+        <h2 class="ser">MCQs - Arrays</h2>
+        <pr>
+            <li>MCQs on Arrays</li>
+        </pr><br>
+
+        <h2 class="ser">Strings</h2>
+        <pr>
+            <li>String Concept</li>
+            <li>Introduction to String in C</li>
+            <li>Storing Strings</li>
+            <li>The string Delimiter</li>
+            <li>String Literals (String Constants)</li>
+            <li>Strings and Characters</li>
+            <li>Declaring Strings</li>
+            <li>Initializing Strings</li>
+            <li>Strings and the Assignment Operator</li>
+            <li>String Input Functions / Reading Strings</li>
+            <li>String Output Functions / Writing Strings</li>
+            <li>String Input-Output using fscanf() and fprintf() Functions</li>
+            <li>Single Character Library Functions / Character Manipulation in the String</li>
+            <li>String Manipulation Library Functions</li>
+            <li>Programs Using Character Arrays</li>
+            <li>Array of Strings (2D Character Arrays)</li>
+            <li>Programs Using Array of Strings</li>
+        </pr><br>
+
+        <h2 class="ser">MCQs - Strings</h2>
+        <pr>
+            <li>MCQs on Strings</li>
+        </pr><br>
+
+        <h2 class="ser">Pointers</h2>
+        <pr>
+            <li>Understanding Memory Addresses</li>
+            <li>Pointer Operators</li>
+            <li>Pointer</li>
+            <li>Pointer Advantages and Disadvantages</li>
+            <li>Declaration of Pointer Variables</li>
+            <li>Initialization of Pointer Variables</li>
+            <li>Dereferencing / Redirecting Pointer Variables</li>
+            <li>Declaration versus Redirection</li>
+            <li>Void Pointer</li>
+            <li>Null Pointer</li>
+            <li>Compatibility</li>
+            <li>Array of Pointers</li>
+            <li>Pointer to Pointer</li>
+            <li>Pointer Arithmetic</li>
+            <li>Dynamic Memory Allocation Functions</li>
+        </pr><br>
+
+        <h2 class="ser">Functions</h2>
+        <pr>
+            <li>Advantages of using functions</li>
+            <li>Defining a function</li>
+            <li>Calling a function</li>
+            <li>Return statement</li>
+            <li>Function Prototype</li>
+            <li>Basic Function Designs</li>
+            <li>Programs Using Functions</li>
+            <li>Scope</li>
+            <li>Recursion</li>
+            <li>Iteration vs Recursion</li>
+            <li>Nested functions</li>
+            <li>Variable Length Number of Arguments</li>
+            <li>Parameter Passing Techniques – Call by value & Call by Address</li>
+            <li>Functions Returning Pointers</li>
+            <li>Pointers and One-Dimensional Arrays</li>
+            <li>Pointers and Two-Dimensional Arrays</li>
+            <li>Passing 1D arrays to Functions</li>
+            <li>Passing 2D arrays to Functions</li>
+            <li>Pointers and Strings</li>
+            <li>Passing Strings to Functions</li>
+            <li>Pointer to Function</li>
+        </pr><br>
+
+        <h2 class="ser">MCQs</h2>
+        <pr>
+            <li>MCQs on Pointers and Functions</li>
+        </pr>
+
+        <h2 class="ser">Storage Classes</h2>
+        <pr>
+            <li>Object Attributes</li>
+            <li>Scope</li>
+            <li>Extent</li>
+            <li>Linkage</li>
+            <li>auto</li>
+            <li>static</li>
+            <li>extern</li>
+            <li>register</li>
+        </pr><br>
+
+        <h2 class="ser">Preprocessor Directives</h2>
+        <pr>
+            <li>The #include Preprocessor Directive & User-defined header files</li>
+            <li>The #define Preprocessor Directive: Symbolic Constants</li>
+            <li>The #define Preprocessor Directive: Macros</li>
+            <li>Conditional Compilation Directives</li>
+            <pr>
+                <li>#if</li>
+                <li>#else</li>
+                <li>#elif</li>
+                <li>#endif</li>
+                <li>#ifdef</li>
+                <li>#ifndef</li>
+                <li>#undef</li>
+                <li>#error</li>
+                <li>#line</li>
+                <li>#pragma</li>
+            </pr>
+        </pr><br>
+
+        <h2 class="ser">MCQs - Preprocessor Directives</h2>
+        <pr>
+            <li>MCQs on Preprocessor Directives</li>
+        </pr><br>
+
+
+
+
+
         <form class="border-top border-bottom">
             <br>
-            <h8>Categories: <a1>Classroom Training</a1></h8>
+            <h8>Click Here For<a1>  C Language Online Training</a1></h8><br><br>
+            <h8>Categories:<a1>Online Training -- <h8 class="color" style='color: black;'>Tags:</h8> Chennai, Hyderabad</a1></h8>
             <br>
         </form>
     </div>
 </div>
+
 <div class="col-md-6 px-4">
         <div class="right-box">
             <h3><a href="http://localhost:3000/home" style=" color: red;"> Home </a><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
                 <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg> CLASSROOM TRAINING <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+            </svg> ONLINE TRAINING <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
                 <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg>ALL COURSES </h3><br><br>
+            </svg> C Language Training </h3><br><br>
             <div class="star">
             <span class="Rating"><a>Rating of &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="yellow" class="bi bi-star" viewBox="0 0 16 16">
                 <polygon points="8 0 10 5 15 5 11.25 8.75 12.5 14.5 8 11 3.5 14.5 4.75 8.75 1 5" />
@@ -507,5 +481,5 @@
            </div>
         </div>
     </div>
-<%= render "footer" %>
-
+</body>
+<%= render "fooder" %>

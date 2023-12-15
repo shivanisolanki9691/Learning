@@ -13,5 +13,11 @@ class CoursesController < ApplicationController
 
   def python
   end
+
+  def selenium
+  end
+
+  def language
+  end
   
 end
