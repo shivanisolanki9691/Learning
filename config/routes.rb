@@ -38,4 +38,5 @@ Rails.application.routes.draw do
   get "struts", to: "courses#struts", as: "struts"
   get "xml", to: "courses#xml", as: "xml"
   get "cnet", to: "courses#cnet", as: "cnet"
+  get "asp", to: "courses#asp", as: "asp"
 end
