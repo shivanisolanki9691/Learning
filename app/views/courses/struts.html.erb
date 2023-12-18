@@ -1,18 +1,25 @@
 <%= render "header" %>
 <style>
+    h{
+        font-weight: bold;
+    }pr li{
+    margin-left: 35px;
+    font-size: 12px;
+    font-style: italic;
+    }
     .course-card {
         margin-bottom: 20px;
     }
     .left-box {
         padding: 20px;
-        width: 120%;
-        margin-top: 49px;
+/*        width: 120%;*/
     }
 
     .right-box {
         padding: 20px;
         margin-top: 20px;
     }
+
     
     h1 {
         font-weight: bold;
@@ -50,8 +57,10 @@
     p{
         font-size: 12px
     }
-    thead{
-        background-color: lightblue
+    .ser {
+        font-size: 12px;
+        font-weight: bold;
+        margin: 16px;
     }
 </style>
 <body>
@@ -59,278 +68,179 @@
 <!-- Left Box -->
 <div class="col-md-6">
     <div class="left-box">
-        <h4>All Courses</h4>
-        <form class="border-top border-bottom"><br>
-        <a1>webmaster</a1><br><br>
-        </form>
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>Course Name</th>
-                <th>Course Content</th>
-                <th>Register Now</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td class="text-black">Data Science</td>
-                <td><a href="/view_courses" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-               <td class="text-black">Hadoop</td>
-                <td><a href="/hadoop" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">AWS</td>
-                <td><a href="/AWS" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">DevOps</td>
-                <td><a href="/dev" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Salesforce</td>
-                <td><a href="/sale" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Python</td>
-                <td><a href="/python" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Selenium</td>
-                <td><a href="/selenium" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">C Language</td>
-                <td><a href="/language" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">C++</td>
-                <td><a href="/c" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Data Structure</td>
-                <td><a href="/data" style="color: red;">View Course</a></td>
-                <td>SignUp !</td>
-            </tr>
-            <tr>
-                <td class="text-black">Core Java</td>
-                <td><a href="/core" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Advanced Java</td>
-                <td><a href="/advansed" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Spring</td>
-                <td><a href="/spring" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Hibernate</td>
-                <td><a href="/hibernate" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Web Services</td>
-                <td><a href="/web" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Struts</td>
-                <td><a href="/struts" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">XML</td>
-                <td><a href="/xml" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">C#.NET</td>
-                <td><a href="/cnet" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">ASP.NET</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">SQL Server</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Android</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">iPhone</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">IoT</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">RPA</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Automation Anywhere</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Blue Prism</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Spring Boot</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">CRT</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Unix/Linux</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Digital Marketing</td>
-                <td>View Course</td>
-                <td>SignUp !</td>
-            </tr>
-            <tr>
-                <td class="text-black">PHP with MySQL</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">ASP.NET MVC</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Java Training</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>>
-            </tr>
-            <tr>
-                <td class="text-black">HTML5 CSS3</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">HTML/JavaScript</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">jQuery</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">UI UX</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Ui Technologies</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">AngularJS</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular2</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular4</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular6</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular7</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular8</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">NodeJS</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">ReactJS</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Artificial Intelligence</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Apache Spark</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Blockchain</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-             <tr>
-                <td class="text-black">Full Stack Web Development Course</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            </tbody>
-        </table>
+        <h4 class="border-bottom pb-2">Struts Training</h4>
+        <a1 class="border-bottom pb-2">NIT Manager</a1>
+        <div class="left-box">
+            <h class="services" style="font-size: 12px; font-weight: bold;">Struts 1.x and 2.x Training Overview</h>
+            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;">The Apache Struts web framework is a free open-source solution for creating Java web applications. It provides various components that can be used to develop MVC based web applications that are easy to develop and maintain.</p>
+            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;">This advanced course shows JSP and servlet programmers how to build web applications using the <strong>Apache Struts framework.</strong> Learner learn the Struts architecture and see how it captures a great deal of pre-existing best practice: in model-view-controller action mappings, form beans, custom tags for working with <strong>HTML</strong> forms, input validation, and the Tiles view-building framework. This Struts 1.3 and 2.0 version of the course illustrates the use of Struts 1.3 in detail and 2.0.</p>
+        </div>
+        <div class="left-box">
+            <h class="services" style="font-size: 12px; font-weight: bold;">Struts 1.x & 2.x Course Prerequisite</h>
+            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;">Java Programming, Java Web Programming, or Java Enterprise Edition. Java Servlet and JSP programming experience, and a basic understanding of<a1> HTML </a1>and <strong>XML</strong> is required.</p>
+        </div>
+        <h2 class="ser">Struts 1.x & 2.x Training Course Objectives</h2>
+        <pr>
+            <li>Facilitate understanding of the Model-View-Controller (MVC) design pattern and how it is best applied to Java Web development</li>
+            <li>Use Struts actions and action mappings to take control of HTTP requests/responses</li>
+            <li>Manage HTML form input and output with form beans, and use these beans to simplify data handling in the controller</li>
+            <li>Use JSTL and Struts custom tags to build robust and reusable JSP presentation logic</li>
+            <li>Support multiple client locales with various internationalization techniques</li>
+            <li>Define validation rules for input forms, and provide clear user feedback</li>
+            <li>Build complex presentations using decoupled, reusable tiles, screens, and layouts</li>
+        </pr><br>
+        <h2 class="ser">Struts 1.x and 2.x Training Course Duration</h2>
+        <pr>
+            <li>60 Working days</li>
+            <li>Daily one and a half hours</li>
+        </pr><br>
+        <h2 class="ser">Struts 1.x and 2.x Training Course Content</h2>
+        <h2 class="ser">STRUTS – 1.x</h2>
+        <h2 class="ser">Different types of Applications</h2>
+        <h2 class="ser">Different Layers in Application</h2>
+        <pr>
+            <li>Presentation Processing Layer</li>
+            <li>Business Processing Layer</li>
+            <li>Data Storage and Access Layer</li>
+        </pr><br>
+        <h2 class="ser">Web Application Designing Models</h2>
+        <pr>
+            <li>Model1-Architecture</li>
+            <li>Model2-Architecture (MVC)</li>
+            <li>Designing web application using MVC architecture</li>
+        </pr><br>
+        <h2 class="ser">Struts Introduction</h2>
+        <h2 class="ser">Struts Architecture</h2>
+        <h2 class="ser">Struts Resources</h2>
+        <pr>
+            <li>JSP</li>
+            <li>ActionServlet</li>
+            <li>web.xml</li>
+            <li>ActionForm</li>
+            <li>Action class</li>
+            <li>Struts Configuration File</li>
+            <li>Explanation about Struts-configuration File</li>
+            <li>Detailed explanation of Struts request processing flow</li>
+            <li>Customizing RequestProcessor</li>
+        </pr><br>
+        <h2 class="ser">Validations in Struts</h2>
+        <h2 class="ser">Client Validations</h2>
+        <h2 class="ser">Server-side Validations</h2>
+        <pr>
+            <li>By using validate() method – programmatic approach</li>
+            <li>By using Validator Framework – declarative approach</li>
+            <li>Combination of programmatic approach and declarative approach</li>
+        </pr><br>
+        <h2 class="ser">Different types of Action Forms and Dynamic Action Forms</h2>
+        <pr>
+            <li>ActionForm</li>
+            <li>DynaActionForm</li>
+            <li>ValidatorForm</li>
+            <li>DynaValidatorForm</li>
+            <li>ValidatorActionForm</li>
+            <li>DynaValidatorActionForm</li>
+        </pr><br>
+        <h2 class="ser">Exception Handling in Struts</h2>
+        <pr>
+            <li>Programmatic Approach</li>
+            <li>Declarative Approach</li>
+        </pr><br>
+        <h2 class="ser">Local Forwards and Global Forwards</h2>
+        <h2 class="ser">Local Exceptions and Global Exceptions</h2>
+        <h2 class="ser">Struts Predefined Tag Libraries</h2>
+        <pr>
+            <li>HTML Tag Library</li>
+            <li>Bean Tag Library</li>
+            <li>Logic Tag Library</li>
+            <li>Nested Tag Library</li>
+            <li>Tiles Tag Library</li>
+        </pr><br>
+        <h2 class="ser">Predefined Action Classes</h2>
+        <pr>
+            <li>ForwardAction</li>
+            <li>IncludeAction</li>
+            <li>DispatchAction</li>
+            <li>LookupDispatchAction</li>
+            <li>MappingDispatchAction</li>
+            <li>SwitchAction</li>
+            <li>LocaleAction</li>
+            <li>DownloadAction</li>
+            <li>EventDispatchAction</li>
+        </pr><br>
+        <h2 class="ser">Internationalization (I18N) in Struts 1.x</h2>
+        <h2 class="ser">Struts with Ajax Example</h2>
+        <h2 class="ser">Preventing Double Submits</h2>
+        <h2 class="ser">Data Source</h2>
+        <h2 class="ser">File Uploading and Downloading in Struts</h2>
+        <h2 class="ser">Tiles Framework</h2>
+        <h2 class="ser">IDEs: Eclipse, Netbeans</h2>
+
+        <h2 class="ser">STRUTS – 2.x</h2>
+
+        <h2 class="ser">Basic Components of Struts 2</h2>
+        <pr><li>Struts 2 Features</li></pr><br>
+
+        <h2 class="ser">Differences between Struts 1.x & 2.x</h2>
+        <h2 class="ser">Steps to Create Struts 2 Application</h2>
+
+        <h2 class="ser">Core Components in Struts 2</h2>
+        <pr>
+            <li>Filter Dispatcher</li>
+            <li>Interceptors</li>
+            <li>Value Stack</li>
+            <li>Action Context</li>
+            <li>Action Invocation</li>
+            <li>OGNL (Object Graph Notation Language)</li>
+        </pr><br>
+        <h2 class="ser">Struts 2 Work Flow</h2>
+        <h2 class="ser">Struts 2 Action</h2>
+        <h2 class="ser">Struts 2 Configuration</h2>
+        <pr>
+            <li>Multi Configuration</li>
+            <li>MultiNameSpace</li>
+        </pr><br>
+        <h2 class="ser">Struts 2 Tag Library</h2>
+        <h2 class="ser">Interceptors</h2>
+        <pr>
+            <li>Params Interceptor</li>
+            <li>Model Driven Interceptor</li>
+            <li>Custom Interceptor</li>
+            <li>Exception Handling</li>
+        </pr><br>
+
+        <h2 class="ser">Struts 2 Validation</h2>
+        <pr>
+            <li>Custom Validation</li>
+            <li>Input Validation</li>
+            <li>Aware Interfaces</li>
+            <li>Application Aware</li>
+            <li>Session Aware</li>
+            <li>Request and Response Aware</li>
+        </pr><br>
+        <h2 class="ser">Aware Interfaces</h2>
+        <pr>
+            <li>Application Aware</li>
+            <li>Session Aware</li>
+            <li>Request and Response Aware</li>
+        </pr><br>
+        <h2 class="ser">Internationalization(I18N) in Struts 2.x</h2>
+        <h2 class="ser">Files Uploading and Downloading</h2>
+        <h2 class="ser">Securing Struts Application</h2>
+        <h2 class="ser">Debugging and Profiling</h2>
+        <h2 class="ser">Progress Meters</h2>
+        <h2 class="ser">Custom Interceptors</h2>
+        <h2 class="ser">Data Store using Struts 2</h2>
+        <h2 class="ser">JFreeChart Plugins</h2>
+        <h2 class="ser">Struts 2 with Tiles 2</h2>
+        <h2 class="ser">IDEs: Eclipse, Netbeans</h2>
         <form class="border-top border-bottom">
             <br>
-            <h8>Categories: <a1>Classroom Training</a1></h8>
+            <h8>Categories:<a1>Struts Training</a1></h8>
             <br>
         </form>
     </div>
 </div>
+
 <div class="col-md-6 px-4">
         <div class="right-box">
             <h3><a href="http://localhost:3000/home" style=" color: red;"> Home </a><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
@@ -339,7 +249,7 @@
             </svg> CLASSROOM TRAINING <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
                 <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg>ALL COURSES </h3><br><br>
+            </svg> Struts Training </h3><br><br>
             <div class="star">
             <span class="Rating"><a>Rating of &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="yellow" class="bi bi-star" viewBox="0 0 16 16">
                 <polygon points="8 0 10 5 15 5 11.25 8.75 12.5 14.5 8 11 3.5 14.5 4.75 8.75 1 5" />
@@ -507,5 +417,5 @@
            </div>
         </div>
     </div>
-<%= render "footer" %>
-
+</body>
+<%= render "fooder" %>

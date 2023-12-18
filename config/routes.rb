@@ -31,5 +31,11 @@ Rails.application.routes.draw do
   get 'c', to: 'courses#c', as: "c"
   get 'data', to: "courses#data", as: 'data'
   get 'core', to: "courses#core", as: "core"
-
+  get 'advansed', to: "courses#advansed", as: "advansed"
+  get 'spring', to: "courses#spring", as: "spring"
+  get "hibernate", to: "courses#hibernate", as: "hibernate"
+  get "web", to: "courses#web", as: "web"
+  get "struts", to: "courses#struts", as: "struts"
+  get "xml", to: "courses#xml", as: "xml"
+  get "cnet", to: "courses#cnet", as: "cnet"
 end

@@ -28,5 +28,22 @@ class CoursesController < ApplicationController
 
   def core
   end
+
+  def advansed
+  end
+
+  def spring
+  end
+  def hibernate
+  end
+  def web
+  end
+
+  def struts
+  end
+
+  def xml
+  end
+  
   
 end

@@ -1,18 +1,25 @@
 <%= render "header" %>
 <style>
+    h{
+        font-weight: bold;
+    }pr li{
+    margin-left: 35px;
+    font-size: 12px;
+    font-style: italic;
+    }
     .course-card {
         margin-bottom: 20px;
     }
     .left-box {
         padding: 20px;
-        width: 120%;
-        margin-top: 49px;
+/*        width: 120%;*/
     }
 
     .right-box {
         padding: 20px;
         margin-top: 20px;
     }
+
     
     h1 {
         font-weight: bold;
@@ -50,8 +57,10 @@
     p{
         font-size: 12px
     }
-    thead{
-        background-color: lightblue
+    .ser {
+        font-size: 12px;
+        font-weight: bold;
+        margin: 16px;
     }
 </style>
 <body>
@@ -59,287 +68,207 @@
 <!-- Left Box -->
 <div class="col-md-6">
     <div class="left-box">
-        <h4>All Courses</h4>
-        <form class="border-top border-bottom"><br>
-        <a1>webmaster</a1><br><br>
-        </form>
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>Course Name</th>
-                <th>Course Content</th>
-                <th>Register Now</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td class="text-black">Data Science</td>
-                <td><a href="/view_courses" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-               <td class="text-black">Hadoop</td>
-                <td><a href="/hadoop" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">AWS</td>
-                <td><a href="/AWS" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">DevOps</td>
-                <td><a href="/dev" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Salesforce</td>
-                <td><a href="/sale" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Python</td>
-                <td><a href="/python" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Selenium</td>
-                <td><a href="/selenium" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">C Language</td>
-                <td><a href="/language" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">C++</td>
-                <td><a href="/c" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Data Structure</td>
-                <td><a href="/data" style="color: red;">View Course</a></td>
-                <td>SignUp !</td>
-            </tr>
-            <tr>
-                <td class="text-black">Core Java</td>
-                <td><a href="/core" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Advanced Java</td>
-                <td><a href="/advansed" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Spring</td>
-                <td><a href="/spring" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Hibernate</td>
-                <td><a href="/hibernate" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Web Services</td>
-                <td><a href="/web" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Struts</td>
-                <td><a href="/struts" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">XML</td>
-                <td><a href="/xml" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">C#.NET</td>
-                <td><a href="/cnet" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">ASP.NET</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">SQL Server</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Android</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">iPhone</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">IoT</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">RPA</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Automation Anywhere</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Blue Prism</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Spring Boot</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">CRT</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Unix/Linux</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Digital Marketing</td>
-                <td>View Course</td>
-                <td>SignUp !</td>
-            </tr>
-            <tr>
-                <td class="text-black">PHP with MySQL</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">ASP.NET MVC</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Java Training</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>>
-            </tr>
-            <tr>
-                <td class="text-black">HTML5 CSS3</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">HTML/JavaScript</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">jQuery</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">UI UX</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Ui Technologies</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">AngularJS</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular2</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular4</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular6</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular7</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular8</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">NodeJS</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">ReactJS</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Artificial Intelligence</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Apache Spark</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Blockchain</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-             <tr>
-                <td class="text-black">Full Stack Web Development Course</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            </tbody>
-        </table>
+        <h4 class="border-bottom pb-2">Hibernate Training</h4>
+        <a1 class="border-bottom pb-2">NIT Manager</a1>
+        <div class="left-box">
+            <h class="services" style="font-size: 12px; font-weight: bold;">About Hibernate Training</h>
+            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;">Hibernate is the most popular object-relational mapping framework for Java environments. Object relational mapping in large enterprise applications is difficult. In this class, students learn object-relational mapping concepts and the various issues and options available in Java to address object persistence. With these fundamentals, the course then explores the basics of Hibernate object persistence and configuration. It also digs into the details of Hibernate mapping, queries, transactions, and concurrency.</p>
+            <p class="paragrap" style="margin-top: 20px;, word-spacing: 2px;">This course is loaded with lots of hands on examples and deals with maintenance and performance issues. After taking this class, developers will be able to build faster, more flexible and easier to maintain application persistence layers with the Hibernate framework.
+        </div>
+        <h2>Prerequisites for Hibernate Course</h2><br>
+        <pr>
+            <li>Good Understanding of Java Programming Language</li>
+            <li>Basic Knowledge of Relational Databases</li>
+            <li>Familiarity with SQL (Structured Query Language)</li>
+        </pr><br>
+        <h2>Hibernate Training Course Objectives</h2><br>
+        <pr>
+            <li>Understanding the Challenges of Object-Relational Mapping (ORM)</li>
+            <li>Learning the Architecture of Hibernate</li>
+            <li>Setting up and Configuring Hibernate for a Java Project</li>
+            <li>Mapping Java Classes and Object Associations to Relational Database Tables with Hibernate Mapping Files</li>
+            <li>Studying Hibernate's Strategies for Mapping Java Inheritance Trees to Relational Database Tables</li>
+            <li>Exploring Hibernate Query Language (HQL) and Criteria API for Retrieving Java Objects</li>
+            <li>Understanding Hibernate's Caching Architecture</li>
+        </pr><br>
+        <h2>Hibernate Training Course Duration</h2><br>
+        <pr>
+            <li>Normal Track: 45 Working days, daily one and a half hours</li>
+            <li>Fast Track: 30 Working days, daily two hours</li>
+        </pr><br>
+        <h2 class="ser">Hibernate Training Course Overview</h2><br>
+        <h2 class="ser">Advantages of Hibernate compared to JDBC</h2>
+        <h2 class="ser">Introduction</h2>
+        <h2 class="ser">ORM (Object Relational Mapping)</h2><br>
+        <h2 class="ser">Hibernate Resources</h2><br>
+        <pr>
+            <li>Configuration file</li>
+            <li>Mapping file</li>
+            <li>Persistent class or POJO</li>
+            <li>Client application</li>
+        </pr><br>
+        <h2 class="ser">Hibernate Architecture</h2>
+
+        <h2 class="ser">Installation and Directory Structure</h2>
+
+        <h2 class="ser">Hibernate Data Types</h2>
+
+        <h2 class="ser">First Application using Hibernate</h2><br>
+        <h2 class="ser">Hibernate API</h2><br>
+        <pr>
+            <li>Configuration</li>
+            <li>SessionFactory</li>
+            <li>Session</li>
+            <li>Transaction</li>
+        </pr><br>
+        <h2 class="ser">Object Life Cycle in Hibernate</h2><br> 
+        <pr>
+            <li>Transient object</li>
+            <li>Persistent object</li>
+            <li>Detached object</li>
+        </pr><br>
+        <h2 class="ser">CRUD Operations using Session Methods in Hibernate</h2><br>
+        <pr>
+            <h2 class="ser">Creating (Inserting) Data:</h2>
+            <ul class="list">
+                <li>save</li>
+                <li>persist</li>
+                <li>saveOrUpdate</li>
+            </ul>
+
+            <h2 class="ser">Updating Data:</h2>
+            <ul class="list">
+                <li>update</li>
+                <li>merge</li>
+            </ul>
+
+            <h2 class="ser">Deleting Data:</h2>
+            <ul class="list">
+                <li>delete</li>
+            </ul>
+
+            <h2 class="ser">Retrieving Data:</h2>
+            <ul class="list">
+                <li>load</li>
+                <li>get</li>
+            </ul>
+
+            <h2 class="ser">Managing Session:</h2>
+            <ul class="list">
+                <li>flush</li>
+                <li>evict</li>
+                <li>clear</li>
+            </ul>
+        </pr><br>
+        <h2 class="ser">Versioning</h2><br>
+        <h2>Primary Key Generators in Hibernate</h2>
+        <pr>
+            <li>Assigned</li>
+            <li>Increment</li>
+            <li>Sequence</li>
+            <li>Hilo</li>
+            <li>Seqhilo</li>
+            <li>Identity</li>
+            <li>Foreign</li>
+            <li>Native</li>
+            <li>UUID</li>
+            <li>Custom generator</li>
+        </pr><br>
+
+        <h2 class="ser">Hibernate Query Language (HQL)</h2>
+
+        <h2 class="ser">Joins in Hibernate</h2>
+
+        <h2 class="ser">Batch processing and Native SQL</h2>
+
+        <h2 class="ser">Criteria API</h2>
+
+        <h2 class="ser">Criteria with projections</h2><br>
+        <h2>Inheritance Mapping in Hibernate</h2>
+        <pr>
+            <li>Table per class</li>
+            <li>Table per subclass</li>
+            <li>Table per concrete class</li>
+        </pr><br>
+        <h2 class="ser">Component Mapping</h2>
+
+        <h2 class="ser">Custom Mapping</h2>
+        <h2 class="ser">Collection Mapping in Hibernate</h2>
+        <pr>
+            <li><list></li>
+            <li><set></li>
+            <li><map></li>
+            <li><bag></li>
+            <li>Mapping array</li>
+            <li>Sorting collections</li>
+        </pr><br>
+        <h2>Association Mapping in Hibernate</h2><br>
+        <pr>
+            <h2 class="ser">Types of Associations:</h2>
+            <ul class="list">
+                <li>One-to-One</li>
+                <li>One-to-Many</li>
+                <li>Many-to-One</li>
+                <li>Many-to-Many</li>
+            </ul>
+
+            <h2 class="ser">Direction of Associations:</h2>
+            <ul class="list">
+                <li>Unidirectional</li>
+                <li>Bidirectional</li>
+            </ul>
+
+            <h2 class="ser">Explanation on Attributes:</h2>
+            <ul class="list">
+                <li>Explanation on 'inverse' attribute</li>
+                <li>Explanation on 'cascade' attribute</li>
+            </ul>
+        </pr><br>
+        <h2 class="ser">Caching in Hibernate</h2><br>
+        <pr>
+            <li>First-level Cache (Session cache)</li>
+            <li>Second-level Cache (SessionFactory cache)</li>
+            <li>Query-level Cache</li>
+        </pr><br>
+        <h2 class="ser">Connection Pool in Hibernate</h2><br>
+        <pr>
+            <li>Default connection pool</li>
+            <li>Server-supplied pool</li>
+            <li>Third-party vendor connection pool</li>
+        </pr><br>
+        <h2 class="ser">Transactions and Concurrency in Hibernate</h2><br>
+        <pr>
+            <li>Programmatic transactions with JTA</li>
+            <li>Optimistic Concurrency control</li>
+            <li>Pessimistic Concurrency control</li>
+        </pr><br>
+        <h2 class="ser">Hibernate Pagination</h2>
+        <h2 class="ser">Hibernate Filter</h2>
+        <h2 class="ser">Hibernate Interceptor</h2>
+        <h2 class="ser">Connecting with Multiple Databases (Oracle, HypersonicSQL)</h2>
+        <h2 class="ser">Integrating Hibernate with Servlet</h2>
+        <h2 class="ser">Integrating Hibernate with Struts</h2>
+        <h2 class="ser">Working with Hibernate Annotations</h2><br>
+        <h2 class="ser">IDE:    Eclipse, Netbeans</h2>
+
         <form class="border-top border-bottom">
             <br>
-            <h8>Categories: <a1>Classroom Training</a1></h8>
+            <h8>Click Here For<a1>  Hibernate Online Training</a1></h8><br><br>
+            <h8>Categories:<a1>Online Training -- <h8 class="color" style='color: black;'>Tags:</h8> Chennai, Hyderabad</a1></h8>
             <br>
         </form>
     </div>
 </div>
+
 <div class="col-md-6 px-4">
         <div class="right-box">
             <h3><a href="http://localhost:3000/home" style=" color: red;"> Home </a><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
                 <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg> CLASSROOM TRAINING <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+            </svg> ONLINE TRAINING <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
                 <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg>ALL COURSES </h3><br><br>
+            </svg> Hibernate Training </h3><br><br>
             <div class="star">
             <span class="Rating"><a>Rating of &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="yellow" class="bi bi-star" viewBox="0 0 16 16">
                 <polygon points="8 0 10 5 15 5 11.25 8.75 12.5 14.5 8 11 3.5 14.5 4.75 8.75 1 5" />
@@ -507,5 +436,5 @@
            </div>
         </div>
     </div>
-<%= render "footer" %>
-
+</body>
+<%= render "fooder" %>
