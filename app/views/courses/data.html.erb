@@ -1,18 +1,25 @@
 <%= render "header" %>
 <style>
+    h{
+        font-weight: bold;
+    }pr li{
+    margin-left: 35px;
+    font-size: 12px;
+    font-style: italic;
+    }
     .course-card {
         margin-bottom: 20px;
     }
     .left-box {
         padding: 20px;
-        width: 120%;
-        margin-top: 49px;
+/*        width: 120%;*/
     }
 
     .right-box {
         padding: 20px;
         margin-top: 20px;
     }
+
     
     h1 {
         font-weight: bold;
@@ -50,8 +57,10 @@
     p{
         font-size: 12px
     }
-    thead{
-        background-color: lightblue
+    .ser {
+        font-size: 12px;
+        font-weight: bold;
+        margin: 16px;
     }
 </style>
 <body>
@@ -59,287 +68,276 @@
 <!-- Left Box -->
 <div class="col-md-6">
     <div class="left-box">
-        <h4>All Courses</h4>
-        <form class="border-top border-bottom"><br>
-        <a1>webmaster</a1><br><br>
-        </form>
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>Course Name</th>
-                <th>Course Content</th>
-                <th>Register Now</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td class="text-black">Data Science</td>
-                <td><a href="/view_courses" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-               <td class="text-black">Hadoop</td>
-                <td><a href="/hadoop" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">AWS</td>
-                <td><a href="/AWS" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">DevOps</td>
-                <td><a href="/dev" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Salesforce</td>
-                <td><a href="/sale" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Python</td>
-                <td><a href="/python" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Selenium</td>
-                <td><a href="/selenium" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">C Language</td>
-                <td><a href="/language" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">C++</td>
-                <td><a href="/c" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Data Structure</td>
-                <td><a href="/data" style="color: red;">View Course</a></td>
-                <td>SignUp !</td>
-            </tr>
-            <tr>
-                <td class="text-black">Core Java</td>
-                <td><a href="/core" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Advanced Java</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Spring</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Hibernate</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Web Services</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Struts</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">XML</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">C#.NET</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">ASP.NET</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">SQL Server</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Android</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">iPhone</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">IoT</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">RPA</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Automation Anywhere</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Blue Prism</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Spring Boot</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">CRT</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Unix/Linux</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Digital Marketing</td>
-                <td>View Course</td>
-                <td>SignUp !</td>
-            </tr>
-            <tr>
-                <td class="text-black">PHP with MySQL</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">ASP.NET MVC</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Java Training</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>>
-            </tr>
-            <tr>
-                <td class="text-black">HTML5 CSS3</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">HTML/JavaScript</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">jQuery</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">UI UX</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Ui Technologies</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">AngularJS</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular2</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular4</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular6</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular7</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular8</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">NodeJS</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">ReactJS</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Artificial Intelligence</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Apache Spark</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Blockchain</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-             <tr>
-                <td class="text-black">Full Stack Web Development Course</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            </tbody>
-        </table>
+        <h4 class="border-bottom pb-2">Data Structure Training</h4>
+        <a1 class="border-bottom pb-2">NIT Manager</a1>
+        <div class="left-box">
+            <h class="services" style="font-size: 12px; font-weight: bold;">About Data Structure Training</h>
+            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;">Data Structures is a concept a means of storing a collection of data. Computer Science is a concern with study of methods for effectively using a computer to solve problems. These can be solve by algorithms and data structures. Data Structures tells you what way the data as to store in computer memory and how to access the data efficiently. Many Applications are designed by data structures stack applications like page visited history in a web-browser, chain of method calls in the Java virtual machine or C++ Run-time environment etc Queue Application Like Waiting Lines, Multi-programming etc For many applications the choice of proper data structure is the only major decision involving the implementation. Majorly the database designing and internal implementation is done only by using Data Structures techniques.</p>
+        </div>
+        <div class="left-box">
+            <h class="services" style="font-size: 12px; font-weight: bold;">Data Structure Training Course Objective</h>
+            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;">This Course main objective for the student to understand Analysis and Designing of the Algorithms and how the different data structures are used for efficient accessing of the data and Manipulation of the data at the end of the session we can able to Know different Kinds of data structures and we can able to provide different algorithms for time and space complexity.</p>
+        </div>
+        <h2 class="ser">Data Structure Training Course Duration</h2>
+        <pr><li>30 Working days, daily one and half hours</li></pr>
+        <h2 class="ser">Data Structure Training Course Content Overview</h2>
+        <h2 class="ser">Introduction to Data Structure</h2>
+        <h2 class="ser">Algorithms</h2>
+        <h2 class="ser">Performance Analysis</h2>
+        <pr><li>Time complexity</li>
+        <li>Space complexity</li></pr>
+        <h2 class="ser">Asymptotic Notations-</h2>
+        <pr><li>Big O</li>
+        <li>Omega</li>
+        <li>Theta notations</li></pr>
+        <h2 class="ser">Arrays</h2>
+        <h2 class="ser">Structures</h2>
+        <h2 class="ser">Pointers</h2>
+
+        <h2 class="ser">Dynamic Memory Allocation</h2>
+        <pr>
+            <li>malloc()</li>
+            <li>calloc()</li>
+            <li>realloc()</li>
+            <li>free()</li>
+        </pr><br>
+        <h2 class="ser">Stacks</h2>
+        <pr>
+            <li>Stack Operations</li>
+            <ul class="list"> 
+                <li>push()</li>
+                <li>pop()</li>
+                <li>peek()</li>
+                <li>display()</li>
+                <li>isEmpty()</li>
+                <li>isFull()</li>
+            </ul>
+            <li>Stack Implementation using Arrays</li>
+            <li>Applications</li>
+            <ul class="list"> 
+                <li>Decimal to Binary</li>
+                <li>String Reverse</li>
+                <li>Number Reverse</li>
+                <li>Recursion – Towers of Hanoi</li>
+                <li>Balanced Parentheses</li>
+                <li>Expressions</li>
+            </ul>
+        </pr><br>
+        <h2 class="ser">Stack Implementation using pointer (dynamic)</h2>
+        <h2 class="ser">Expression</h2>
+        <pr>
+            <li>Introduction to Notations</li>
+            <li>Importance of Notations in Expression Evaluation</li>
+            <li>Conversion Algorithms</li>
+            <ul class="list"> 
+                <li>Infix to Prefix</li>
+                <li>Infix to Postfix</li>
+                <li>Prefix to Infix</li>
+                <li>Prefix to Postfix</li>
+                <li>Postfix to Infix</li>
+                <li>Postfix to Prefix</li>
+            </ul>
+            <li>Implementation of All the Conversions</li>
+        </pr><br>
+        <h2 class="ser">Queues</h2>
+        <pr>
+            <li>Operations on Queue</li>
+            <ul class="list"> 
+                <li>enqueue()</li>
+                <li>dequeue()</li>
+            </ul>
+            <li>Queue Implementation using Static Arrays</li>
+            <li>Applications</li>
+            <li>Queue Implementations using Pointers (Dynamic)</li>
+        </pr><br>
+        <h2 class="ser">Circular queues</h2>
+        <h2 class="ser">Double Ended queue (Deques)</h2>
+        <h2 class="ser">Single Linked List</h2>
+        <pr>
+            <li>Introduction</li>
+            <li>Construction</li>
+            <li>Length</li>
+            <li>Insertion</li>
+            <li>Deletion</li>
+            <li>Sort</li>
+            <li>Reverse List</li>
+            <li>Swap Node Data</li>
+            <li>Swap Nodes</li>
+            <li>Applications</li>
+        </pr><br>
+        <h2 class="ser">Stack implementation using linked list</h2>
+        <h2 class="ser">Queue implementation using linked list</h2>
+        <h2 class="ser">Doubly linked list</h2>
+        <h2 class="ser">Circular linked list</h2>
+        <h2 class="ser">Circular Doubly Linked List</h2>
+        <h2 class="ser">Binary Tree</h2>
+        <pr>
+            <li>Terminology</li>
+            <li>Differences between Tree and Binary Tree</li>
+            <li>Binary Tree Representations</li>
+            <li>Expression Trees</li>
+            <li>Traversals</li>
+            <pr>
+                <li>In-order</li>
+                <li>Pre-order</li>
+                <li>Post-order</li>
+            </pr>
+        </pr><br>
+        <h2 class="ser">Binary Search Tree (BST)</h2>
+        <pr>
+            <li>Introduction to BST</li>
+            <li>Insertion</li>
+            <li>Deletion</li>
+            <li>Search</li>
+            <li>Implementation</li>
+        </pr><br>
+
+        <h2 class="ser">Graph</h2>
+        <pr>
+            <li>Introduction & Terminology</li>
+            <li>Graph Representations</li>
+            <li>Traversal</li>
+            <pr>
+                <li>BFS (Breadth First Search)</li>
+                <li>DFS (Depth First Search)</li>
+            </pr>
+        </pr><br>
+        <h2 class="ser">Searching Algorithms</h2>
+        <pr>
+            <li>Linear Search</li>
+            <li>Binary Search</li>
+        </pr><br>
+        <h2 class="ser">Sorting Algorithms</h2>
+        <pr>
+            <li>Bubble Sort</li>
+            <li>Selection Sort</li>
+            <li>Insertion Sort</li>
+            <li>Heap Sort</li>
+            <li>Merge Sort</li>
+            <li>Quick Sort</li>
+        </pr><br>
+        <h2 class="ser">AVL Trees</h2>
+        <pr>
+            <li>Introduction</li>
+            <li>BST v/s AVL</li>
+            <li>Rotations</li>
+            <pr>
+                <li>L-L-Rotation</li>
+                <li>R-R-Rotation</li>
+                <li>L-R-Rotation</li>
+                <li>R-L-Rotation</li>
+            </pr>
+            <li>Insertion</li>
+            <li>Deletion</li>
+            <li>Traversal</li>
+        </pr><br>
+        <h2 class="ser">Red-Black Trees (RBT)</h2>
+        <pr>
+            <li>Introduction</li>
+            <li>BST v/s AVL v/s RBT</li>
+            <li>Rotations</li>
+            <pr>
+                <li>L-L-Rotation</li>
+                <li>R-R-Rotation</li>
+                <li>L-R-Rotation</li>
+                <li>R-L-Rotation</li>
+            </pr>
+            <li>Insertion</li>
+            <li>Deletion</li>
+        </pr><br>
+        <h2 class="ser">B-Trees</h2>
+        <pr>
+            <li>M-way Search Tree</li>
+            <li>Search</li>
+            <li>Insertion</li>
+            <li>Deletion</li>
+        </pr><br>
+        <h2 class="ser">Hashing</h2>
+        <pr>
+            <li>Hash Table Representation</li>
+            <li>Hash Function - Division Method</li>
+            <li>Collision</li>
+            <li>Collision Resolution Techniques</li>
+            <pr>
+                <li>Separate Chaining</li>
+                <li>Open Addressing</li>
+                <pr>
+                    <li>Linear Probing</li>
+                    <li>Quadratic Probing</li>
+                    <li>Double Hashing</li>
+                </pr>
+                <li>Rehashing</li>
+            </pr>
+        </pr><br>
+        <h2 class="ser">Hashing</h2>
+        <pr>
+            <li>Hash Table Representation</li>
+            <li>Hash Function - Division Method</li>
+            <li>Collision</li>
+            <li>Collision Resolution Techniques</li>
+            <pr>
+                <li>Separate Chaining</li>
+                <li>Open Addressing</li>
+                <pr>
+                    <li>Linear Probing</li>
+                    <li>Quadratic Probing</li>
+                    <li>Double Hashing</li>
+                </pr>
+                <li>Rehashing</li>
+            </pr>
+        </pr><br>
+        <h2 class="ser">Priority Queue</h2>
+        <pr>
+            <li>Definition</li>
+            <li>Operations</li>
+            <pr>
+                <li>Insertion</li>
+                <li>Deletion</li>
+            </pr>
+        </pr><br>
+        <h2 class="ser">Heap</h2>
+        <pr>
+            <li>Definition</li>
+            <li>Max Heap</li>
+            <li>Min Heap</li>
+            <li>Insertion</li>
+            <li>Deletion</li>
+        </pr><br>
+        <h2 class="ser">Pattern Matching Algorithms</h2>
+        <pr>
+            <li>Brute Force</li>
+            <li>Boyer–Moore Algorithm</li>
+            <li>Knuth-Morris-Pratt Algorithm</li></pr>
+            <h2 class="ser">Tries</li>
+            <pr>
+                <li>Standard Tries</li>
+                <li>Compressed Tries</li>
+                <li>Suffix Tries</li>
+            </pr>
+        </pr><br>
+
+        <h2 class="ser">Dynamic Programming</h2>
+
+        <h2 class="ser">Greedy Method</h2>
+
+        <h2 class="ser">Divide and conquer method</h2>
         <form class="border-top border-bottom">
             <br>
-            <h8>Categories: <a1>Classroom Training</a1></h8>
+            <h8>Categories:<a1>Classroom Training -- <h8 class="color" style='color: black;'>Tags:</h8> Data Structure Training</a1></h8>
             <br>
         </form>
     </div>
 </div>
+
 <div class="col-md-6 px-4">
         <div class="right-box">
             <h3><a href="http://localhost:3000/home" style=" color: red;"> Home </a><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
                 <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg> CLASSROOM TRAINING <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+            </svg> ONLINE TRAINING <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
                 <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg>ALL COURSES </h3><br><br>
+            </svg> Data Structure Training </h3><br><br>
             <div class="star">
             <span class="Rating"><a>Rating of &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="yellow" class="bi bi-star" viewBox="0 0 16 16">
                 <polygon points="8 0 10 5 15 5 11.25 8.75 12.5 14.5 8 11 3.5 14.5 4.75 8.75 1 5" />
@@ -507,5 +505,5 @@
            </div>
         </div>
     </div>
-<%= render "footer" %>
-
+</body>
+<%= render "fooder" %>

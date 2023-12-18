@@ -28,5 +28,8 @@ Rails.application.routes.draw do
   get 'python', to: 'courses#python', as: "python"
   get 'selenium', to: 'courses#selenium', as: "selenium"
   get 'language', to: 'courses#language', as: "language"
+  get 'c', to: 'courses#c', as: "c"
+  get 'data', to: "courses#data", as: 'data'
+  get 'core', to: "courses#core", as: "core"
 
 end

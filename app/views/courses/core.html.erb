@@ -1,18 +1,25 @@
 <%= render "header" %>
 <style>
+    h{
+        font-weight: bold;
+    }pr li{
+    margin-left: 35px;
+    font-size: 12px;
+    font-style: italic;
+    }
     .course-card {
         margin-bottom: 20px;
     }
     .left-box {
         padding: 20px;
-        width: 120%;
-        margin-top: 49px;
+/*        width: 120%;*/
     }
 
     .right-box {
         padding: 20px;
         margin-top: 20px;
     }
+
     
     h1 {
         font-weight: bold;
@@ -50,8 +57,10 @@
     p{
         font-size: 12px
     }
-    thead{
-        background-color: lightblue
+    .ser {
+        font-size: 12px;
+        font-weight: bold;
+        margin: 16px;
     }
 </style>
 <body>
@@ -59,287 +68,112 @@
 <!-- Left Box -->
 <div class="col-md-6">
     <div class="left-box">
-        <h4>All Courses</h4>
-        <form class="border-top border-bottom"><br>
-        <a1>webmaster</a1><br><br>
-        </form>
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>Course Name</th>
-                <th>Course Content</th>
-                <th>Register Now</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td class="text-black">Data Science</td>
-                <td><a href="/view_courses" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-               <td class="text-black">Hadoop</td>
-                <td><a href="/hadoop" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">AWS</td>
-                <td><a href="/AWS" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">DevOps</td>
-                <td><a href="/dev" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Salesforce</td>
-                <td><a href="/sale" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Python</td>
-                <td><a href="/python" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Selenium</td>
-                <td><a href="/selenium" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">C Language</td>
-                <td><a href="/language" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">C++</td>
-                <td><a href="/c" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Data Structure</td>
-                <td><a href="/data" style="color: red;">View Course</a></td>
-                <td>SignUp !</td>
-            </tr>
-            <tr>
-                <td class="text-black">Core Java</td>
-                <td><a href="/core" style="color: red;">View Course</a></td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Advanced Java</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Spring</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Hibernate</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Web Services</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Struts</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">XML</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">C#.NET</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">ASP.NET</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">SQL Server</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Android</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">iPhone</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">IoT</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">RPA</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Automation Anywhere</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Blue Prism</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Spring Boot</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">CRT</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Unix/Linux</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Digital Marketing</td>
-                <td>View Course</td>
-                <td>SignUp !</td>
-            </tr>
-            <tr>
-                <td class="text-black">PHP with MySQL</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">ASP.NET MVC</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Java Training</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>>
-            </tr>
-            <tr>
-                <td class="text-black">HTML5 CSS3</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">HTML/JavaScript</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">jQuery</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">UI UX</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Ui Technologies</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">AngularJS</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular2</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular4</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular6</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular7</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Angular8</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">NodeJS</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">ReactJS</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Artificial Intelligence</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Apache Spark</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            <tr>
-                <td class="text-black">Blockchain</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-             <tr>
-                <td class="text-black">Full Stack Web Development Course</td>
-                <td>View Course</td>
-                <td><a href="/signup" style="color: red;">SignUp !</a></td>
-            </tr>
-            </tbody>
-        </table>
+        <h4 class="border-bottom pb-2">Core Java Training</h4>
+        <a1 class="border-bottom pb-2">NIT Manager</a1>
+        <div class="left-box">
+            <h class="services" style="font-size: 12px; font-weight: bold;">Core Java Training Overview</h>
+            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;">This Core Java Training is by the Real-Time Professionals and Teaching Experts.</p>
+            <pr><li>Entire SCJP syllabus will be covered</li>
+            <li>Every program execution will be explained with Compiler and JVM Architectures</li>
+            <li>Every program memory diagram will be clearly explained with JVM Architecture</li>
+            <li>1000+ Programs will be covered in training as well as in practice material</li>
+            <li>Entire list of interview questions will be covered on every concept</li>
+            <li>Every concept will be clearly explained with real-time project scenarios</li>
+            <li>Every concept will be explained with MVC and LC-RP Architectures</li>
+            <li>Therefore you will get good knowledge in designing and developing projects</li>
+            <li>So that you can clear all interviews as a fresher or as an experienced</li></pr>
+        </div>
+        <h2 class="ser">Core Java Training Prerequisites</h2>
+        <pr>
+            <li>No Prerequisite, Anyone Can Learn</li>
+        </pr>
+
+        <h2 class="ser">Core Java Course Duration</h2>
+        <pr>
+            <li>Normal Track: 60 Working days, daily one and half hour</li>
+            <li>Fast Track: 40 Working days, daily two hours</li>
+        </pr><br>
+
+        <h2 class="ser">Core Java Training Course Overview</h2>
+        <pr>
+            <li>Introduction to Java</li>
+            <li>Java Basics</li>
+            <li>Object-Oriented Programming (OOP) in Java</li>
+            <li>Java Standard Library</li>
+            <li>File Handling</li>
+            <li>Introduction to GUI Programming</li>
+            <li>Introduction to Multithreading</li>
+            <li>Introduction to Networking in Java</li>
+            <li>Introduction to JDBC</li>
+        </pr><br>
+
+        <h2 class="ser">Core Java Training Content Overview</h2>
+
+        <h2 class="ser">Introduction to Java and OOPS</h2>
+            <pr><li>Java Tokens - Comments, Identifiers, Keywords, Separators</li>
+            <li>Working with Java Editor Softwares - Editplus, NetBeans, Eclipse</li>
+            <li>Packages with static imports</li>
+            <li>Working with jar</li>
+            <li>Modifiers - File level, Access level and Non-access level</li>
+            <li>Datatypes, Literals, Variables, Type Conversion, Casting & Promotion</li>
+            <li>Reading runtime values from keyboard and Properties File</li>
+            <li>Operators and Control Statements</li>
+            <li>Method and Types of methods</li>
+            <li>Variable and Types of Variables</li>
+            <li>Constructor and Types of constructors</li>
+            <li>Block and Types of Blocks</li>
+            <li>Declarations, Invocations and Executions</li>
+            <li>Compiler & JVM Architecture with Reflection API</li>
+            <li>Static Members and their execution control flow</li>
+            <li>Non-Static Members and their execution control flow</li>
+            <li>Final Variables and their rules</li>
+            <li>Classes and Types of classes</li>
+            <li>OOPS - Fundamentals, Models, Relations and Principles</li>
+            <li>Coupling and Cohesion (MVC and LCRP Architectures)</li>
+            <li>Types of objects & Garbage Collection</li>
+            <li>Arrays and Var-arg types</li>
+            <li>Enum and Annotation</li>
+            <li>Design Patterns</li>
+        </pr><br>
+        <h2 class="ser">Java API and Project</h2>
+        <pr>
+            <li>API and API Documentation</li>
+            <li>Fundamental Classes - Object, Class, System, Runtime</li>
+            <li>String Handling</li>
+            <li>Exception Handling and Assertions</li>
+            <li>Multithreading with JVM Architecture</li>
+            <li>IO Streams (File IO)</li>
+            <li>Networking (Socket Programming)</li>
+            <li>Wrapper Classes with Auto boxing and unboxing</li>
+            <li>Collections with Generics</li>
+            <li>Java 5, 6, 7, 8 new features</li>
+            <li>Inner classes</li>
+            <li>AWT, Swings, Applet</li>
+            <li>Regular Expressions</li>
+            <li>Formatting date, time (java.text package)</li>
+        </pr><br>
+
+
+
+
         <form class="border-top border-bottom">
             <br>
-            <h8>Categories: <a1>Classroom Training</a1></h8>
+            <h8>Click Here For<a1>  Python Online Training</a1></h8><br><br>
+            <h8>Categories:<a1>Online Training -- <h8 class="color" style='color: black;'>Tags:</h8> Chennai, Hyderabad</a1></h8>
             <br>
         </form>
     </div>
 </div>
+
 <div class="col-md-6 px-4">
         <div class="right-box">
             <h3><a href="http://localhost:3000/home" style=" color: red;"> Home </a><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
                 <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg> CLASSROOM TRAINING <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+            </svg> ONLINE TRAINING <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
                 <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg>ALL COURSES </h3><br><br>
+            </svg> Core Java Training </h3><br><br>
             <div class="star">
             <span class="Rating"><a>Rating of &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="yellow" class="bi bi-star" viewBox="0 0 16 16">
                 <polygon points="8 0 10 5 15 5 11.25 8.75 12.5 14.5 8 11 3.5 14.5 4.75 8.75 1 5" />
@@ -507,5 +341,5 @@
            </div>
         </div>
     </div>
-<%= render "footer" %>
-
+</body>
+<%= render "fooder" %>

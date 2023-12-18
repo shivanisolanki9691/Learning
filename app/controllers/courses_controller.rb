@@ -19,5 +19,14 @@ class CoursesController < ApplicationController
 
   def language
   end
+
+  def c
+  end
+
+  def data
+  end
+
+  def core
+  end
   
 end
