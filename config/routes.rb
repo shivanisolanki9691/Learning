@@ -44,4 +44,7 @@ Rails.application.routes.draw do
   get "cnet", to: "courses#cnet", as: "cnet"
   get "asp", to: "courses#asp", as: "asp"
   get "sql", to: 'courses#sql', as: "sql"
+  get "android", to: 'courses#android', as: "android"
+  get "phone", to: 'courses#phone', as: "phone"
+  get "iot", to: 'courses#iot', as: "iot"
 end

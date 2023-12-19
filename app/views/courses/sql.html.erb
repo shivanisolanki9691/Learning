@@ -182,10 +182,182 @@
               <pr><li>Truncate</li>
               <li>Differences Between Delete and Truncate</li>
           </ul><br>
-          
+          <h2 class="ser">Data Query Language (DQL)</h2>
+            <pr>
+                <li>Select</li>
+                <li>Where clause</li>
+                <li>Order By Clause</li>
+                <li>Distinct Keyword</li>
+                <li>Isnull() function</li>
+                <li>Column aliases</li>
+                <li>Predicates</li>
+                <ul class="list">
+                    <li>Between … And</li>
+                    <li>In</li>
+                    <li>Like</li>
+                    <li>Is Null</li>
+                </ul>
+            </pr><br>
+            <h2 class="ser">Built In Functions</h2>
+            <pr>
+                <li>Scalar Functions</li>
+                <li>Numeric Functions</li>
+                <li>Character Functions</li>
+                <li>Conversion Functions</li>
+                <li>Date Functions</li>
+                <li>Aggregate Functions</li>
+                <li>Convenient Aggregate Functions</li>
+                <li>Statistical Aggregate Functions</li>
+                <li>Group By and Having Clauses</li>
+                <li>Super Aggregates</li>
+                <li>Over(partition by …) Clause</li>
+                <li>Ranking Functions</li>
+                <li>Common Table Expressions (CTE)</li>
+            </pr><br>
+            <h2 class="ser">Top n Clause</h2>
+            <h2 class="ser">Set Operators</h2>
+            <pr>
+                <li>Union</li>
+                <li>Intersect</li>
+                <li>Except</li>
+            </pr><br>
+            <h2 class="ser">Joins</h2>
+            <pr>
+                <li>Inner Join</li>
+                <li>Equi Join</li>
+                <li>Natural Join</li>
+                <li>Non-Equi Join</li>
+                <li>Self Join</li>
+                <li>Outer Join</li>
+                <ul class="list">
+                    <li>Left Outer Join</li>
+                    <li>Right Outer Join</li>
+                    <li>Full Outer Join</li>
+                </ul>
+                <li>Cross Join</li>
+            </pr><br>
+            <h2 class="ser">Sub Queries</h2>
+            <pr>
+                <li>Single Row Sub Queries</li>
+                <li>Multi Row Sub Queries</li>
+                <li>Any or Some</li>
+                <li>ALL</li>
+                <li>Nested Sub Queries</li>
+                <li>Co-Related Sub Queries</li>
+                <li>Exists and Not Exists</li>
+            </pr><br>
+            <h2 class="ser">Indexes</h2>
+            <pr>
+                <li>Clustered Index</li>
+                <li>NonClustered Index</li>
+                <li>Create, Alter, and Drop Indexes</li>
+                <li>Using Indexes</li>
+            </pr><br>
 
+            <h2 class="ser">Security</h2>
+            <pr>
+                <li>Login Creation</li>
+                <li>SQL Server Authenticated Login</li>
+                <li>Windows Authenticated Login</li>
+                <li>User Creation</li>
+                <li>Granting Permissions</li>
+                <li>Revoking Permissions</li>
+                <li>Roles</li>
+            </pr><br>
+            <h2 class="ser">Views</h2>
+            <pr>
+                <li>Purpose of Views</li>
+                <li>Creating, Altering, and Dropping Indexes</li>
+                <li>Simple and Complex Views</li>
+                <li>Encryption and Schema Binding Options in creating views</li>
+            </pr><br>
 
+            <h2 class="ser">Transaction Management</h2>
+            <pr>
+                <li>Introduction</li>
+                <li>Begin Transaction</li>
+                <li>Commit Transaction</li>
+                <li>Rollback Transaction</li>
+                <li>Save Transaction</li>
+                <li>Role of Log File in Transaction Management</li>
+                <li>Implicit Transactions</li>
+            </pr><br>
 
+            <h2 class="ser">TSQL Programming</h2>
+            <pr>
+                <li>Drawbacks of TSQL that leads to TSQL Programming</li>
+                <li>Introduction to TSQL Programming</li>
+                <li>Control statements in TSQL Programming</li>
+                <pr>
+                    <li>Conditional Control Statements</li>
+                    <ul class="list">
+                        <li>If</li>
+                        <li>Case</li>
+                    </ul>
+                    <li>Looping Control Statements</li>
+                    <ul class="list">
+                        <li>While</li>
+                    </ul>
+                </pr>
+            </pr><br>
+            <h2 class="ser">Cursors</h2>
+            <pr>
+                <li>Working with Cursors</li>
+                <li>Types of Cursors</li>
+                <pr>
+                    <li>Forward_Only and Scroll Cursors</li>
+                    <li>Static, Dynamic, and Keyset Cursors</li>
+                    <li>Local and Global Cursors</li>
+                </pr>
+            </pr><br>
+
+            <h2 class="ser">Stored Sub Programs</h2>
+            <pr>
+                <li>Advantages of Stored Sub Programs compared to Independent SQL Statements</li>
+                <li>Stored Procedures</li>
+                <pr>
+                    <li>Creating, Altering, and Dropping</li>
+                    <li>Optional Parameters</li>
+                    <li>Input and Output Parameters</li>
+                    <li>Permissions on Stored Procedures</li>
+                </pr>
+                <li>User Defined Functions</li>
+                <pr>
+                    <li>Creating, Altering, and Dropping</li>
+                    <li>Types of User Defined Functions</li>
+                    <ul class="list">
+                        <li>Scalar Functions</li>
+                        <li>Table Valued Functions</li>
+                        <li>Inline Table Valued Functions</li>
+                        <li>Multi Statement Table Valued Functions</li>
+                    </ul>
+                    <li>Permissions on User Defined Functions</li>
+                </pr>
+                <li>Triggers</li>
+                <pr>
+                    <li>Purpose of Triggers</li>
+                    <li>Differences between Stored Procedures and User Defined Functions and Triggers</li>
+                    <li>Creating, Altering, and Dropping Triggers</li>
+                    <li>Magic Tables</li>
+                    <li>Instead Of Triggers</li>
+                </pr>
+                <li>Exception Handling</li>
+                <pr>
+                    <li>Implementing Exception Handling</li>
+                    <li>Adding and Removing User Defined Error Messages to and from SQL Server Error Messages List</li>
+                    <li>Raising Exceptions Manual</li>
+                </pr>
+            </pr><br>
+            <h2 class="ser">CLR Integration</h2>
+            <pr>
+                <li>What is CLR Integration and the Steps for Implementing It</li>
+                <li>A Simple Example with CLR Integration</li>
+            </pr><br>
+
+            <h2 class="ser">Working With XML Data Type</h2>
+            <h2 class="ser">Backup and Restore Of Database</h2>
+            <h2 class="ser">Attach and Detach of Database</h2>
+            <h2 class="ser">Normalization</h2>
 
         <form class="border-top border-bottom">
             <br>

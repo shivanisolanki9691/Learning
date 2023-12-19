@@ -44,6 +44,8 @@ class CoursesController < ApplicationController
 
   def xml
   end
+  def android
+  end
   
   
 end
