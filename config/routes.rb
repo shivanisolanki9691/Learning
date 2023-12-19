@@ -43,4 +43,5 @@ Rails.application.routes.draw do
   get "xml", to: "courses#xml", as: "xml"
   get "cnet", to: "courses#cnet", as: "cnet"
   get "asp", to: "courses#asp", as: "asp"
+  get "sql", to: 'courses#sql', as: "sql"
 end
