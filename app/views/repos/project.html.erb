@@ -1,18 +1,12 @@
 <%= render "header" %>
 <style>
-    h{
-        font-weight: bold;
-    }pr li{
-    margin-left: 35px;
-    font-size: 12px;
-    font-style: italic;
-    }
     .course-card {
         margin-bottom: 20px;
     }
+
     .left-box {
         padding: 20px;
-/*        width: 120%;*/
+        width: 120%;
     }
 
     .right-box {
@@ -20,7 +14,6 @@
         margin-top: 20px;
     }
 
-    
     h1 {
         font-weight: bold;
     }
@@ -57,201 +50,65 @@
     p{
         font-size: 12px
     }
-    .ser {
-        font-size: 12px;
-        font-weight: bold;
-        margin: 16px;
+    .container {
+        width: 766px;
     }
+    .img-thumbnail {
+        border: none;
+    }
+    .clicked {
+        filter: brightness(0) invert(1);
+        border: none; 
+        outline: none; 
+    }
+    .button {
+            margin: 32px;
+    margin-top: 82px;
+    }
+    .ieee-projects {
+      background-color: blue; /* Change to your desired color */
+      color: white; /* Text color */
+    }
+    .live-web-projects {
+      background-color: green; /* Change to your desired color */
+      color: white; /* Text color */
+    }
+
+
 </style>
-<body>
+<div class="page">
 <div class="row">
-<!-- Left Box -->
-<div class="col-md-6">
-    <div class="left-box">
-        <h4 class="border-bottom pb-2">Web Services Training</h4>
-        <a1 class="border-bottom pb-2">NIT Manager</a1>
+    <!-- Left Box -->
+    <div class="col-md-6">
         <div class="left-box">
-            <h class="services" style="font-size: 12px; font-weight: bold;">XML Web Services Course Overview</h>
-            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;">The Java Web Services class teaches students how to build Web Services and Web Service clients using <strong>Java technologies.</strong> The class includes a introduction to XML namespaces, XML Schema,<strong> SOAP,</strong> and WSDL before exploring Web service client or server-side development in Java APIs and tools. Specifically, this class focuses on JAX-W</p>
-        </div>
-        <div class="left-box">
-            <h class="services" style="font-size: 12px; font-weight: bold;">XML Web Services Training Prerequisite</h>
-            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;">Students should have a good understanding of the Java programming language and a basic understanding of XML. Students that have attended <a1>Core Java</a1> and <a1>Advanced Java </a>have the necessary background for this course.</p>
-        </div>
-        <h2 class="ser">XML Web Services Course Objectives</h2>
-  Founded in 2004 and headquartered in Hyderabad, India, we have offices and training institutes throughout the India.
-        <h2 class="ser">XML Web Services Course Duration</h2>
-        <pr>
-            <li>45 Working days, daily one and a half hours</li>
-        </pr><br>
-        <h2 class="ser">XML Web Services Training Content</h2>
-        <h2 class="ser">XML</h2>
-        <h2 class="ser">Introduction to XML</h2>
-        <pr>
-            <li>Evolution of XML</li>
-            <li>Need of XML</li>
-            <li>Workflow of XML</li>
-        </pr><br>
-        <h2 class="ser">Fundamentals of XML</h2>
-        <pr>
-            <li>XML Declarations</li>
-            <li>Elements</li>
-            <li>Comments</li>
-            <li>Processing Instructions</li>
-            <li>Doctype Declarations</li>
-            <li>Entities</li>
-            <li>Namespaces</li>
-            <li>Real-time Examples with Scenarios</li>
-        </pr><br>
-        <h2 class="ser">Document Type Definition's (DTD's)</h2>
-        <pr>
-            <li>Validation</li>
-            <li>Elements & Attributes</li>
-            <li>Entities</li>
-            <li>Real-time Examples with Scenarios</li>
-        </pr><br>
-        <h2 class="ser">XML Schema Definition (XSD)</h2>
-        <pr>
-            <li>About XSD</li>
-            <li>Difference between XSD & DTD</li>
-            <li>Schema Declarations</li>
-            <li>Data types</li>
-            <li>Element declarations</li>
-            <li>Complex type declarations</li>
-            <li>Complex Content</li>
-            <li>Simple Type Declarations</li>
-            <li>Real-time Examples with Scenarios</li>
-        </pr><br>
-        <h2 class="ser">About Parser</h2>
-        <pr>
-            <li>Need of parser</li>
-            <li>Types of parsers</li>
-            <li>Parsing approaches</li>
-            <li>Real-time Examples with Scenarios</li>
-        </pr><br>
-        <h2 class="ser">Schema Validation</h2>
-        <pr>
-            <li>About schema validation API’s</li>
-            <li>JAXP DOM Parser</li>
-            <li>JAXP SAX Parser</li>
-            <li>JAXP Validation API</li>
-            <li>Real-time Examples with Scenarios</li>
-        </pr><br>
-        <h2 class="ser">About XPath</h2>
-        <pr>
-            <li>Need of XPath</li>
-            <li>XPath Expressions</li>
-            <li>Difference between XPath & DOM API</li>
-            <li>JAXP XPath API</li>
-            <li>JDOM XPath API</li>
-            <li>Real-time Examples with Scenarios</li>
-        </pr><br>
-        <h2 class="ser">About XSLT</h2>
-        <pr>
-            <li>XSLT vs XML</li>
-            <li>XSLT basics</li>
-            <li>JAXP Transformation API</li>
-            <li>Real-time Examples with Scenarios</li>
-        </pr><br>
-        <h2 class="ser">XML Object Bindings</h2>
-        <pr>
-            <li>The need of object binding</li>
-            <li>JAXB API (Covers 2.0)</li>
-            <li>About Marshalling & Unmarshalling</li>
-            <li>Binding with XML beans</li>
-            <li>Real-time Examples with Scenarios</li>
-        </pr><br>
-        <h2 class="ser">Web Services</h2>
-        <h2 class="ser">About Web Services</h2>
-        <pr>
-            <li>Introduction</li>
-            <li>SOA Architecture Principles</li>
-            <li>Types of Web Services</li>
-        </pr><br>
-        <h2 class="ser">About REST Web Service</h2>
-        <pr>
-            <li>Introduction</li>
-            <li>Rest principles & Terminology</li>
-            <li>About JAX-RS API</li>
-            <li>Annotation Inheritance with REST</li>
-            <li>REST Client Design Scenarios</li>
-            <li>REST Service Endpoint & URL Design Scenarios</li>
-            <li>Real-time Examples with Scenarios</li>
-        </pr><br>
-        <h2 class="ser">About SOAP Web Service</h2>
-        <pr>
-            <li>Introduction</li>
-            <li>Anatomy of SOAP</li>
-            <li>Structure of SOAP</li>
-            <li>SOAP with HTTP</li>
-            <li>SOAP-1.2 Features</li>
-        </pr><br>
-        <h2 class="ser">About SAAJ</h2>
-        <pr>
-            <li>Introduction</li>
-            <li>Creating a SOAP Message</li>
-            <li>Retrieving SOAP Message</li>
-            <li>Sending SOAP Message</li>
-            <li>Adding attachments to SOAP Message</li>
-        </pr><br>
-        <h2 class="ser">About WSDL</h2>
-        <pr>
-            <li>Introduction</li>
-            <li>WSDL Structure (Covers 2.0)</li>
-            <li>Message Exchanging Design Patterns & Modes</li>
-        </pr><br>
-        <h2 class="ser">About JAX-WS API</h2>
-        <pr>
-            <li>Introduction</li>
-            <li>Fundamentals of JAX-WS</li>
-            <li>Web Service meta data annotations</li>
-            <li>XML Generation using JAXB Annotations</li>
-            <li>JAX-WS Annotations</li>
-            <li>Real-time Examples with Scenarios</li>
-        </pr><br>
-        <h2 class="ser">About Web Services Security</h2>
-        <pr>
-            <li>Introduction</li>
-            <li>Need of security</li>
-            <li>Types of securities</li>
-            <li>Real-time Examples with Scenarios</li>
-        </pr><br>
-        <h2 class="ser">About Apache-CXF</h2>
-        <pr>
-            <li>Introduction</li>
-            <li>High-level architecture</li>
-            <li>Real-time Examples with Scenarios</li>
-        </pr><br>
-        <h2 class="ser">About Apache-AXIS</h2>
-        <pr>
-            <li>Introduction</li>
-            <li>High-level architecture</li>
-            <li>Real-time Examples with Scenarios</li>
-        </pr><br>
-        <h2 class="ser">Course Highlights</h2>
-        <pr>
-            <li>All examples are covered with real-time scenarios</li>
-            <li>Covers development with Eclipse & NetBeans IDE’s</li>
-            <li>Web services testing and monitoring tools</li>
-        </pr><br>
+            <h class="ser" style="font-size: 24px; font-weight: bold; margin: 26px">Project</h><br><br>
+            <div class="src" style="margin-top: 94px;">
+                <img src="./assets/spng" class="img-thumbnail" onclick="changeColor(this)">
+                <img src="./assets/hpng" class="img-thumbnail" onclick="changeColor(this)">
+                <img src="./assets/ijpg" class="img-thumbnail" onclick="changeColor(this)">
+                <img src="./assets/npng" class="img-thumbnail" onclick="changeColor(this)">
+                <img src="./assets/vpng" class="img-thumbnail" onclick="changeColor(this)">
+                <img src="./assets/shpng" class="img-thumbnail" onclick="changeColor(this)"><br>
+                <div class="button">
+                    <button type="submit" class="btn btn-primary ieee-projects">IEEE PROJECTS</button>&nbsp;&nbsp;
+                    <button type="submit" class="btn btn-primary live-web-projects">LIVE WEB BASED PROJECTS</button>&nbsp;&nbsp;
+                    <button type="submit" class="btn btn-primary real-time-project">REAL-TIME PROJECT</button>
+                </div>
 
-        <form class="border-top border-bottom">
-            <br>
-            <h8>Categories:<a1>Web Services Training<h8 class="color" style='color: black;'>Tags:</h8> Chennai, Hyderabad</a1></h8>
-            <br>
-        </form>
+            </div>
+        </div>
+
     </div>
-</div>
 
-<div class="col-md-6 px-4">
+    <div class="col-md-6 px-4">
         <div class="right-box">
             <h3><a href="http://localhost:3000/home" style=" color: red;"> Home </a><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
                 <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg> ONLINE TRAINING <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+            </svg> CLASSROOM TRAINING <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
                 <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg> Web Services Training </h3><br><br>
+            </svg>ALL COURSES </h3><br><br>
             <div class="star">
             <span class="Rating"><a>Rating of &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="yellow" class="bi bi-star" viewBox="0 0 16 16">
                 <polygon points="8 0 10 5 15 5 11.25 8.75 12.5 14.5 8 11 3.5 14.5 4.75 8.75 1 5" />
@@ -419,5 +276,4 @@
            </div>
         </div>
     </div>
-</body>
-<%= render "fooder" %>
+</div>

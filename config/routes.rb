@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   get 'Software_trainers_profile', to: 'repos#Software_trainers_profile', as: "Software_trainers_profile"
   get 'view_courses', to: 'repos#view_courses', as: "view_courses"
   get 'signup', to: 'repos#signup', as: "signup"
+  get 'project', to: 'repos#project', as: 'project'
+  get 'careers', to: "repos#careers", as: "careers"
+  get 'about', to: "repos#about", as: "about"
 
   get 'trainers_profile', to: "repos#trainers_profile", as: "trainers_profile"
   get "student_enquiry", to: "repos#student_enquiry", as: "student_enquiry" 
@@ -18,6 +21,7 @@ Rails.application.routes.draw do
   get "feedback", to: "repos#feedback", as: "feedback"
   get "post_testimonials", to: "repos#post_testimonials", as: "post_testimonials"
   get "contact", to: "repos#contact", as: "contact"
+
 
 
   resources :courses

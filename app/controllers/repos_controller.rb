@@ -34,6 +34,12 @@ class ReposController < ApplicationController
 
   def contact
   end
+
+  def project
+  end
+
+  def careers
+  end
   
 end
 
