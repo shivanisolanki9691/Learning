@@ -58,4 +58,6 @@ Rails.application.routes.draw do
   get "java", to: "courses#java", as: "java"
   get 'htcs', to: "courses#htcs", as: "htcs"
   get 'javascript', to: "courses#javascript", as: "javascipt"
+  get "jquery", to: "courses#jquery", as: "jquery"
+  get "development", to: "courses#development", as: "development"
 end
