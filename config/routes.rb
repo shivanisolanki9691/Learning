@@ -60,4 +60,15 @@ Rails.application.routes.draw do
   get 'javascript', to: "courses#javascript", as: "javascipt"
   get "jquery", to: "courses#jquery", as: "jquery"
   get "development", to: "courses#development", as: "development"
+  get "blackchain", to: 'courses#blackchain', as: "blackchain"
+  get 'spark', to: 'courses#spark', as: 'spark'
+  get "artificial", to: "courses#artificial", as: "artificial"
+  get "react", to: "courses#react", as: "react"
+  get "node", to: "courses#node", as: "node"
+  get "angular8", to: "courses#angular8", as: "angular8"
+  get "angular7", to: "courses#angular7", as: "angular7"
+  get "angular6", to: "courses#angular6", as: "angular6"  
+  get "angular4", to: "courses#angular4", as: "angular4" 
+  get "angular2", to: "courses#angular2", as: "angular2" 
+  get "angularjs", to: "courses#angularjs", as: "angularjs"    
 end
