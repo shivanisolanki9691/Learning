@@ -76,4 +76,5 @@ Rails.application.routes.draw do
   get 'placementa', to: "services#placementa", as: "placementa"
   get 'placements', to: "services#placements", as: "placements"
   get 'nacre', to: "services#nacre", as: "nacre"
+  get 'classroom', to: 'services#classroom', as: "classroom"
 end
