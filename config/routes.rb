@@ -71,4 +71,9 @@ Rails.application.routes.draw do
   get "angular4", to: "courses#angular4", as: "angular4" 
   get "angular2", to: "courses#angular2", as: "angular2" 
   get "angularjs", to: "courses#angularjs", as: "angularjs"    
+
+  resources :services
+  get 'placementa', to: "services#placementa", as: "placementa"
+  get 'placements', to: "services#placements", as: "placements"
+  get 'nacre', to: "services#nacre", as: "nacre"
 end

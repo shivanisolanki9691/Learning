@@ -52,5 +52,36 @@
             img.classList.toggle("clicked");
         }
     </script>
+      <script>
+    let currentPage = 1; // Initially set to the first page
+
+    function previousPage() {
+      if (currentPage > 1) {
+        currentPage--;
+        updatePageNumber();
+        // Fetch and display data for the previous page
+        fetchData();
+      }
+    }
+
+    function nextPage() {
+      currentPage++;
+      updatePageNumber();
+      // Fetch and display data for the next page
+      fetchData();
+    }
+
+    function updatePageNumber() {
+      document.getElementById('pageNumber').innerText = currentPage;
+    }
+
+    function fetchData() {
+      // Perform an AJAX request or update table data here based on the currentPage variable
+      // Replace the table content in <tbody> with fetched data
+      // Example:
+      // document.getElementById('myTable').innerHTML = '<tr>...</tr><tr>...</tr>';
+    }
+    
+  </script>
 </body>
 </html>
