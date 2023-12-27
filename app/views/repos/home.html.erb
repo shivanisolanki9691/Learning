@@ -1,5 +1,9 @@
 <%= render "header" %>
 <style type="text/css">
+	body {
+        margin: 41px;
+        padding: 0;
+    }
  	h2{
  		margin: 24px;
  	   font-size: 24px;
@@ -76,22 +80,22 @@
 	}
 
 	.img-thumbnail {
-	  width: 200px; 
-	  height: 200px; 
-	  margin-right: 10px; 
-	  object-fit: cover; 
+	    width: 186px;
+	    height: 166px;
+	    margin-right: 10px;
+	    object-fit: cover;
 	}
+
 	.btn-primary {
 		background-color: red;
 	} 
 
 	.carousel-indicators {
-    bottom: 0px;
+		bottom: 0px;
 	}
-
 </style>
 
-
+<body>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -256,10 +260,6 @@
 	</div>
 </div>
 <br>
+</body>
 <%= render "footer" %>
-
-
-
-
-
-
+<p class="paragrap" style="font-weight: bold;">© 2023 Naresh i Technologies | Software Training - Online Training - Live Project Training - Weekend Training</p>

@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get 'project', to: 'repos#project', as: 'project'
   get 'careers', to: "repos#careers", as: "careers"
   get 'about', to: "repos#about", as: "about"
+  get 'blog', to: 'repos#blog', as: "blog"
 
   get 'trainers_profile', to: "repos#trainers_profile", as: "trainers_profile"
   get "student_enquiry", to: "repos#student_enquiry", as: "student_enquiry" 
