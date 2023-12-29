@@ -1,53 +1,23 @@
+
 class CoursesController < ApplicationController
-  def hadoop
+  skip_before_action :verify_authenticity_token
+
+  def create
+    @course = Course.new(course_params)
+    if @course.save
+       render json: {messages: " Course successfully created"}, status: :ok
+    else
+      render json: { messages: "course not create"  }, status: :unprocessable_entity
+    end
   end
 
-  def Aws
+  def show 
+    @course =Course.find(params[:id])
   end
 
-  def dev
-  end
+  private
 
-  def sale
+  def course_params
+    params.require(:course).permit(:trainer_id, :mode_of_training, :course_name)
   end
-
-  def python
-  end
-
-  def selenium
-  end
-
-  def language
-  end
-
-  def c
-  end
-
-  def data
-  end
-
-  def core
-  end
-
-  def advansed
-  end
-
-  def spring
-  end
-  def hibernate
-  end
-  def web
-  end
-
-  def struts
-  end
-
-  def xml
-  end
-  def android
-  end
-  def spark
-  end
-  
-  
 end

@@ -1,0 +1,508 @@
+<%= render "header" %>
+<style>
+    body {
+        margin: 41px;
+        padding: 0;
+     }
+    .course-card {
+        margin-bottom: 20px;
+    }
+
+    .left-box {
+        padding: 20px;
+        width: 120%;
+    }
+
+    .right-box {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-weight: bold;
+    }
+
+    h2 {
+        font-weight: bold;
+        margin: 0px;
+        margin-top: 20px; 
+       font-size: 19px;
+    }
+    h3{
+        color: red;
+        font-size: 16px;
+        margin-left: 135px;
+    }
+    h4{
+        font-size: 1.5rem;
+        margin-top: 102px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    td {
+        font-size: 10px;
+    }
+    .text-black {
+        color: black !important;
+    }
+    .star{
+        margin-left: 210px;
+    }
+    span.Rating{    
+        margin-left: 28px;
+    }
+    p{
+        font-size: 12px
+    }
+    .container {
+        width: 766px;
+    }
+    .img-thumbnail {
+        border: none;
+    }
+    .clicked {
+        filter: brightness(0) invert(1);
+        border: none; 
+        outline: none; 
+    }
+    .button {
+            margin: 32px;
+    margin-top: 82px;
+    }
+    .ieee-projects {
+      background-color: blue; /* Change to your desired color */
+      color: white; /* Text color */
+    }
+    .live-web-projects {
+      background-color: green; /* Change to your desired color */
+      color: white; /* Text color */
+    }
+
+
+</style>
+<div class="page">
+<div class="row">
+    <!-- Left Box -->
+    <div class="col-md-6">
+        <div class="left-box">
+            <h class="ser" style="font-size: 24px; font-weight: bold; margin: 26px">Online Training</h><br><br>
+        </div>
+        <div class="left-box">
+            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;"> Following its legacy as a path breaker<strong>  Depth Core Technologies</strong> is offering<strong> Online Software Training </strong>using its vast<strong> Technology Expertise</strong> and <strong>Training Delivery Methodology</strong> for the benefit of the student community in transforming their dreams from a wandering generality to specific reality. Our sole maxim in introducing<strong> Online Software Training</strong> sessions to cater the training requirements of the Software Aspirants who cannot attend Classroom Training conducted at our Office Locations in Hyderabad and Chennai due to various reasons.</p>
+        </div>
+        <div class="left-box">
+            <img src="./assets/onlinepng" width="600" height="300">
+        </div>
+        <div class="container mt-4">
+            <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Faculty</th>
+                    <th>Date</th>
+                    <th>Time (IST)</th>
+                    <th>Duration</th>
+                    <th>Fee</th>
+                    <th>Registration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CORE JAVA</td>
+                    <td>Mr. Mansani</td>
+                    <td>28th December</td>
+                    <td>7:30 PM</td>
+                    <td>Dur: 45 Days</td>
+                    <td>with videos: 6,000/- <br> without videos: 3,500/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+                <tr>
+                    <td>PYTHON</td>
+                    <td>Dr. Venkat Raju</td>
+                    <td>28th December</td>
+                    <td>8:30 PM</td>
+                    <td>Dur: 45 Days</td>
+                    <td>with videos: 10,000/- <br> without videos: 6,000/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+                <tr>
+                    <td>POWER BI</td>
+                    <td>Miss. Mohana</td>
+                    <td>29th December</td>
+                    <td>8:00 AM</td>
+                    <td>Dur: 45 Days</td>
+                    <td>with videos: 11,000/- <br> without videos: 7,000/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+                <tr>
+                    <td>Azure Data Engineer with Data Factory</td>
+                    <td>Mr. Gareth</td>
+                    <td>28th December</td>
+                    <td>7:30 PM</td>
+                    <td>Dur: 45 Days</td>
+                    <td>with videos: 14,000/- <br> without videos: 9,000/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+                <tr>
+                    <td>Spring Basics, Spring Boot & MicroServices</td>
+                    <td>Mr. Dileep Singh</td>
+                    <td>29th December</td>
+                    <td>7:30 AM</td>
+                    <td>Dur: 3 Months</td>
+                    <td>with videos: 8,000/- <br> without videos: 5,000/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+                <tr>
+                    <td>Azure + DevOps</td>
+                    <td>Mr. Naveen</td>
+                    <td>29th December</td>
+                    <td>7:30 AM</td>
+                    <td>Dur: 45 Days</td>
+                    <td>with videos: 16,000/- <br> without videos: 8,000/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+                <tr>
+                    <td>HTML | CSS | JavaScript</td>
+                    <td>Mr. Shiva Kumar</td>
+                    <td>29th December</td>
+                    <td>6:00 PM</td>
+                    <td>Dur: 45 Days</td>
+                    <td>with videos: 4,000/- <br> without videos: 2,000/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+                <tr>
+                    <td>ORACLE (SQL & PL/SQL)</td>
+                    <td>Mr. Sudhakar.L</td>
+                    <td>29th December</td>
+                    <td>4:00 PM</td>
+                    <td>Dur: 45 Days</td>
+                    <td>with videos: 5,000/- <br> without videos: 2,000/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+                <tr>
+                    <td>C Language</td>
+                    <td>Mr. Rishi Kumar</td>
+                    <td>29th December</td>
+                    <td>6:00 PM</td>
+                    <td>Dur: 45 Days</td>
+                    <td>with videos: 4,000/- <br> without videos: 2,000/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+                <tr>
+                    <td>SQL Server</td>
+                    <td>Mr. Shiva Chaitanya</td>
+                    <td>29th December</td>
+                    <td>6:00 PM</td>
+                    <td>Dur: 45 Days</td>
+                    <td>with videos: 4,800/- <br> without videos: 2,000/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+                <tr>
+                    <td>Mulesoft</td>
+                    <td>Mr. Srinath</td>
+                    <td>29th December</td>
+                    <td>7:00 AM</td>
+                    <td>Dur: 45 Days</td>
+                    <td>with videos: 13,000/- <br> without videos: 10,000/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+                <tr>
+                    <td>REACT JS</td>
+                    <td>Mr. Sudhakar Sharma</td>
+                    <td>29th December</td>
+                    <td>7:30 AM</td>
+                    <td>Dur: 45 Days</td>
+                    <td>with videos: 8,000/- <br> without videos: 5,000/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+                <tr>
+                    <td>SELENIUM</td>
+                    <td>Mr. Anil Kumar</td>
+                    <td>2nd January</td>
+                    <td>9:00 AM</td>
+                    <td>Dur: 60 Days</td>
+                    <td>with videos: 12,000/- <br> without videos: 6,000/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+                <tr>
+                    <td>ASP.NET MVC 5 + MVC Core</td>
+                    <td>Mr. Bangar Raju</td>
+                    <td>29th December</td>
+                    <td>11:00 AM</td>
+                    <td>Dur: 60 Days</td>
+                    <td>with videos: 8,000/- <br> without videos: 5,000/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+                <tr>
+                    <td>PYTHON</td>
+                    <td>Mr. Satish Gupta</td>
+                    <td>2nd January</td>
+                    <td>5:00 PM</td>
+                    <td>Dur: 60 Days</td>
+                    <td>with videos: 10,000/- <br> without videos: 6,000/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+                <tr>
+                    <td>AWS</td>
+                    <td>Mr. Reyaz</td>
+                    <td>2nd January</td>
+                    <td>5:30 PM</td>
+                    <td>Dur: 60 Days</td>
+                    <td>with videos: 14,000/- <br> without videos: 10,000/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+                <tr>
+                    <td>Full DATA SCINECE & AI</td>
+                    <td>Mr. Omkar</td>
+                    <td>2nd January</td>
+                    <td>10:30 AM</td>
+                    <td>Dur: 3 Months</td>
+                    <td>with videos: 25,000/- <br> without videos: 18,000/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+                <tr>
+                    <td>DevOps</td>
+                    <td>Mr. Shiva</td>
+                    <td>2nd January</td>
+                    <td>7:00 PM</td>
+                    <td>Dur: 60 Days</td>
+                    <td>with videos: 16,000/- <br> without videos: 10,000/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+                 <tr>
+                    <td>UI Full Stack Web With React JS</td>
+                    <td>Mr. Prasad</td>
+                    <td>2nd January</td>
+                    <td>4:00 PM</td>
+                    <td>Dur: 3 Months</td>
+                    <td>with videos: 18,000/- <br> without videos: 10,000/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+                <tr>
+                    <td>DIGITAL MARKETING</td>
+                    <td>Mr. Ramakanth</td>
+                    <td>3rd January</td>
+                    <td>6:00 PM</td>
+                    <td>Dur: 60 Days</td>
+                    <td>with videos: 12,000/- <br> without videos: 6,000/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+                <tr>
+                    <td>Salesforce CRM</td>
+                    <td>Mr. Adhan</td>
+                    <td>8th January</td>
+                    <td>7:30 AM</td>
+                    <td>Dur: 60 Days</td>
+                    <td>with videos: 12,000/- <br> without videos: 8,000/-</td>
+                    <td><a href="#">GET FREE DEMO</a></td>
+                </tr>
+            </tbody>
+            </table>
+            <div class="left-box">
+                <img src="./assets/awspng" width="700" height="100">
+            </div>
+            <div class="left-box">
+                <img src="./assets/fullpng" width="700" height="100">
+            </div>
+            <div class="left-box">
+                <img src="./assets/devpng" width="700" height="100">
+            </div>
+            <div class="left-box">
+                <img src="./assets/mspng" width="700" height="100">
+            </div>
+            <div class="left-box">
+                <img src="./assets/springpng" width="700" height="100">
+            </div>
+        </div>
+        <div class="left-box">
+            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;">We offer two streams of content for<strong> Online Training in ALL Courses:</strong> For experienced IT professionals – aimed to update knowledge of the existing IT professionals interested to obtain a knack of latest developments in technology.</p>
+        </div>
+        <div class="left-box">
+            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;">For fresher’s – intended to teach the required skills to the fresher’s, wherein the focus shall begin with building a strong understanding of the basics of technology and end with complete guidance on its latest trends.</p>
+        </div>
+        <div class="left-box">
+            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;">Online training is known to be called as CBT (Computer-based Training), IBT (Internet-based training), WBT (Web-based training), e-Learning across the globe.  Online Training is a Software-based teaching program installed on a computer network or a computer.  It is a procedure of delivering training through an electronic medium or internet without the presence of an instructor or trainer.</p>
+        </div>
+        <div class="left-box">
+            <h class="ser" style="font-size: 20px; font-weight: bold; "> Are you Located in any of these Locations and Looking for Online Courses?</h>
+        </div>
+        <div class="left-box">
+            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;"><strong>India:</strong> Hyderabad, Mumbai, Chennai, Bangalore, Pune, Noida, Gurgaon, Delhi, Kolkata, Thiruvananthapuram, Bhubaneswar, Bhopal India. <strong>Other Countries: </strong>in the USA, Canada, UK, London, Australia, Singapore, Malaysia, Saudi Arabia, South Korea, Bangladesh</p>
+        </div>
+
+    </div>
+
+    <div class="col-md-6 px-4">
+        <div class="right-box">
+            <h3><a href="http://localhost:3000/home" style=" color: red;"> Home </a><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+                <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+            </svg> Online Training </h3><br><br>
+            <div class="star">
+            <span class="Rating"><a>Rating of &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="yellow" class="bi bi-star" viewBox="0 0 16 16">
+                <polygon points="8 0 10 5 15 5 11.25 8.75 12.5 14.5 8 11 3.5 14.5 4.75 8.75 1 5" />
+            </svg><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="yellow" class="bi bi-star" viewBox="0 0 16 16">
+                <polygon points="8 0 10 5 15 5 11.25 8.75 12.5 14.5 8 11 3.5 14.5 4.75 8.75 1 5" />
+            </svg><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="yellow" class="bi bi-star" viewBox="0 0 16 16">
+                <polygon points="8 0 10 5 15 5 11.25 8.75 12.5 14.5 8 11 3.5 14.5 4.75 8.75 1 5" />
+            </svg><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="yellow" class="bi bi-star" viewBox="0 0 16 16">
+                <polygon points="8 0 10 5 15 5 11.25 8.75 12.5 14.5 8 11 3.5 14.5 4.75 8.75 1 5" />
+            </svg><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="yellow" class="bi bi-star" viewBox="0 0 16 16">
+                <polygon points="8 0 10 5 15 5 11.25 8.75 12.5 14.5 8 11 3.5 14.5 4.75 8.75 1 5" />
+            </svg> </a></span><br>
+            <a class="average" style="font-size: 10px;">Average of 4.98 on a total of 500 Ratings</a><br></div>
+            <div class="training" style="margin-left: 142px; margin-top: 14px; font-size: 12px">
+            <a herf="/trainers_profile" style="color: red;">Trainers Profile</a><br>
+            <a href="/student_enquiry" style="color: red;">Student Enquiry</a><br>
+            <a href="/corporate_training" style="color: red;">Corporate Training</a><br>
+            <a href="/feedback" style="color: red;">Post your Feedback</a><br>
+            <a href="/post_testimonials" style="color: red;">View/Post Testimonials<br>
+            <a href="/contact" style="color: red;">Contact Us</a></a1></div>
+            <div class="margin" style="margin-left: 141px;">
+                <h2>Register for Course!</h3><br>
+                <p>Learn from the Real-Time Experts</p>
+                <br>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="firstName">First Name<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="lastName">Last Name<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="email">Email<span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="phone">Phone<span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="state">State</label>
+                                <input type="tel" class="form-control" id="state" placeholder="Enter your phone number">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="modeOfTraining">Mode of Training<span class="text-danger">*</span></label>
+                            <select id="modeOfTraining" class="form-control">
+                                <option selected>Online Training</option>
+                                <option selected>Classroom Training</option>
+                                <option selected>Weekend Training</option>
+                                <option selected>Project Training</option>
+                                <option selected>Intership Training</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Course</label>
+                            <select id="course" class="form-control">
+                                <option selected>Select Course</option>
+                                <option selected>Python</option>
+                                <option selected>Java</option>
+                                <option selected>C++</option>
+                                <option selected>C#</option>
+                                <option selected>JavaScript</option>
+                                <option selected>Ruby</option>
+                                <option selected>Swift</option>
+                                <option selected>Kotlin</option>
+                                <option selected>Data Science</option>
+                                <option selected>Machine Learning</option>
+                                <option selected>Deep Learning</option>
+                                <option selected>Natural Language Processing (NLP)</option>
+                                <option selected>TensorFlow</option>
+                                <option selected>PyTorch</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    <br>
+
+                    <h2>JOIN WHATSAPP GROUPS FOR UPDATES<br><br>
+                        <img src="./assets/whatsappjpg">
+                    </h2>
+                    <h2>WATCH FREE TUTORIALS<br><br>
+                        <img src="./assets/telegramjpeg">
+                    </h2>
+                    <h2>JOIN US ON TELEGRAM FOR UPDATES<br><br>
+                        <img src="./assets/freejpg">
+                    </h2>
+                    <h2>FIND COURSES HERE</h2>
+                    <li>courses traning</li>
+                    <li>Android Training</li>
+                    <li>iPhone Training</li>
+                    <li>Asp.Net Training</li>
+                    <li>Asp.Net MVC Training</li>
+                    <li>C#.NET Training</li>
+                    <li>C++ Training</li>
+                    <li>Data Structure Training</li>
+                    <li>Java Training</li>
+                    <ul class="list">
+                        <li>Core Java Training</li>
+                        <li>Advanced Java Training</li>
+                        <li>Hibernate Training</li>
+                        <li>J2EE Training</li>
+                        <li>Spring 5.x Training</li>
+                        <li>Hibernate Training</li>
+                        <li>Web Services Training</li>
+                        <li>Struts Training</li>
+                        <li>XML Training</li>
+                        <li>Java Online Training</li></ul>
+                    <li>Oracle Training</li>
+                    <li>SQL Server Training</li>
+                    <li>Selenium Training</li>
+                    <li>UNIX LINUX Training</li>
+                    <li>PHP Training</li>
+                    <li>HTML5 CSS3 Training</li>
+                    <li>jQuery Training</li>
+                    <li>UI Technologies Training</li>
+                    <li>UI UX Training</li>
+                    <li>AngularJS Training</li>
+                    <ul class="list">
+                        <li>Angular 2 Training</li>
+                        <li>Angular 4 Training</li>
+                        <li>Angular 6 Training</li>
+                        <li>Angular 7 Training</li>
+                    </ul>
+                    <li>Data Science Training</li>
+                    <li>Artificial Intelligence Training</li>
+                    <li>Hadoop Training</li>
+                    <li>Apache Spark Training</li>
+                    <li>Python Training</li>
+                    <li>Hadoop Online Training</li>
+                    <li>DevOps Training</li>
+                    <li>AWS Training</li>
+                    <li>IoT Training</li>
+                    <li>SalesForce CRM Training</li>
+                    <li>Digital Marketing Training</li>
+                    <li>RPA Training</li>
+                    <ul class="list">
+                        <li>Blue Prism Training</li>
+                        <li>Automation Anywhere Training</li>
+                        <li>Automation Anywhere Online Training</li>
+                    </ul>
+                    <li>Blockchain Training</li>
+                    <li>Realtime Projects</li>
+                    <ul class="list">
+                        <li>Real Time Java Project</li>
+                        <li>Real-Time Project on PHP</li></ul>
+                    <li>Doubleclick for Publishers Training</li>
+                    <li>Software Training in Chennai</li>
+                    <li>Testing Tools Training</li>
+                    <li>Full Stack Web Development Course</li>
+                    <li>Full Stack Web Development Course</li>
+                    <li>Full Stack Java Developer Course</li>
+               </div>
+           </div>
+        </div>
+    </div>
+</div>

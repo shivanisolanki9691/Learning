@@ -21,8 +21,7 @@ ActiveAdmin.register_page "Dashboard" do
     #         end
     #       end
     #     end
-    #   end
-
+    #   endS
     #   column do
     #     panel "Info" do
     #       para "Welcome to ActiveAdmin."

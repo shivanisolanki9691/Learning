@@ -5,6 +5,11 @@ Rails.application.routes.draw do
   # get 'courses/hadoop'
   # get 'courses/hadoop'
   # # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  namespace :admin do
+    get 'header', to: 'header#show' # or use appropriate controller action
+    # Other resourceful routes...
+  end
+  resources :trainers
   root 'repos#index'
   resources :repos
   get 'home', to: 'repos#home',as: 'home'
@@ -81,4 +86,7 @@ Rails.application.routes.draw do
   get 'placements', to: "services#placements", as: "placements"
   get 'nacre', to: "services#nacre", as: "nacre"
   get 'classroom', to: 'services#classroom', as: "classroom"
+  get 'online', to: 'services#online', as: "online"
+  get 'weekend', to: 'services#weekend', as: "weekend"
+  get 'coursetime', to: 'services#coursetime', as: 'coursetime'
 end

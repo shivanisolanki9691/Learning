@@ -3,7 +3,7 @@
     body {
         margin: 41px;
         padding: 0;
-     }
+    }
     .course-card {
         margin-bottom: 20px;
     }
@@ -31,8 +31,8 @@
     h3{
         color: red;
         font-size: 13px;
-        margin-left: 416px;
-        margin-top: 14px;
+        margin-left: 1064px;
+        margin-top: -34px;
     }
     h4{
         font-size: 1.5rem;
@@ -40,7 +40,7 @@
         font-size: 20px;
         font-weight: bold;
     }
-    a1, td {
+    a1 {
         color: red;
     }
     .text-black {
@@ -65,78 +65,239 @@
         filter: brightness(0) invert(1);
         border: none; 
         outline: none; 
-    }img{
-        margin-top: 70px;
-
     }
-    .button {
-        margin: 32px;
-        margin-top: 82px;
+        thead{
+        background-color: lightblue
     }
-    .ieee-projects {
-      background-color: blue; /* Change to your desired color */
-      color: white; /* Text color */
-    }
-    .live-web-projects {
-      background-color: green; /* Change to your desired color */
-      color: white; /* Text color */
-    }
-    .ieee{
-        background-color: orange;
-        color: white;
-
-    }
-
 </style>
 <body>
+<div class="page-title">
+    <h1 class="border-bottom pb-2" style="font-weight: bold; font-size: 20px; margin-left: 30px; margin-right: 31px;">Course Schedule
+        <h3><a href="http://localhost:3000/home" style=" color: red;"> Home </a><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+            <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+        </svg> Course Schedule
+        </h3><br><br>
+    </h1><br>
+  <p class="border-bottom pb-2" style=" margin-left: 30px; margin-right: 31px;">This is a page description</p><br>
+</div>
+
 <div class="row">
 
-    <div class="col-md-6">
-        <div class="left-box  px-4">
-            <h2> Blog</h2><br>
-            <img src="./assets/Boostpng" alt="Learning Image" width="700">
+<div class="col-md-6">
+        <div class="left-box">
+            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;"> The <strong>Depth Core Software Training</strong> Institute of Hyderabad, India offers multiple <strong>training schedules</strong> to meet our student’s needs.  Most of our students already have careers, work obligations, children etc., and our<strong> software training </strong>classes are designed to work well within these lifestyles.</p>
         </div>
         <div class="left-box">
-            <h2>What are you interested in learning?</h2>
-            <div class="button">
-                <a href="/view_courses" class="btn btn-primary ieee-projects">DATASCIENCE</a>
-
-                <a href="/dev" class="btn btn-primary live-web-projects">DEVOPS</a>&nbsp;&nbsp;
-                <button type="submit" class="btn btn-primary real-time-project"> MICROSOFT</button>
+            <p class="paragrap" style="margin-top: 20px; word-spacing: 2px; font-size: 20px; font-weight: bold;"> “Depth Core adds unique scheduling flexibility you will not find at most Software Training Institutes</p>
+            <img src="./assets/onlinepng" width="600" height="300">
+        </div>
+    <div class="container mt-4">
+        <h2>Course Schedule</h2><br>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>Faculty</th>
+              <th>Date</th>
+              <th>Time (IST)</th>
+              <th>Register Now</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Placement Program on JAVA & .NET</td>
+              <td>Team of Expert</td>
+              <td>28th December</td>
+              <td>9:00 AM</td>
+              <td>Register Now</td>
+            </tr>
+            <tr>
+                <td><a href="/development">Full Stack JAVA</a></td>
+                <td>Mr. Mansani</td>
+                <td>28th December</td>
+                <td>7:30 PM</td>
+                <td><a href="https://docs.google.com/forms/d/1gUhrsbYZxUOx5KjQuOhCL-bdtMSnkWu76MPuHlkupY8">Register Now</a></td>
+            </tr>
+            <tr>
+                <td><a href="/python">Full Stack PYTHON</a></td>
+                <td>Mr. Satish Gupta</td>
+                <td>2nd January</td>
+                <td>5:00 PM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+            <tr>
+                <td>Azure Data Engineer with Data Factory</td>
+                <td>Mr. Gareth</td>
+                <td>28th December</td>
+                <td>7:30 PM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+            <tr>
+                <td><a href="/python">PYTHON</a></td>
+                <td>Dr. Venkat Raju</td>
+                <td>28th December</td>
+                <td>8:30 PM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+            <tr>
+                <td>SQL Server</td>
+                <td>Mr .Shiva Chaitanya</td>
+                <td>29th December</td>
+                <td>6:00 PM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+            <tr>
+                <td>ORACLE (SQL & PL/SQL)</td>
+                <td>Mr. Sudhakar.L</td>
+                <td>29th December</td>
+                <td>4:00 PM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+             <tr>
+                <td><a href="/language">C Language</a></td>
+                <td>Mr. Rishi Kumar</td>
+                <td>29th December</td>
+                <td>6:00 PM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+            <tr>
+                <td>Mulesoft</td>
+                <td>Mr. Srinath</td>
+                <td>29th December</td>
+                <td>7:00 AM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+            <tr>
+                <td>DevOps with AWS</td>
+                <td>Mr. Veera Babu</td>
+                <td>29th December</td>
+                <td>7:30 AM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+            <tr>
+                <td><a href="/AWS">AWS</a></td>
+                <td>Mr. Avinash</td>
+                <td>29th December</td>
+                <td>9:00 AM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+            <tr>
+                <td>Ms Azure + Azure DevOps</td>
+                <td>Mr. Naveen</td>
+                <td>29th December</td>
+                <td>7:30 AM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+            <tr>
+                <td><a href="/core">CORE JAVA</a></td>
+                <td>Mr. Mansani</td>
+                <td>28th December</td>
+                <td>7:30 PM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+              <tr>
+                <td><a href="/spring">Spring Basics, Spring Boot & MicroServices</a></td>
+                <td>Mr. Dileep Singh</td>
+                <td>29th December</td>
+                <td>7:30 AM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+            <tr>
+                <td>POWER BI</td>
+                <td>Miss. Mohana</td>
+                <td>29th December</td>
+                <td>8:00 AM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+            <tr>
+                <td><a href="/react">REACT JS</a></td>
+                <td>Mr. Sudhakar Sharma</td>
+                <td>29th December</td>
+                <td>7:30 AM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+            <tr>
+                <td><a href="/net">ASP.NET CORE MVC 5 + MVC Core</a></td>
+                <td>Mr. Bangar Raju</td>
+                <td>29th December</td>
+                <td>11:00 AM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+            <tr>
+                <td>SELENIUM</td>
+                <td>Mr. Anil Kumar</td>
+                <td>2nd January</td>
+                <td>9:00 AM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+            <tr>
+                <td><a href="/AWS">AWS</td>
+                <td>Mr. Reyaz</td>
+                <td>2nd January</td>
+                <td>5:30 PM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+            <tr>
+                <td><a href="/dev">DevOps</a></td>
+                <td>Mr. Shiva</td>
+                <td>2nd January</td>
+                <td>7:00 PM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+            <tr>
+                <td><a href="/view_courses">Full Stack DATA SCIENCE & AI</a></td>
+                <td>Mr. Omkar</td>
+                <td>2nd January</td>
+                <td>10:30 AM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+            <tr>
+                <td>UI Full Stack Web With ReactJS</td>
+                <td>Mr. Prasad</td>
+                <td>2nd January</td>
+                <td>4:00 PM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+            <tr>
+                <td>DIGITAL MARKETING</td>
+                <td>Mr. Ramakanth</td>
+                <td>3rd January</td>
+                <td>6:00 PM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+            <tr>
+                <td><a href="/sale">Salesforce CRM</a></td>
+                <td>Mr. Adhan</td>
+                <td>8th January</td>
+                <td>7:30 AM</td>
+                <td><a href="#">Register Now</a></td>
+            </tr>
+          </tbody>
+        </table>
+            <div class="left-box">
+                <img src="./assets/awspng" width="700" height="100">
             </div>
-            <div class="button">
-                <a href="/selenium" class="btn btn-primary ieee-projects">SELENIUM</a>&nbsp;&nbsp;
-                <a href="/AWS" class="btn btn-primary live-web-projects"> AWS </a>&nbsp;&nbsp;
-                <a href="/hadoop" class="btn btn-primary real-time-project">HADOOP</a>
-                <a href="/linux" class="btn btn-primary ieee-projects">LINUX</a>
+            <div class="left-box">
+                <img src="./assets/fullpng" width="700" height="100">
             </div>
-        </div>
-        <div class="left-box">
-            <h2>Are you interested in learning Full Stack technologies?</h2><br>
-            <button typwkme="submit" class="btn btn-primary ieee">FULLSTACK JAVA DEVELOPER</button>&nbsp;&nbsp;
-        </div>
-        <div class="left-box">
-            <button type="submit" class="btn btn-primary ieee">FULLSTACK .NET DEVELOPER</button>&nbsp;&nbsp;
-        </div>
-        <div class="left-box">
-            <button type="submit" class="btn btn-primary ieee">FULLSTACK DATASCIENCE </button>&nbsp;&nbsp;
-        </div>
-         <div class="left-box">
-            <h2>Become a software developer with our tutorials</h2>
-            <div class="button">
-                <a href="/python" class="btn btn-primary ieee-projects">PYTHON</a>&nbsp;&nbsp;
-                <a href="/java" class="btn btn-primary live-web-projects">JAVA</a>&nbsp;&nbsp;
-                <a href="/angularJS" class="btn btn-primary real-time-project"> ANGULARJS</a>
+            <div class="left-box">
+                <img src="./assets/devpng" width="700" height="100">
             </div>
-        </div>
-
+            <div class="left-box">
+                <img src="./assets/mspng" width="700" height="100">
+            </div>
+            <div class="left-box">
+                <img src="./assets/springpng" width="700" height="100">
+            </div>
+ <!--            <div class="left-box">
+                <p class="paragrap" style="margin-top: 20px; word-spacing: 2px;">New students may start as late as the end of the first week.  Late starts must be made up on Friday of the first enrollment week for that course schedule.</p>
+            </div>
+ -->
     </div>
-    <div class="col-md-6 px-4">
+</div>
+ <div class="col-md-6 px-4">
         <div class="right-box">
-            <h3><a href="http://localhost:3000/home" style=" color: red;"> Home </a><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
-                <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg> Blog</h3><br><br>
             <div class="star">
             <span class="Rating"><a>Rating of &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="yellow" class="bi bi-star" viewBox="0 0 16 16">
                 <polygon points="8 0 10 5 15 5 11.25 8.75 12.5 14.5 8 11 3.5 14.5 4.75 8.75 1 5" />
@@ -306,5 +467,4 @@
     </div>
 </div>
 </body>
-<br>
-<p class="paragrap" style="font-weight: bold;">© 2023 Depth Core Technologies | Software Training - Online Training - Live Project Training - Weekend Training</p>
+
