@@ -89,4 +89,7 @@ Rails.application.routes.draw do
   get 'online', to: 'services#online', as: "online"
   get 'weekend', to: 'services#weekend', as: "weekend"
   get 'coursetime', to: 'services#coursetime', as: 'coursetime'
+  get 'live', to: 'services#live', as: 'live'
+  get 'ieee', to: 'services#ieee', as: 'ieee'
+  get 'realtime', to: 'services#realtime', as: 'realtime'
 end
