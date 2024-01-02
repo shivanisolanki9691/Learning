@@ -92,4 +92,6 @@ Rails.application.routes.draw do
   get 'live', to: 'services#live', as: 'live'
   get 'ieee', to: 'services#ieee', as: 'ieee'
   get 'realtime', to: 'services#realtime', as: 'realtime'
+  get 'jobs', to: 'services#jobs', as: "jobs" 
+  get 'treand', to: "services#treand", as: "treand"
 end
