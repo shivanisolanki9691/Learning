@@ -94,4 +94,5 @@ Rails.application.routes.draw do
   get 'realtime', to: 'services#realtime', as: 'realtime'
   get 'jobs', to: 'services#jobs', as: "jobs" 
   get 'treand', to: "services#treand", as: "treand"
+  get 'interships', to: 'services#interships', as: 'interships'
 end
