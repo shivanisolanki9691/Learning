@@ -7,4 +7,13 @@ Rails.application.routes.draw do
   # get 'courses/hadoop'
   # # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root 'learnings#index'
+
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :learning_platform
+  get 'Advantage', to: 'learnings#Advantage',as: 'Advantage'
+  get 'terms', to: 'learnings#terms', as: "terms"
+  get 'privacy', to: 'learnings#privacy', as: "privacy"
+  get 'refund', to: 'learnings#refund', as: "refund"
+  get 'jobs', to: 'learnings#jobs', as: 'jobs'
+  get 'procast', to: 'learnings#procast', as: 'procast'
 end

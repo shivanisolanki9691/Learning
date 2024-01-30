@@ -1,2 +1,705 @@
-<h1>Learnings#index</h1>
-<p>Find me in app/views/learnings/index.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Website</title>
+</head>
+<style type="text/css">
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #80808017;
+    }
+    .text-center{
+        font-style: initial;
+    }
+    img{
+        background-image: grey;
+    }
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: black;
+        padding-right: 0.5rem;
+        padding-left: 3.5rem;
+        font-weight: bold;
+    }
+    button {
+        background-color: blue;
+        color: white; 
+        padding: 10px 20px; 
+        border: none;
+        cursor: pointer;
+        border: 2px solid white;
+    } 
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .background-container {
+        background: url('https://themewagon.github.io/tutor/images/hero_bg.jpg') center/cover no-repeat;
+        height: 400px;
+        overflow: auto; 
+        position: relative;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+    .content {
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    .text-center {
+        text-align: center!important;
+
+    }
+    .test{
+        margin: auto;
+        color: rgb(4, 83, 153);
+    }
+    .subscription-plan {
+        max-width: 340px;
+        margin: 20px auto;
+        background-color: white;
+        padding: 10px;
+        border-radius: 8px;
+        
+    }
+    .plan-header {
+        
+        color: white;
+        padding: 8px;
+        text-align: center;
+        border-radius: 8px 8px 0 0;
+    }
+    .plan-header img {
+        max-width: 100%;
+        height: 20vh;
+    }
+    .plan-details {
+        padding: 10px;
+    }
+    .price {
+        font-size: 20px;
+/*        color: #e74c3c;*/
+        text-decoration: line-through;
+    }
+    .discount-price {
+        font-size: 24px;
+        color: #2ecc71;
+    }
+    p{
+        display: -webkit-inline-box;
+        color: black;
+/*        font-weight: bold;*/
+        font-size: 20px;
+    }
+
+    /*    #avdantage*/
+    .row{
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-left: 51px;
+        margin-top: 107px;
+        width: 95%;
+    }
+    .d-flex {
+        display: -ms-flexbox!important;
+        display: flex!important;
+        flex-direction: row;
+    }
+    .gap-4 {
+        gap: 1.5rem!important;
+        margin-top: 12px;
+
+    }
+    .member.d-flex.align-items-center.gap-2 {
+        padding: 20px 20px;
+    }
+    .text-white {
+        color: #fff!important;
+        display: flex;
+        padding: 25px;
+        justify-content: space-between;
+    }
+    .live {
+        overflow: hidden;
+        vertical-align: middle;
+        margin-right: 30px;
+        font-size: 13px;
+    }
+    h4 {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .plan-header img {
+        max-width: 100%;
+        height: 30vh;
+    }
+
+
+
+
+
+h1{
+  margin: 50px 0 30px;
+  text-align: center;
+}
+
+.faq-container{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq{
+    background-color: #44414112;
+    border: 1px solid #bdb8c1;
+    border-radius: 10px;
+    padding: 17px;
+    margin: 30px -72px;
+    position: relative;
+    overflow: hidden;
+    transition: all .4s e
+}
+
+.faq.active{
+  background-color: #fff8c91c;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-title{
+      margin: 15px 35px 0 0;
+}
+
+.faq-text{
+  display: none;
+  margin: 30px 0 0;
+  font-size: 15px;
+}
+
+.faq.active .faq-text{
+  display: block;
+}
+
+.faq-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+.chevron, .close{
+  width: 12px;
+  height:12px;
+}
+
+.faq-toggle .close{
+  display: none;
+} 
+
+.faq.active .faq-toggle .close{
+  display: block;
+}
+
+.faq.active .faq-toggle .chevron{
+  display: none;
+}
+
+.faq.active .faq-toggle{
+  background-color: #A555EC;
+  border-radius: 50%;
+  color:#ffffd9;
+}
+h3{
+    font-size: 15px;
+}
+.subscription-plan.mern-stack {
+    margin-left: -159px;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+</style>
+<body>
+    <%= render "header" %>
+    <nav class="navbar navbar-expand-lg navbar-light bg-#80808017">
+        <img src="https://i.postimg.cc/8PytfQ5h/new.png" alt="" class="img-fluid" width="70px">
+        <div class="container" >
+            <ul class="navbar-nav">
+                <li class="nav-item active" style="color: black;">
+                    <a class="nav-link" href="/learning_platform">Home</a>
+                </li>
+                <li class="nav-item" style="color: black;">
+                  <a class="nav-link" href="#Courses">Courses</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Instructors">Instructors</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Request Callback">Request Callback</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/jobs">Jobs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/procast">Podcast</a>
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                <button class="button" style="background-color: blue; color: white; padding: 6px 20px; border: none;cursor: pointer;">LOGIN | SIGNUP</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+
+
+    <div class="background-container">
+        <div class="background-container" style="background: rgb(18 17 17 / 46%); margin-left: 0px; margin-top: 1px; width: 100%;">
+            <div class="col-lg-8" style="margin-left: 130px; max-width: 63.666667%;">
+                <h1><span style="color: black; text-shadow: white 2px 0px; font-weight: bold; margin-right: 478px;">Get SDE Ready</span></h1><br>
+                <h2 style="font-weight: bold; color: white;font-size: 24px"><strong style="color: rgb(78 79 82 / 96%);">Empowering Future Innovators:</strong> Your Pathway to Software Development Excellence</h2><br>
+
+                <button class="button" style="background-color: #58585c;">Explore our courses</button>
+            </div>
+        </div>
+    </div><br>
+
+
+
+
+
+    <div class="container" style="background-color: rgb(238, 245, 255);"><br>
+        <div class="test" style="font-weight: bold; font-size: 33px;">
+            <br>
+            <div class="join" id="Courses">Courses</div>
+        </div>
+    </div>
+    
+    <div class="container" style="background-color: rgb(238, 245, 255);">
+        <div class="subscription-plan">
+            <div class="plan-header">
+               <img src="./assets/dsa.png">
+            </div>
+            <div class="plan-details">
+                <div class="d-flex align-items-center"><span class="badge me-2" style="background-color: rgb(127 199 217 / 97%); color: white; font-weight: bold;">Intern</span>&nbsp;&nbsp;<span class="badge me-2" style="background-color:  rgb(127 199 217 / 97%);color: white; font-weight: bold;">Students</span>&nbsp;&nbsp;<span class="badge me-2" style="background-color:  rgb(127 199 217 / 97%);color: white; font-weight: bold;">SDE-1/2/3</span>
+                </div>
+                <p>&nbsp;</p>
+                <ul>
+                    <div class="liv    margin-left: 42px;e" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="red" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: red;"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M9 10v8l7-4zm12-4h-7.58l3.29-3.29L16 2l-4 4h-.03l-4-4-.69.71L10.56 6H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 14H3V8h18v12z"></path>
+                        </svg>&nbsp;&nbsp;&nbsp;120+ Live Classes &nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="red" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: red;"><path d="M17 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H7V0H9V2H15V0H17V2ZM17 4V6H15V4H9V6H7V4H5V20H19V4H17ZM7 8H17V10H7V8ZM7 12H17V14H7V12Z"></path></svg>&nbsp;&nbsp;&nbsp;100+ Quizzes &nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="red" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: red;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M22 5.18L10.59 16.6l-4.24-4.24 1.41-1.41 2.83 2.83 10-10L22 5.18zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8c1.57 0 3.04.46 4.28 1.25l1.45-1.45A10.02 10.02 0 0012 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.73 0 3.36-.44 4.78-1.22l-1.5-1.5c-1 .46-2.11.72-3.28.72zm7-5h-3v2h3v3h2v-3h3v-2h-3v-3h-2v3z"></path></svg>&nbsp;&nbsp;&nbsp;Live Projects+ Resources &nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="red" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: red;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M21 12.22C21 6.73 16.74 3 12 3c-4.69 0-9 3.65-9 9.28-.6.34-1 .98-1 1.72v2c0 1.1.9 2 2 2h1v-6.1c0-3.87 3.13-7 7-7s7 3.13 7 7V19h-8v2h8c1.1 0 2-.9 2-2v-1.22c.59-.31 1-.92 1-1.64v-2.3c0-.7-.41-1.31-1-1.62z"></path><circle cx="9" cy="13" r="1"></circle><circle cx="15" cy="13" r="1"></circle><path d="M18 11.03A6.04 6.04 0 0012.05 6c-3.03 0-6.29 2.51-6.03 6.45a8.075 8.075 0 004.86-5.89c1.31 2.63 4 4.44 7.12 4.47z"></path></svg>&nbsp;&nbsp;&nbsp;Live Doubt Support &nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="red" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: red;"><path d="M5 8V20H19V8H5ZM5 6H19V4H5V6ZM20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM7 10H11V14H7V10ZM7 16H17V18H7V16ZM13 11H17V13H13V11Z"></path></svg>&nbsp;&nbsp;&nbsp;Interview Questions Covered &nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="red" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: red;"><path d="M12 11.16c.887-.933 1.813-1.865 2.78-2.6C15.952 7.668 17.267 7 18.75 7 21.657 7 24 9.615 24 12.25s-2.343 5.25-5.25 5.25c-1.483 0-2.798-.668-3.97-1.56-.967-.735-1.893-1.667-2.78-2.6-.887.933-1.813 1.865-2.78 2.6-1.172.892-2.487 1.56-3.97 1.56C2.343 17.5 0 14.885 0 12.25S2.343 7 5.25 7c1.483 0 2.798.667 3.97 1.56.967.735 1.893 1.667 2.78 2.6ZM5.25 8.5c-2.032 0-3.75 1.895-3.75 3.75S3.218 16 5.25 16c1.017 0 2.014-.457 3.062-1.253.89-.678 1.758-1.554 2.655-2.497-.897-.943-1.765-1.82-2.655-2.497C7.264 8.957 6.267 8.5 5.25 8.5Zm7.783 3.75c.897.943 1.765 1.82 2.655 2.497C16.736 15.543 17.733 16 18.75 16c2.032 0 3.75-1.895 3.75-3.75S20.782 8.5 18.75 8.5c-1.017 0-2.014.457-3.062 1.253-.89.678-1.758 1.554-2.655 2.497Z"></path></svg>&nbsp;&nbsp;&nbsp;Lifetime Access &nbsp;
+                    </div>
+                </ul>
+                <div class="live" style="color: red;">(60% OFF)</div>
+                <span class="price" style="color: grey; margin: 10px;">₹10,000 &nbsp;&nbsp;<p>₹4,000<p></span>&nbsp;&nbsp
+                <button type="button" colorscheme="red" class="Button_button__Rzx8I sc-dhKdcB kpMGBC btn btn-outline-primary rounded btn-sm"><span>Know more </span>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="font-size: 1rem;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="subscription-plan">
+            <div class="plan-header">
+                <img src="./assets/mern.png">
+            </div>
+            <div class="plan-details">
+                <div class="d-flex align-items-center">
+                    <span class="badge me-2" style="background-color: rgb(127 199 217 / 97%); color: white; font-weight: bold;">Intern</span>&nbsp;&nbsp;<span class="badge me-2" style="background-color: rgb(127 199 217 / 97%);color: white; font-weight: bold;">Students</span>&nbsp;&nbsp;<span class="badge me-2" style="background-color: rgb(127 199 217 / 97%);color: white; font-weight: bold;">SDE-1/2/3</span>
+                </div>
+                <p>&nbsp;</p>
+                <ul>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="green" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: green;"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M9 10v8l7-4zm12-4h-7.58l3.29-3.29L16 2l-4 4h-.03l-4-4-.69.71L10.56 6H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 14H3V8h18v12z"></path></svg>&nbsp;&nbsp;&nbsp;65+ Live Classes &nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="green" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: green;"><path d="M17 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H7V0H9V2H15V0H17V2ZM17 4V6H15V4H9V6H7V4H5V20H19V4H17ZM7 8H17V10H7V8ZM7 12H17V14H7V12Z"></path></svg>&nbsp;&nbsp;&nbsp;10+ Live Projects &nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="green" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: green;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M22 5.18L10.59 16.6l-4.24-4.24 1.41-1.41 2.83 2.83 10-10L22 5.18zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8c1.57 0 3.04.46 4.28 1.25l1.45-1.45A10.02 10.02 0 0012 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.73 0 3.36-.44 4.78-1.22l-1.5-1.5c-1 .46-2.11.72-3.28.72zm7-5h-3v2h3v3h2v-3h3v-2h-3v-3h-2v3z"></path></svg>&nbsp;&nbsp;&nbsp;64+ Downloadable Resources &nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="green" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: green;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M21 12.22C21 6.73 16.74 3 12 3c-4.69 0-9 3.65-9 9.28-.6.34-1 .98-1 1.72v2c0 1.1.9 2 2 2h1v-6.1c0-3.87 3.13-7 7-7s7 3.13 7 7V19h-8v2h8c1.1 0 2-.9 2-2v-1.22c.59-.31 1-.92 1-1.64v-2.3c0-.7-.41-1.31-1-1.62z"></path><circle cx="9" cy="13" r="1"></circle><circle cx="15" cy="13" r="1"></circle><path d="M18 11.03A6.04 6.04 0 0012.05 6c-3.03 0-6.29 2.51-6.03 6.45a8.075 8.075 0 004.86-5.89c1.31 2.63 4 4.44 7.12 4.47z"></path></svg>&nbsp;&nbsp;&nbsp;Live Doubt Support &nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="green" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: green;"><path d="M5 8V20H19V8H5ZM5 6H19V4H5V6ZM20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM7 10H11V14H7V10ZM7 16H17V18H7V16ZM13 11H17V13H13V11Z"></path></svg>&nbsp;&nbsp;&nbsp;Interview Questions Covered &nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="green" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: green;"><path d="M12 11.16c.887-.933 1.813-1.865 2.78-2.6C15.952 7.668 17.267 7 18.75 7 21.657 7 24 9.615 24 12.25s-2.343 5.25-5.25 5.25c-1.483 0-2.798-.668-3.97-1.56-.967-.735-1.893-1.667-2.78-2.6-.887.933-1.813 1.865-2.78 2.6-1.172.892-2.487 1.56-3.97 1.56C2.343 17.5 0 14.885 0 12.25S2.343 7 5.25 7c1.483 0 2.798.667 3.97 1.56.967.735 1.893 1.667 2.78 2.6ZM5.25 8.5c-2.032 0-3.75 1.895-3.75 3.75S3.218 16 5.25 16c1.017 0 2.014-.457 3.062-1.253.89-.678 1.758-1.554 2.655-2.497-.897-.943-1.765-1.82-2.655-2.497C7.264 8.957 6.267 8.5 5.25 8.5Zm7.783 3.75c.897.943 1.765 1.82 2.655 2.497C16.736 15.543 17.733 16 18.75 16c2.032 0 3.75-1.895 3.75-3.75S20.782 8.5 18.75 8.5c-1.017 0-2.014.457-3.062 1.253-.89.678-1.758 1.554-2.655 2.497Z"></path></svg>&nbsp;&nbsp;&nbsp;Lifetime Access &nbsp;
+                    </div>
+                </ul>
+                <div class="live" style="color: green;">(60% OFF)</div>
+                <span class="price" style="color: grey; margin: 10px;">₹10,000 &nbsp;&nbsp;<p>₹4,000<p></span>&nbsp;&nbsp;
+                <button type="button" colorscheme="green" class="Button_button__Rzx8I sc-jXbUNg bsTKxs btn btn-outline-primary rounded btn-sm"><span>Know more </span>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="font-size: 1rem;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div class="subscription-plan">
+            <div class="plan-header">
+                <img src="./assets/PB.png">
+            </div>
+            <div class="plan-details">
+                <div class="d-flex align-items-center"><span class="badge me-2" style="background-color: rgb(127 199 217 / 97%); color: white; font-weight: bold;">Intern</span>&nbsp;&nbsp;<span class="badge me-2" style="background-color: rgb(127 199 217 / 97%);color: white; font-weight: bold;">Students</span>&nbsp;&nbsp;<span class="badge me-2" style="background-color: rgb(127 199 217 / 97%);color: white; font-weight: bold;">SDE-1/2/3</span>
+                </div>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="yellow" class="bi bi-star" viewBox="0 0 16 16">
+                    <polygon points="8 0 10 5 15 5 11.25 8.75 12.5 14.5 8 11 3.5 14.5 4.75 8.75 1 5" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="yellow" class="bi bi-star" viewBox="0 0 16 16">
+                    <polygon points="8 0 10 5 15 5 11.25 8.75 12.5 14.5 8 11 3.5 14.5 4.75 8.75 1 5" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="yellow" class="bi bi-star" viewBox="0 0 16 16">
+                    <polygon points="8 0 10 5 15 5 11.25 8.75 12.5 14.5 8 11 3.5 14.5 4.75 8.75 1 5" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="yellow" class="bi bi-star" viewBox="0 0 16 16">
+                    <polygon points="8 0 10 5 15 5 11.25 8.75 12.5 14.5 8 11 3.5 14.5 4.75 8.75 1 5" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="yellow" class="bi bi-star" viewBox="0 0 16 16">
+                    <polygon points="8 0 10 5 15 5 11.25 8.75 12.5 14.5 8 11 3.5 14.5 4.75 8.75 1 5" />
+                </svg></p>
+                <p>4.4</p>
+                <ul>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M9 10v8l7-4zm12-4h-7.58l3.29-3.29L16 2l-4 4h-.03l-4-4-.69.71L10.56 6H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 14H3V8h18v12z"></path></svg>&nbsp;&nbsp;&nbsp;65+ Live Classes&nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path d="M17 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H7V0H9V2H15V0H17V2ZM17 4V6H15V4H9V6H7V4H5V20H19V4H17ZM7 8H17V10H7V8ZM7 12H17V14H7V12Z"></path></svg>&nbsp;&nbsp;&nbsp;40+ Quizzes&nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M22 5.18L10.59 16.6l-4.24-4.24 1.41-1.41 2.83 2.83 10-10L22 5.18zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8c1.57 0 3.04.46 4.28 1.25l1.45-1.45A10.02 10.02 0 0012 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.73 0 3.36-.44 4.78-1.22l-1.5-1.5c-1 .46-2.11.72-3.28.72zm7-5h-3v2h3v3h2v-3h3v-2h-3v-3h-2v3z"></path></svg><span style="margin-top: 10px; padding-top: 20px; color: rgb(25, 25, 25);">&nbsp;&nbsp;&nbsp;400+ Question Solved&nbsp;</span>
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M21 12.22C21 6.73 16.74 3 12 3c-4.69 0-9 3.65-9 9.28-.6.34-1 .98-1 1.72v2c0 1.1.9 2 2 2h1v-6.1c0-3.87 3.13-7 7-7s7 3.13 7 7V19h-8v2h8c1.1 0 2-.9 2-2v-1.22c.59-.31 1-.92 1-1.64v-2.3c0-.7-.41-1.31-1-1.62z"></path><circle cx="9" cy="13" r="1"></circle><circle cx="15" cy="13" r="1"></circle><path d="M18 11.03A6.04 6.04 0 0012.05 6c-3.03 0-6.29 2.51-6.03 6.45a8.075 8.075 0 004.86-5.89c1.31 2.63 4 4.44 7.12 4.47z"></path></svg>&nbsp;&nbsp;&nbsp;Live Doubt Support&nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path d="M5 8V20H19V8H5ZM5 6H19V4H5V6ZM20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM7 10H11V14H7V10ZM7 16H17V18H7V16ZM13 11H17V13H13V11Z"></path></svg>&nbsp;&nbsp;&nbsp;Interview Questions Covered&nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="blue" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: blue;"><path d="M12 11.16c.887-.933 1.813-1.865 2.78-2.6C15.952 7.668 17.267 7 18.75 7 21.657 7 24 9.615 24 12.25s-2.343 5.25-5.25 5.25c-1.483 0-2.798-.668-3.97-1.56-.967-.735-1.893-1.667-2.78-2.6-.887.933-1.813 1.865-2.78 2.6-1.172.892-2.487 1.56-3.97 1.56C2.343 17.5 0 14.885 0 12.25S2.343 7 5.25 7c1.483 0 2.798.667 3.97 1.56.967.735 1.893 1.667 2.78 2.6ZM5.25 8.5c-2.032 0-3.75 1.895-3.75 3.75S3.218 16 5.25 16c1.017 0 2.014-.457 3.062-1.253.89-.678 1.758-1.554 2.655-2.497-.897-.943-1.765-1.82-2.655-2.497C7.264 8.957 6.267 8.5 5.25 8.5Zm7.783 3.75c.897.943 1.765 1.82 2.655 2.497C16.736 15.543 17.733 16 18.75 16c2.032 0 3.75-1.895 3.75-3.75S20.782 8.5 18.75 8.5c-1.017 0-2.014.457-3.062 1.253-.89.678-1.758 1.554-2.655 2.497Z"></path></svg>&nbsp;&nbsp;&nbsp;Lifetime Access&nbsp;
+                    </div>
+                </ul>
+                <div class="live" style="color: blue;">(60% OFF)</div>
+                <span class="price" style="color: grey; margin: 10px;">₹10,000 &nbsp;&nbsp;<p>₹4,000<p></span>&nbsp;&nbsp;
+                <button type="button" colorscheme="blue" class="Button_button__Rzx8I sc-imWYAI jgFDwn btn btn-outline-primary rounded btn-sm"><span>Know more </span>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="font-size: 1rem;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="hy" style="padding: 0px 25px;">
+    <div class="container" style="background-color: rgb(238, 245, 255);">
+        <div class="subscription-plan mern-stack">
+            <div class="plan-header">
+               <img src="./assets/dsa.png">
+            </div>
+            <div class="plan-details">
+                <div class="d-flex align-items-center"><span class="badge me-2" style="background-color: rgb(127 199 217 / 97%); color: white; font-weight: bold;">Intern</span>&nbsp;&nbsp;<span class="badge me-2" style="background-color:  rgb(127 199 217 / 97%);color: white; font-weight: bold;">Students</span>&nbsp;&nbsp;<span class="badge me-2" style="background-color:  rgb(127 199 217 / 97%);color: white; font-weight: bold;">SDE-1/2/3</span>
+                </div>
+                <p>&nbsp;</p>
+                <ul>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="red" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: red;"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M9 10v8l7-4zm12-4h-7.58l3.29-3.29L16 2l-4 4h-.03l-4-4-.69.71L10.56 6H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 14H3V8h18v12z"></path></svg>&nbsp;&nbsp;&nbsp;120+ Live Classes &nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="red" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: red;"><path d="M17 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H7V0H9V2H15V0H17V2ZM17 4V6H15V4H9V6H7V4H5V20H19V4H17ZM7 8H17V10H7V8ZM7 12H17V14H7V12Z"></path></svg>&nbsp;&nbsp;&nbsp;100+ Quizzes &nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="red" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: red;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M22 5.18L10.59 16.6l-4.24-4.24 1.41-1.41 2.83 2.83 10-10L22 5.18zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8c1.57 0 3.04.46 4.28 1.25l1.45-1.45A10.02 10.02 0 0012 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.73 0 3.36-.44 4.78-1.22l-1.5-1.5c-1 .46-2.11.72-3.28.72zm7-5h-3v2h3v3h2v-3h3v-2h-3v-3h-2v3z"></path></svg>&nbsp;&nbsp;&nbsp;Live Projects+ Resources &nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="red" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: red;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M21 12.22C21 6.73 16.74 3 12 3c-4.69 0-9 3.65-9 9.28-.6.34-1 .98-1 1.72v2c0 1.1.9 2 2 2h1v-6.1c0-3.87 3.13-7 7-7s7 3.13 7 7V19h-8v2h8c1.1 0 2-.9 2-2v-1.22c.59-.31 1-.92 1-1.64v-2.3c0-.7-.41-1.31-1-1.62z"></path><circle cx="9" cy="13" r="1"></circle><circle cx="15" cy="13" r="1"></circle><path d="M18 11.03A6.04 6.04 0 0012.05 6c-3.03 0-6.29 2.51-6.03 6.45a8.075 8.075 0 004.86-5.89c1.31 2.63 4 4.44 7.12 4.47z"></path></svg>&nbsp;&nbsp;&nbsp;Live Doubt Support &nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="red" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: red;"><path d="M5 8V20H19V8H5ZM5 6H19V4H5V6ZM20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM7 10H11V14H7V10ZM7 16H17V18H7V16ZM13 11H17V13H13V11Z"></path></svg>&nbsp;&nbsp;&nbsp;Interview Questions Covered &nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="red" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: red;"><path d="M12 11.16c.887-.933 1.813-1.865 2.78-2.6C15.952 7.668 17.267 7 18.75 7 21.657 7 24 9.615 24 12.25s-2.343 5.25-5.25 5.25c-1.483 0-2.798-.668-3.97-1.56-.967-.735-1.893-1.667-2.78-2.6-.887.933-1.813 1.865-2.78 2.6-1.172.892-2.487 1.56-3.97 1.56C2.343 17.5 0 14.885 0 12.25S2.343 7 5.25 7c1.483 0 2.798.667 3.97 1.56.967.735 1.893 1.667 2.78 2.6ZM5.25 8.5c-2.032 0-3.75 1.895-3.75 3.75S3.218 16 5.25 16c1.017 0 2.014-.457 3.062-1.253.89-.678 1.758-1.554 2.655-2.497-.897-.943-1.765-1.82-2.655-2.497C7.264 8.957 6.267 8.5 5.25 8.5Zm7.783 3.75c.897.943 1.765 1.82 2.655 2.497C16.736 15.543 17.733 16 18.75 16c2.032 0 3.75-1.895 3.75-3.75S20.782 8.5 18.75 8.5c-1.017 0-2.014.457-3.062 1.253-.89.678-1.758 1.554-2.655 2.497Z"></path></svg>&nbsp;&nbsp;&nbsp;Lifetime Access &nbsp;
+                    </div>
+                </ul>
+                <div class="live" style="color: red;">(60% OFF)</div>
+                <span class="price" style="color: grey; margin: 10px;">₹10,000 &nbsp;&nbsp;<p>₹4,000<p></span>&nbsp;&nbsp
+                <button type="button" colorscheme="red" class="Button_button__Rzx8I sc-dhKdcB kpMGBC btn btn-outline-primary rounded btn-sm"><span>Know more </span>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="font-size: 1rem;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div class="subscription-plan">
+            <div class="plan-header">
+                <img src="./assets/mern.png">
+            </div>
+            <div class="plan-details">
+                <div class="d-flex align-items-center">
+                    <span class="badge me-2" style="background-color: rgb(127 199 217 / 97%); color: white; font-weight: bold;">Intern</span>&nbsp;&nbsp;<span class="badge me-2" style="background-color: rgb(127 199 217 / 97%);color: white; font-weight: bold;">Students</span>&nbsp;&nbsp;<span class="badge me-2" style="background-color: rgb(127 199 217 / 97%);color: white; font-weight: bold;">SDE-1/2/3</span>
+                </div>
+                <p></p>
+                <ul>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="green" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: green;"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M9 10v8l7-4zm12-4h-7.58l3.29-3.29L16 2l-4 4h-.03l-4-4-.69.71L10.56 6H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 14H3V8h18v12z"></path></svg>&nbsp;&nbsp;&nbsp;65+ Live Classes &nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="green" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: green;"><path d="M17 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H7V0H9V2H15V0H17V2ZM17 4V6H15V4H9V6H7V4H5V20H19V4H17ZM7 8H17V10H7V8ZM7 12H17V14H7V12Z"></path></svg>&nbsp;&nbsp;&nbsp;10+ Live Projects &nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="green" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: green;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M22 5.18L10.59 16.6l-4.24-4.24 1.41-1.41 2.83 2.83 10-10L22 5.18zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8c1.57 0 3.04.46 4.28 1.25l1.45-1.45A10.02 10.02 0 0012 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.73 0 3.36-.44 4.78-1.22l-1.5-1.5c-1 .46-2.11.72-3.28.72zm7-5h-3v2h3v3h2v-3h3v-2h-3v-3h-2v3z"></path></svg>&nbsp;&nbsp;&nbsp;64+ Downloadable Resources &nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="green" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: green;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M21 12.22C21 6.73 16.74 3 12 3c-4.69 0-9 3.65-9 9.28-.6.34-1 .98-1 1.72v2c0 1.1.9 2 2 2h1v-6.1c0-3.87 3.13-7 7-7s7 3.13 7 7V19h-8v2h8c1.1 0 2-.9 2-2v-1.22c.59-.31 1-.92 1-1.64v-2.3c0-.7-.41-1.31-1-1.62z"></path><circle cx="9" cy="13" r="1"></circle><circle cx="15" cy="13" r="1"></circle><path d="M18 11.03A6.04 6.04 0 0012.05 6c-3.03 0-6.29 2.51-6.03 6.45a8.075 8.075 0 004.86-5.89c1.31 2.63 4 4.44 7.12 4.47z"></path></svg>&nbsp;&nbsp;&nbsp;Live Doubt Support &nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="green" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: green;"><path d="M5 8V20H19V8H5ZM5 6H19V4H5V6ZM20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM7 10H11V14H7V10ZM7 16H17V18H7V16ZM13 11H17V13H13V11Z"></path></svg>&nbsp;&nbsp;&nbsp;Interview Questions Covered &nbsp;
+                    </div>
+                    <div class="live" style="font-weight: bold;">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="green" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: green;"><path d="M12 11.16c.887-.933 1.813-1.865 2.78-2.6C15.952 7.668 17.267 7 18.75 7 21.657 7 24 9.615 24 12.25s-2.343 5.25-5.25 5.25c-1.483 0-2.798-.668-3.97-1.56-.967-.735-1.893-1.667-2.78-2.6-.887.933-1.813 1.865-2.78 2.6-1.172.892-2.487 1.56-3.97 1.56C2.343 17.5 0 14.885 0 12.25S2.343 7 5.25 7c1.483 0 2.798.667 3.97 1.56.967.735 1.893 1.667 2.78 2.6ZM5.25 8.5c-2.032 0-3.75 1.895-3.75 3.75S3.218 16 5.25 16c1.017 0 2.014-.457 3.062-1.253.89-.678 1.758-1.554 2.655-2.497-.897-.943-1.765-1.82-2.655-2.497C7.264 8.957 6.267 8.5 5.25 8.5Zm7.783 3.75c.897.943 1.765 1.82 2.655 2.497C16.736 15.543 17.733 16 18.75 16c2.032 0 3.75-1.895 3.75-3.75S20.782 8.5 18.75 8.5c-1.017 0-2.014.457-3.062 1.253-.89.678-1.758 1.554-2.655 2.497Z"></path></svg>&nbsp;&nbsp;&nbsp;Lifetime Access &nbsp;
+                    </div>
+                </ul>
+                <div class="live" style="color: green;">(60% OFF)</div>
+                <span class="price" style="color: grey; margin: 10px;">₹10,000 &nbsp;&nbsp;<p>₹4,000<p></span>&nbsp;&nbsp;
+                <button type="button" colorscheme="green" class="Button_button__Rzx8I sc-jXbUNg bsTKxs btn btn-outline-primary rounded btn-sm"><span>Know more </span>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="font-size: 1rem;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+    <h1>Advantages Of Joining Us</h1>
+    <div class="row justify-content-center gap-4">
+        <div class="col-xs-12 col-md-5" style="cursor: pointer;">
+            <div class="member d-flex align-items-center gap-2" style="background-color: rgb(15, 67, 129);">
+                <div class="text-white">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="height: 50px; width: 50px;">
+                    <path d="M16 4C16.5523 4 17 4.44772 17 5V9.2L22.2133 5.55071C22.4395 5.39235 22.7513 5.44737 22.9096 5.6736C22.9684 5.75764 23 5.85774 23 5.96033V18.0397C23 18.3158 22.7761 18.5397 22.5 18.5397C22.3974 18.5397 22.2973 18.5081 22.2133 18.4493L17 14.8V19C17 19.5523 16.5523 20 16 20H2C1.44772 20 1 19.5523 1 19V5C1 4.44772 1.44772 4 2 4H16ZM7.4 8.82867C7.2067 8.82867 7.04543 8.96578 7.00813 9.14806L7 9.22867V14.7713C7 14.8474 7.02169 14.9219 7.06254 14.9861C7.16631 15.1492 7.36858 15.2116 7.54238 15.1452L7.61475 15.1088L11.9697 12.3375C12.0191 12.306 12.061 12.2641 12.0924 12.2148C12.1962 12.0517 12.1671 11.842 12.0333 11.7127L11.9697 11.6625L7.61475 8.8912C7.55057 8.85036 7.47607 8.82867 7.4 8.82867Z"></path></svg>&nbsp;&nbsp;&nbsp;<h4>Live classes by Instructors</h4><p></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-5" style="cursor: pointer;">
+            <div class="member d-flex align-items-center gap-2" style="background-color: rgb(231, 102, 131);">
+                <div class="text-white">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="height: 50px; width: 50px;"><path d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z"></path></svg>&nbsp;&nbsp;&nbsp;<h4>1:1 mentorship</h4><p></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-5" style="cursor: pointer;">
+            <div class="member d-flex align-items-center gap-2" style="background-color: rgb(80, 143, 167);">
+                <div class="text-white">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="height: 50px; width: 50px;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M10.27 12h3.46a1.5 1.5 0 001.48-1.75l-.3-1.79a2.951 2.951 0 00-5.82.01l-.3 1.79c-.15.91.55 1.74 1.48 1.74zM1.66 11.11c-.13.26-.18.57-.1.88.16.69.76 1.03 1.53 1h1.95c.83 0 1.51-.58 1.51-1.29 0-.14-.03-.27-.07-.4-.01-.03-.01-.05.01-.08.09-.16.14-.34.14-.53 0-.31-.14-.6-.36-.82-.03-.03-.03-.06-.02-.1.07-.2.07-.43.01-.65a1.12 1.12 0 00-.99-.74.09.09 0 01-.07-.03C5.03 8.14 4.72 8 4.37 8c-.3 0-.57.1-.75.26-.03.03-.06.03-.09.02a1.24 1.24 0 00-1.7 1.03c0 .02-.01.04-.03.06-.29.26-.46.65-.41 1.05.03.22.12.43.25.6.03.02.03.06.02.09zM16.24 13.65c-1.17-.52-2.61-.9-4.24-.9-1.63 0-3.07.39-4.24.9A2.988 2.988 0 006 16.39V18h12v-1.61c0-1.18-.68-2.26-1.76-2.74zM1.22 14.58A2.01 2.01 0 000 16.43V18h4.5v-1.61c0-.83.23-1.61.63-2.29-.37-.06-.74-.1-1.13-.1-.99 0-1.93.21-2.78.58zM22.78 14.58A6.95 6.95 0 0020 14c-.39 0-.76.04-1.13.1.4.68.63 1.46.63 2.29V18H24v-1.57c0-.81-.48-1.53-1.22-1.85zM22 11v-.5c0-1.1-.9-2-2-2h-2c-.42 0-.65.48-.39.81l.7.63c-.19.31-.31.67-.31 1.06 0 1.1.9 2 2 2s2-.9 2-2z"></path></svg>&nbsp;&nbsp;&nbsp;<h4>Connect with Peer Group</h4><p></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-5" style="cursor: pointer;">
+            <div class="member d-flex align-items-center gap-2" style="background-color: rgb(222, 174, 49);">
+                <div class="text-white">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="height: 50px; width: 50px;"><path d="M152,96V80h-8a16,16,0,0,0-16,16v64a16,16,0,0,0,16,16h8V160a16,16,0,0,1,16-16h48a16,16,0,0,1,16,16v48a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V192h-8a32,32,0,0,1-32-32V136H80v8a16,16,0,0,1-16,16H32a16,16,0,0,1-16-16V112A16,16,0,0,1,32,96H64a16,16,0,0,1,16,16v8h32V96a32,32,0,0,1,32-32h8V48a16,16,0,0,1,16-16h48a16,16,0,0,1,16,16V96a16,16,0,0,1-16,16H168A16,16,0,0,1,152,96Z"></path></svg>&nbsp;&nbsp;&nbsp;<h4>Structured Curriculum</h4><p></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-5" style="cursor: pointer;">
+            <div class="member d-flex align-items-center gap-2" style="background-color: rgb(167, 104, 215);">
+                <div class="text-white">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="height: 50px; width: 50px;"><path d="M471.1 96C405 96 353.3 137.3 320 174.6 286.7 137.3 235 96 168.9 96 75.8 96 0 167.8 0 256s75.8 160 168.9 160c66.1 0 117.8-41.3 151.1-78.6 33.3 37.3 85 78.6 151.1 78.6 93.1 0 168.9-71.8 168.9-160S564.2 96 471.1 96zM168.9 320c-40.2 0-72.9-28.7-72.9-64s32.7-64 72.9-64c38.2 0 73.4 36.1 94 64-20.4 27.6-55.9 64-94 64zm302.2 0c-38.2 0-73.4-36.1-94-64 20.4-27.6 55.9-64 94-64 40.2 0 72.9 28.7 72.9 64s-32.7 64-72.9 64z"></path></svg>&nbsp;&nbsp;&nbsp;<h4>Lifetime access to the recordings</h4><p></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-5" style="cursor: pointer;">
+            <div class="member d-flex align-items-center gap-2" style="background-color: rgb(15, 140, 255);">
+                <div class="text-white">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="height: 50px; width: 50px;"><path d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627z"></path></svg>&nbsp;&nbsp;&nbsp;<h4>Live doubt support</h4><p></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-5" style="cursor: pointer;">
+            <div class="member d-flex align-items-center gap-2" style="background-color: rgb(179, 34, 94);">
+                <div class="text-white">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="height: 50px; width: 50px;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M9 1h6v2H9zM19.03 7.39l1.42-1.42c-.43-.51-.9-.99-1.41-1.41l-1.42 1.42A8.962 8.962 0 0012 4a9 9 0 00-9 9c0 4.97 4.02 9 9 9a8.994 8.994 0 007.03-14.61zM13 14h-2V8h2v6z"></path></svg>&nbsp;&nbsp;&nbsp;<h4>Flexible</h4><p></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-5" style="cursor: pointer;">
+            <div class="member d-flex align-items-center gap-2" style="background-color: rgb(35, 145, 23);">
+                <div class="text-white">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="height: 50px; width: 50px;"><path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"></path></svg>&nbsp;&nbsp;&nbsp;
+                    <h4>Cash prize in every class</h4><p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <h1>Leading Companies Behind Top-notch Instructors</h1>
+    <div class="container" style="display: flex; flex-direction: column;">
+        <img alt="companies" src="https://i.postimg.cc/h4X98SXk/Screenshot-2023-07-08-150931.png">
+    </div>
+
+
+    <h1>Frequently Asked Questions</h1>
+    <div class='faq-container'>
+        <div class="faq">
+            <h3 class="faq-title"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(4, 83, 153)" class="bi bi-question-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+            </svg>&nbsp;&nbsp;&nbsp;Who should join this course?</h3>
+            <p class="faq-text">Our courses are intended for anyone aspiring to become a Software Development Engineer. This includes university students who have very basic programming knowledge (2nd year or above), working professionals looking for a career switch till SDE-2, and anyone interested in the field of software development.</p>
+            <button class='faq-toggle'>
+                <svg class="chevron w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
+                </svg>
+                <svg class="close w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+            </button>
+        </div>
+        <div class="faq">
+            <h3 class="faq-title"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(4, 83, 153)" class="bi bi-question-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+            </svg>&nbsp;&nbsp;&nbsp;Is the amount refundable if I don't like the course?</h3>
+            <p class="faq-text">This course offers a no-questions-asked, full refund policy effective within seven days of its registration.</p>
+            <button class='faq-toggle'>
+                <svg class="chevron w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
+                </svg>
+                <svg class="close w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+            </button>
+        </div>
+        <div class="faq ">
+            <h3 class="faq-title"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(4, 83, 153)" class="bi bi-question-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+            </svg>&nbsp;&nbsp;&nbsp;What is the mode of the course, online or offline?</h3>
+            <p class="faq-text">Every single topic will be covered through live online classes, scheduled to take place 5 days a week.</p>
+            <button class='faq-toggle'>
+                <svg class="chevron w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
+                </svg>
+                <svg class="close w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+            </button>
+        </div>
+        <div class="faq ">
+            <h3 class="faq-title"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(4, 83, 153)" class="bi bi-question-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+            </svg>&nbsp;&nbsp;&nbsp;What if I miss a class?</h3>
+            <p class="faq-text">Every class will be recorded and individuals will have life-time access to these recordings.</p>
+            <button class='faq-toggle'>
+                <svg class="chevron w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
+                </svg>
+                <svg class="close w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+            </button>
+        </div>
+        <div class="faq ">
+            <h3 class="faq-title"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(4, 83, 153)" class="bi bi-question-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+            </svg>&nbsp;&nbsp;&nbsp;Are there any prerequisites?</h3>
+            <p class="faq-text">Only basic programming knowledge is required.</p>
+            <button class='faq-toggle'>
+                <svg class="chevron w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
+                </svg>
+                <svg class="close w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+            </button>
+        </div>
+        <div class="faq ">
+            <h3 class="faq-title"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(4, 83, 153)" class="bi bi-question-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+            </svg>&nbsp;&nbsp;&nbsp;Will there be doubt classes?</h3>
+            <p class="faq-text">Yes, there will be regular doubt classes. Students will be informed in advance for these
+            </p>
+            <button class='faq-toggle'>
+                <svg class="chevron w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
+                </svg>
+                <svg class="close w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+            </button>
+        </div>
+        <div class="faq ">
+            <h3 class="faq-title"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(4, 83, 153)" class="bi bi-question-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+            </svg>&nbsp;&nbsp;&nbsp;What is the duration of the course?</h3>
+            <p class="faq-text">The course's duration is expected to span between three to four months, though it can be extended if there is a need for additional classes focused on specific topics or further doubt sessions.
+            Students who opt the Fast-Track To Full Spectrum Software Engineering course, will have an additional two months of classes for the Full-stack web development 
+            <button class='faq-toggle'>part.</p>
+            <button class='faq-toggle'>
+                <svg class="chevron w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
+                </svg>
+                <svg class="close w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+            </button>
+        </div>
+    </div> 
+
+
+   <%= render "instructors" %>
+
+   <%= render "recommendation" %>
+
+    
+    <h1 id="Request Callback">Contact Us</h1>
+    <%= render "contact" %>
+
+    <%= render "footer" %>
+</div>
+</body>
+</html>
