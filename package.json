@@ -17,5 +17,8 @@
   "scripts": {
     "build": "babel src -d lib",
     "test": "jest"
-  }
+  },
+  "main": "src/index.js", // Adjust the path based on your project structure
+  // other package.json configurations...
 }
+
