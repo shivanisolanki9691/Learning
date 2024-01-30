@@ -1,5 +1,5 @@
 {
-  "name": "repo",
+  "name": "learning",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-methods": "^version_number",
