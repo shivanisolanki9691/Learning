@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   root 'learnings#index'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resources :learning_platform
+  resources :learnings
   get 'Advantage', to: 'learnings#Advantage',as: 'Advantage'
   get 'terms', to: 'learnings#terms', as: "terms"
   get 'privacy', to: 'learnings#privacy', as: "privacy"
