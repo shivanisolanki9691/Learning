@@ -5,5 +5,6 @@ class LearningsController < ApplicationController
     @faqs = Faq.all
     @instructors = Instructor.all
     @recommendations = Recommendation.all
+    @contacts = Contact.all
   end
 end

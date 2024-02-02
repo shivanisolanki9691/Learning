@@ -10,7 +10,7 @@ ActiveAdmin.register Course do
     column :quizzes
     column :projects
     column :doubt_support
-    column :interview_questions_covered
+    column :interview_questions_covered 
     column :lifetime_access
     column :price
     column :discounted_price

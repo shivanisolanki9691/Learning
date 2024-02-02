@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'contacts/index'
   # get 'instructors/index'
   # get 'learnings/index'
   # devise_for :users
@@ -10,6 +11,7 @@ Rails.application.routes.draw do
   root 'learnings#index'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :contacts
   resources :recommendations
   resources :instructors
   resources :faqs

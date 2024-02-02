@@ -1,4 +1,4 @@
 class Course < ApplicationRecord
 	has_one_attached :image
-	belongs_to :learning
+	# belongs_to :learning
 end
