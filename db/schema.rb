@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_02_02_050713) do
+ActiveRecord::Schema.define(version: 2024_02_05_113533) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -78,6 +78,16 @@ ActiveRecord::Schema.define(version: 2024_02_02_050713) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "course_applications", force: :cascade do |t|
+    t.string "your_name"
+    t.string "email"
+    t.string "phone_number"
+    t.string "course_of_interest"
+    t.text "message"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "courses", force: :cascade do |t|
     t.string "course_name"
     t.text "description"
@@ -117,6 +127,16 @@ ActiveRecord::Schema.define(version: 2024_02_02_050713) do
   create_table "recommendations", force: :cascade do |t|
     t.string "full_name"
     t.text "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "registrations", force: :cascade do |t|
+    t.string "your_name"
+    t.string "email"
+    t.string "phone_number"
+    t.string "course_of_interest"
+    t.text "message"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

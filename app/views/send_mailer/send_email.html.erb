@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Thank you for your registration, <%= @registration.your_name %>!</h1>
+    <p>Your details:</p>
+    <ul>
+      <li>Your Name: <%= @registration.your_name %></li>
+      <li>Email: <%= @registration.email %></li>
+      <li>Phone Number: <%= @registration.phone_number %></li>
+      <li>Course of Interest: <%= @registration.course_of_interest %></li>
+      <li>Message: <%= @registration.message %></li>
+    </ul>
+    <p>We will get in touch with you shortly.</p>
+  </body>
+</html>

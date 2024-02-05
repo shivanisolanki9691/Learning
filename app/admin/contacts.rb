@@ -12,4 +12,16 @@ ActiveAdmin.register Contact do
     f.actions
   end
 
+
+  index do
+    selectable_column
+    id_column
+    column :email
+    column :phone_number
+    column :open_time
+    column :address
+
+    actions
+  end
+
 end

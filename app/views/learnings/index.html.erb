@@ -11,6 +11,7 @@
         margin: 0;
         padding: 0;
         background-color: #80808017;
+
     }
     .text-center{
         font-style: initial;
@@ -51,14 +52,14 @@
         transform: translate(-50%, -50%);
     }
     .background-container {
-        background: url('https://themewagon.github.io/tutor/images/hero_bg.jpg') center/cover no-repeat;
-        height: 400px;
+        height: 620px;
         overflow: auto; 
         position: relative;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        background-color: blue;
 
 
     }
@@ -259,6 +260,91 @@ h1{
   border-radius: 50%;
 }
 
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+/*#particles-js {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: #b61924;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}*/
+
+/* ---- stats.js ---- */
+
+.count-particles {
+    /* background: #000022; */
+    position: absolute;
+    top: 48px;
+    left: 810px;
+    width: 400px;
+    color: #0b0c0c;
+    font-size: 0.8em;
+    text-align: left;
+    text-indent: 5px;
+    line-height: 32px;
+    padding-bottom: -28px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-top: -48px;
+}
+
+/*.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+*/
+.form-control {
+    display: block;
+    width: 91%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 0.5;
+    color: #495057;
+    background-color: #fff;
+    /* background-clip: padding-box; */
+    /* border: 4px solid #ced4da; */
+    margin-left: 17px;
+
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    margin-left: 12px;
+}
+/*btn{
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    margin-left: 12px;
+
+}*/
+
+
 </style>
 <body>
     <%= render "header" %>
@@ -294,18 +380,86 @@ h1{
 
 
 
-    <div class="background-container">
-        <div class="background-container" style="background: rgb(18 17 17 / 46%); margin-left: 0px; margin-top: 1px; width: 100%;">
+<div class="background-container" id="particles-js">
+    <% @registration.each do |regis| %>
+    <div class="count-particles">
+        <div class="form-box" style=" background-color: white;">
+            <form>
+                <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="firstName">Your Name<span class="text-danger">*</span></label>
+                                <input type="text" style="width: 184%;" class="form-control" id="firstName" placeholder="Enter your first name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="email">Email<span class="text-danger">*</span></label>
+                                <input type="email" style="width: 184%;" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="phone">Phone Number<span class="text-danger">*</span></label>
+                                <input type="tel" style="width: 184%;" class="form-control" id="phone" placeholder="Enter your phone number">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Course In Intrested<span class="text-danger">*</span></label>
+                            <select name="course" id="course" class="form-control" required="" placeholder="Please Select Course" oninvalid="this.setCustomValidity('Please Select Course')" oninput="setCustomValidity('')" style="border:1px solid #ccc;text-align: center;">
+                            <option value="">------------Select Course------------</option>
+                            <option value="Cyber Security">Cyber Security</option>
+                            <option value="Game Development">Game Development</option>
+                            <option value="Ethical Hacking">Ethical Hacking</option>
+                            <option value="Python">Python</option>
+                            <option value="HTML5">HTML5</option>
+                            <option value="CSS3">CSS3</option>
+                            <option value="Bootstrap">Bootstrap</option>
+                            <option value="Javascript">Javascript</option>
+                            <option value="JQuery">JQuery</option>
+                            <option value="Ajax">Ajax</option>
+                            <option value="Angular JS">Angular JS</option>
+                            <option value="C Programming">C Programming</option>
+                            <option value="Advance C++">Advance C++</option>
+                            <option value="PHP">PHP</option>
+                            <option value="Core Java">Core Java</option>
+                            <option value="Advance Java">Advance Java</option>
+                            <option value="Corporate Java">Corporate Java</option>
+                            <option value="Android">Android</option>
+                            <option value="IOS">IOS</option>
+                            <option value="Big Data">Big Data</option>
+                            <option value="Hadoop">Hadoop</option>
+                          </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="phone">Your Message<span class="text-danger">*</span></label>
+                               <textarea style="width: 184%;" class="form-control" name="message" rows="8" placeholder="write your message"></textarea>
+
+
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style=" margin-bottom: 12px;    width: 49%; margin-left: 101px;">Submit</button>
+            </form>
+        </div>
+    </div>
+    <% end %>
+</div>
+
+
+
+
+
+
+
+
+      <!--   <div class="background-container" style="background: rgb(18 17 17 / 46%); margin-left: 0px; margin-top: 1px; width: 100%;">
             <div class="col-lg-8" style="margin-left: 130px; max-width: 63.666667%;">
                 <h1><span style="color: black; text-shadow: white 2px 0px; font-weight: bold; margin-right: 478px;">Get SDE Ready</span></h1><br>
                 <h2 style="font-weight: bold; color: white;font-size: 24px"><strong style="color: rgb(78 79 82 / 96%);">Empowering Future Innovators:</strong> Your Pathway to Software Development Excellence</h2><br>
 
                <a href="#Courses" class="button" id="Courses" style="background-color: #58585c; color: white;">Explore our courses</a>
             </div>
-        </div>
-    </div><br>
-
-
+        </div> -->
 
 
 
@@ -422,8 +576,6 @@ h1{
             </div>
         </div>
     </div>
-
-
 
 
 

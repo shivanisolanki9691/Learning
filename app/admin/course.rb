@@ -10,10 +10,10 @@ ActiveAdmin.register Course do
     column :quizzes
     column :projects
     column :doubt_support
-    column :interview_questions_covered 
+    column "Interview Ques", :interview_questions_covered
     column :lifetime_access
     column :price
-    column :discounted_price
+    column "dis_price",:discounted_price
     column :image do |ad|
       if ad.image.attached?
         image_tag(url_for(ad.image), size: '100x50')
@@ -36,7 +36,7 @@ ActiveAdmin.register Course do
       row :quizzes
       row :projects
       row :doubt_support
-      row :interview_questions_covered
+      row "Interview Ques", :interview_questions_covered
       row :lifetime_access
       row :image do |ad|
         if ad.image.attached?
@@ -61,10 +61,15 @@ ActiveAdmin.register Course do
       f.input :quizzes
       f.input :projects
       f.input :doubt_support
-      f.input :interview_questions_covered
+      f.input :interview_questions_covered, label:"interview Ques"
       f.input :lifetime_access
       f.input :image, as: :file
     end
     f.actions
   end
+
+  filter :course_name
+  filter :description
+  filter :price
+  filter :discounted_price
 end
