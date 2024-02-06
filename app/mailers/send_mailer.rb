@@ -2,7 +2,7 @@ class SendMailer < ApplicationMailer
   def send_email(to_email, registration)
 
     # byebug
-    @data = registration
+    @registration = registration
 
 
     mail(to: to_email, subject: "registration list", body: "@registration") do |format|

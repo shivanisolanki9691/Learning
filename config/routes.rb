@@ -8,10 +8,11 @@ Rails.application.routes.draw do
   # get 'courses/hadoop'
   # get 'courses/hadoop'
   # # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  root 'learnings#index'
-
+  # root 'learnings#index'
+    root 'registration#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resources :registration
+    resources :registration, only: [:new, :create, :index]
+
   resources :contacts
   resources :recommendations
   resources :instructors

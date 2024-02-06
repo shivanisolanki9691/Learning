@@ -20,7 +20,7 @@ ActiveAdmin.register Registration do
       f.input :your_name
       f.input :email
       f.input :phone_number
-      f.input :course_of_interest
+      f.input :course_of_interest, as: :select, collection: ["Cyber Security", "Game Development", "Ethical Hacking", "Python", "HTML5", "CSS3", "Bootstrap", "Javascript", "JQuery", "Ajax", "Angular JS", "C Programming", "Advance C++", "PHP", "Core Java", "Advance Java", "Corporate Java", "Android", "IOS", "Big Data", "Hadoop"], prompt: "Please Select Course"
       f.input :message
     end
     f.actions
