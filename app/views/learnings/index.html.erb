@@ -430,20 +430,20 @@ textarea#registration_message {
       <div class="form-box" style="background-color: white;">
         <div class="form-row">
           <div class="form-group col-md-6">
-            <%= f.label :your_name %>
+            <%= f.label :your_name, "Your_name<span class='text-danger'>*</span>".html_safe %>
             <%= f.text_field :your_name, class: "form-control", placeholder: "Enter your first name" %>
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group col-md-6">
-            <%= f.label :email %>
+            <%= f.label :email, "Email<span class='text-danger'>*</span>".html_safe %>
             <%= f.text_field :email, class: "form-control", placeholder: "Type your email here" %>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
-            <%= f.label :phone_number %>
+            <%= f.label :phone_number, "Phone_number<span class='text-danger'>*</span>".html_safe %>
             <%= f.text_field :phone_number, class: "form-control", placeholder: "Type your email here" %>
           </div>
         </div>
