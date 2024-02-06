@@ -167,5 +167,25 @@ update = function() {
 };
 requestAnimationFrame(update);
     </script>
+    <script>
+    document.getElementById('submit_button').addEventListener('click', function(event) {
+      var yourNameValue = document.getElementById('registration_your_name').value;
+      var emailValue = document.getElementById('registration_email').value;
+      var phoneNumberValue = document.getElementById('registration_phone_number').value;
+      var courseOfInterestValue = document.getElementById('registration_course_of_interest').value;
+      var messageValue = document.getElementById('registration_message').value;
+
+      if (yourNameValue.trim() === '' || emailValue.trim() === '' || phoneNumberValue.trim() === '' || courseOfInterestValue === '' || messageValue.trim() === '') {
+        event.preventDefault(); // Prevent form submission
+        document.getElementById('danger').style.display = 'block';
+        document.getElementById('success').style.display = 'none';
+      } else {
+        document.getElementById('danger').style.display = 'none';
+        document.getElementById('success').style.display = 'block';
+      }
+    });
+  </script>
+
+
   </body>
 </html>

@@ -363,8 +363,31 @@ input#registration_course_of_interest{
 textarea#registration_message {
     width: 185%;
     margin-left: 24px;
-}
 
+}
+ .message {
+    margin-top: 10px;
+  }
+
+  .success {
+    display: none;
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }
+
+  .danger {
+    display: none;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }
 
 
 </style>
@@ -438,8 +461,14 @@ textarea#registration_message {
         </div>
 
         <div class="form-group">
-          <%= f.button "Submit", class: "btn btn-primary", style: "margin-bottom: 12px; width: 49%; margin-left: 101px;" %>
+          <%= f.button "Submit", class: "btn btn-primary", style: "margin-bottom: 12px; width: 49%; margin-left: 101px;", id: "submit_button" %>
         </div>
+
+        <div class="message">
+          <div class="success" id="success">Your message was successfully sent.</div>
+          <div class="danger" id="danger">Fields can't be empty.</div>
+        </div>
+
       </div>
     </div>
   <% end %>
