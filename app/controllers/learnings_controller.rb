@@ -10,18 +10,20 @@ class LearningsController < ApplicationController
     @registration = Registration.new 
   end
 
-
   def create
     registration = Registration.new(registration_params)
 
-    if registration.save
-      render json: @registration
-      SendMailer.send_email(registration.email, registration).deliver_now
-    else
-      render :index
+    respond_to do |format|
+      if registration.save
+        SendMailer.send_email(registration.email, registration).deliver_now
+        format.html { redirect_to root_path, notice: 'Registration successful. Confirmation email sent.' }
+        format.json { render json: { success: true, message: 'Registration successful. Confirmation email sent.' } }
+      else
+        format.html { render :index }
+        format.json { render json: { success: false, errors: registration.errors.full_messages } }
+      end
     end
   end
-
   def show
    
   end

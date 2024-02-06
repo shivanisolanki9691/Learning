@@ -11,8 +11,7 @@ Rails.application.routes.draw do
   root 'learnings#index'
     # root 'registration#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-    resources :registration, only: [:new, :create, :index]
-
+  resources :registration, only: [:new, :create, :index]
   resources :contacts
   resources :recommendations
   resources :instructors
