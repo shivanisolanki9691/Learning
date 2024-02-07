@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   root 'learnings#index'
     # root 'registration#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :syllabus
   resources :registration, only: [:new, :create, :index]
   resources :contacts
   resources :recommendations
@@ -24,4 +25,5 @@ Rails.application.routes.draw do
   get 'refund', to: 'learnings#refund', as: "refund"
   get 'jobs', to: 'learnings#jobs', as: 'jobs'
   get 'procast', to: 'learnings#procast', as: 'procast'
+
 end

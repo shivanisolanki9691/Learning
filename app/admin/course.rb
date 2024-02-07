@@ -1,6 +1,6 @@
 ActiveAdmin.register Course do
   permit_params :course_name, :description, :price, :discounted_price, :live_classes, :quizzes, :projects, :doubt_support, :interview_questions_covered, :lifetime_access, :image_url, :image
-
+  
   index do
     selectable_column
     id_column
@@ -49,7 +49,14 @@ ActiveAdmin.register Course do
         end
       end
     end
+    # panel 'Syllabuses' do
+    #   table_for course.syllabuses do
+    #     row :duration
+    #     row :database
+    #   end
+    # end
   end
+
 
   form do |f|
     f.inputs 'Course Details' do
