@@ -11,7 +11,7 @@ ActiveAdmin.register Course do
     column :projects
     column :doubt_support
     column "Interview Ques", :interview_questions_covered
-    column :lifetime_access
+    column "life", :lifetime_access
     column :price
     column "dis_price",:discounted_price
     column :image do |ad|

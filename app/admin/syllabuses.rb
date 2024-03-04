@@ -6,22 +6,31 @@ ActiveAdmin.register Syllabus do
     selectable_column
     id_column
     column :course_name
-    column :duration 
-    column :database
+    column :database 
+    column :description
     # column :course do |obj|
     #   obj.course.course_name
     # end
-    # actions
+    
+    actions
   end
 
   form do |f|
     f.inputs do
-      f.input :course_name
-      f.input :duration
-      f.input :database
       f.input :course_id, as: :select, collection: Course.all.map { |c| [c.course_name, c.id] }, prompt: 'Select Course'
+      f.input :database
+      f.input :description   
     end
     f.actions
+  end
+
+  show do
+    attributes_table do
+      row :course_name
+      row :description
+      row :database, href: admin_syllabus_path(resource)
+
+    end
   end
 
   controller do

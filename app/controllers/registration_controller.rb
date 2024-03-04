@@ -27,21 +27,7 @@ class RegistrationController < ApplicationController
 
   def show
   end
-
-  # def update
-  #   if @registration.update(registration_params)
-  #     # render json: @user , status: :ok
-  #     redirect_to registration_path, notice: "User was successfully updated." 
-  #   end
-  # end
-
-
-  # def destroy
-  #   if @registration.destroy
-  #     # render json: @user
-  #     redirect_to registration_path, notice: "User was successfully destroyed." 
-  #   end
-  # end
+  
 
   private
   def set_user

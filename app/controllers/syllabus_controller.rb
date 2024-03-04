@@ -12,7 +12,6 @@ class SyllabusController < ApplicationController
   end
 
   def create
-    # @course = Course.find(params[:course_id])
     @syllabus = Syllabus.new(syllabus_params)
 
     if @syllabus.save
@@ -29,7 +28,7 @@ class SyllabusController < ApplicationController
   end
 
   def syllabus_params
-    params.permit(:course_name, :duration, :course_id) # Update this line
+    params.permit(:course_name, :duration, :course_id)
   end
 end
 
