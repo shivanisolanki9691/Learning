@@ -28,5 +28,8 @@ Rails.application.routes.draw do
   get 'refund', to: 'learnings#refund', as: "refund"
   get 'jobs', to: 'learnings#jobs', as: 'jobs'
   get 'procast', to: 'learnings#procast', as: 'procast'
+  get 'login', to: 'learnings#login', as: 'login'
+  get 'signup', to: 'learnings#signup', as: 'signup'
+  get 'more', to: 'learnings#more', as: 'more' 
 
 end
