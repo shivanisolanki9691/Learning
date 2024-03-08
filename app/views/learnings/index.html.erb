@@ -376,14 +376,14 @@ textarea#registration_message {
                 <li class="nav-item">
                 <!-- <button class="button" style="background-color: blue; color: white; padding: 6px 20px; border: none;cursor: pointer;">LOGIN | SIGNUP</button> -->
                 <div class="container">
-                    <a href="/login" class="button">SIGNUP</a>
-                    <a href="/signup" class="button">LOGIN</a>
+                    <a href="/signup" class="button">SIGNUP</a>
+                    <a href="/login" class="button">LOGIN</a>
                 </div>
                 </li>
             </ul>
         </div>
     </nav>
-    
+
 
 
     <div class="background-container" id="particles-js">
@@ -478,9 +478,9 @@ textarea#registration_message {
                     <div class="live" style="color: red;">(60% OFF)</div>
 
                     <span class="Home_actual__18qzZ" style="color: black; margin: 10px; font-weight: bold;">
-  <span style="text-decoration: line-through; color: grey;">₹<%= course.price %></span>
-  ₹<%= course.discounted_price %>
-</span>
+                        <span style="text-decoration: line-through; color: grey;">₹<%= course.price %></span>
+                        ₹<%= course.discounted_price %>
+                    </span>
 
 
 
@@ -561,9 +561,15 @@ textarea#registration_message {
 
 
 
-    <h1>Leading Companies Behind Top-notch Instructors</h1>
+    <h1>Companies behind top notch instructor</h1>
     <div class="container" style="display: flex; flex-direction: column;">
-        <img alt="companies" src="https://i.postimg.cc/h4X98SXk/Screenshot-2023-07-08-150931.png">
+        <!-- <img alt="companies" src="https://i.postimg.cc/h4X98SXk/Screenshot-2023-07-08-150931.png"> -->
+        <div class="text-center"><img alt="companies" src="./assets/pixoaticsol" width="200">
+            <img alt="companies" src="./assets/infotech" width="200">
+            <img alt="companies" src="./assets/datazen" width="200">
+            <img alt="companies" src="./assets/down" width="200">
+        </div>
+
     </div>
 
 
@@ -604,60 +610,53 @@ textarea#registration_message {
     <%= render "footer" %>
 </div>
 </body>
-</html>
 <style>
-        @keyframes scaleAnimation {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.1);
-            }
-            100% {
-                transform: scale(1);
-            }
+    @keyframes scaleAnimation {
+        0% {
+            transform: scale(1);
         }
-
-        .member {
-            transform-origin: center;
-            transition: transform 0.5s ease-in-out; /* Add a smooth transition effect */
-        }
-
-        .member:hover {
+        50% {
             transform: scale(1.1);
         }
-    </style>
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .member {
+        transform-origin: center;
+        transition: transform 0.5s ease-in-out; /* Add a smooth transition effect */
+    }
+
+    .member:hover {
+        transform: scale(1.1);
+    }
+</style>
 <style>
-        @keyframes scaleAnimation {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.1);
-            }
-            100% {
-                transform: scale(1);
-            }
+    @keyframes scaleAnimation {
+        0% {
+            transform: scale(1);
         }
-
-        .plan-header {
-            overflow: hidden; /* Ensures the overflow doesn't affect the layout */
-            transition: transform 0.5s ease-in-out; /* Add a smooth transition effect */
-        }
-
-        .plan-header:hover {
+        50% {
             transform: scale(1.1);
         }
-
-        .plan-header img {
-            width: 100%; /* Ensure the image fills the container */
-            height: auto; /* Maintain aspect ratio */
-            display: block; /* Remove any default inline styles */
+        100% {
+            transform: scale(1);
         }
-    </style>
+    }
 
+    .plan-header {
+        overflow: hidden; /* Ensures the overflow doesn't affect the layout */
+        transition: transform 0.5s ease-in-out; /* Add a smooth transition effect */
+    }
 
+    .plan-header:hover {
+        transform: scale(1.1);
+    }
 
-
-
-
+    .plan-header img {
+        width: 100%; /* Ensure the image fills the container */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove any default inline styles */
+    }
+</style>
