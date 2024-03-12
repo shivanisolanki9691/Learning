@@ -6,7 +6,7 @@ ActiveAdmin.register Syllabus do
 
   form do |f|
     f.inputs do
-      f.input :course_id, as: :select, collection: Course.all.msap { |c| [c.course_name, c.id] }, prompt: 'Select Course'
+      f.input :course_id, as: :select, collection: Course.all.map { |c| [c.course_name, c.id] }, prompt: 'Select Course'
       f.input :database
       f.input :title
     end
@@ -22,10 +22,11 @@ ActiveAdmin.register Syllabus do
     end
     column :database  
     # column :title
-    # column :titile, as: :select
+    column :titile, as: :select
     column :title do |syllabus|
-      link_to syllabus.title, admin_syllabus_path(syllabus)   
+      link_to syllabus.title, admin_syllabus_path(syllabus)
     end
+
     actions
   end
 
