@@ -10,7 +10,7 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #80808017;
+        background-color: #fafafa;
 
     }
     .text-center{
@@ -22,13 +22,22 @@
     .container {
         display: flex;
         flex-direction: row-reverse;
+        margin-top: -22px;
     }
     .navbar-light .navbar-nav .nav-link {
-        color: black;
+        color: white;
         padding-right: 0.5rem;
         padding-left: 3.5rem;
         font-weight: bold;
     }
+    .navbar-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: -37px;
+}
     button {
         background-color: blue;
         color: white; 
@@ -60,6 +69,9 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-color: #2f2fd3;
+
+         background-image: url('https://res.cloudinary.com/website-media/image/upload/v1707565710/Screenshot_2024_02_02_171331_transformed_transformed_1_cd68a3e441.png');
+
 
 
     }
@@ -173,10 +185,10 @@ h1{
 
 .faq{
     background-color: #44414112;
-    border: 1px solid #bdb8c1;
+    border: 1px solid #f0efef;
     border-radius: 10px;
     padding: 17px;
-    margin: 30px -72px;
+    margin: 16px -183px;f
     position: relative;
     overflow: hidden;
     transition: all .4s e
@@ -254,7 +266,8 @@ h1{
     flex-wrap: wrap;
     padding: 2px;
     margin-left: 72px;
-    margin-right: 72px;
+    margin-right: 118px;
+
 }
 .circular-image {
   border-radius: 50%;
@@ -343,22 +356,34 @@ textarea#registration_message {
     border: 1px solid transparent;
     border-radius: 5px;
   }
+  nav.navbar.navbar-expand-lg.navbar-light.bg-black {
+    background-color: black;
+  }
+  a.nav-link {
+    color: white;
+  }
+  .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: white;
+}
 
 
 </style>
 <body>
-    <%= render "header" %>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-black">
         <a href="/learnings">
-            <img src="./assets/depthcore" alt="Alt Text" class="img-fluid" width="50px">
+           
+            <svg width="50" height="50" viewBox="0 0 183 167" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M99.4946 0H27.4946H7.49463V20V53.2541C11.6309 44.3145 18.7127 37.0164 27.4946 32.6049V20H99.4946V20.0019C134.335 20.2706 162.495 48.5967 162.495 83.5C162.495 111.767 144.025 135.721 118.495 143.95V164.711C155.205 155.928 182.495 122.901 182.495 83.5C182.495 37.551 145.381 0.27047 99.4946 0.00146484V0ZM24.5585 138.362C17.6575 129.535 18.7509 117.002 26.771 109.485L14.4264 93.6955C-2.28188 108.047 -4.90408 133.149 8.80262 150.68C22.5093 168.212 47.5022 171.722 65.4615 158.97L53.1164 143.181C43.8862 149.151 31.4596 147.188 24.5585 138.362ZM69.4366 153.948L20.9536 91.9376L36.7081 79.6199L66.4456 117.655C68.5469 113.8 71.4535 110.301 75.1327 107.425C82.2837 101.834 91.0107 99.6424 99.3667 100.613L96.9367 120.465C93.6607 120.117 90.2517 120.991 87.4517 123.181C81.7327 127.651 80.7217 135.911 85.1927 141.63C88.2177 145.499 92.9787 147.213 97.5127 146.532L97.4997 166.623C87.0077 167.233 76.3997 162.854 69.4366 153.948ZM73.1725 51.1098C84.4465 65.5298 81.8965 86.3591 67.4765 97.6334L55.1578 81.8775C60.8761 77.4066 61.8874 69.1468 57.4166 63.4285C52.9457 57.7102 44.6859 56.699 38.9676 61.1698C33.2493 65.6406 32.238 73.9005 36.7089 79.6188L20.953 91.9375C9.67871 77.5175 12.2288 56.6881 26.6488 45.4139C41.0689 34.1396 61.8982 36.6897 73.1725 51.1098Z" fill="#fff"/>
+</svg>
         </a>
 
         <div class="container">
             <ul class="navbar-nav">
-                <li class="nav-item active" style="color: black;">
+                <li class="nav-item active" style="color: blcak;">
                     <a class="nav-link" href="/learnings">Home</a>
                 </li>
-                <li class="nav-item" style="color: black;">
+                <li class="nav-item" style="color: white;">
                   <a class="nav-link" href="#Courses">Courses</a>
                 </li>
                 <li class="nav-item">
@@ -375,7 +400,7 @@ textarea#registration_message {
                 </li>&nbsp;&nbsp;&nbsp;&nbsp;
                 <li class="nav-item">
                 <!-- <button class="button" style="background-color: blue; color: white; padding: 6px 20px; border: none;cursor: pointer;">LOGIN | SIGNUP</button> -->
-                <div class="container">
+                <div class="container" style="margin-top: 0px;">
                     <a href="/signup" class="button">SIGNUP</a>
                     <a href="/login" class="button">LOGIN</a>
                 </div>
@@ -387,7 +412,7 @@ textarea#registration_message {
 
 
     <div class="background-container" id="particles-js">
-     <%= form_for @registration, url: registration_index_url(@registration) do |f| %>
+     <!-- <%= form_for @registration, url: registration_index_url(@registration) do |f| %>
         <div class="count-particles">
           <div class="form-box" style="background-color: white;">
             <div class="form-row">
@@ -433,18 +458,20 @@ textarea#registration_message {
 
           </div>
         </div>
-      <% end %>
+      <% end %> -->
     </div>
 
     <div class="container" style="background-color: rgb(238, 245, 255);"><br>
         <div class="test" style="font-weight: bold; font-size: 33px;">
             <br>
             <div class="join" id="Courses">Courses</div>
+            <br>
         </div>
     </div>
-    <div class="course-container" style="background-color: rgb(238, 245, 255);">
+    <br>
+    <div class="course-container" style="background-color: rgb(238, 245, 255); margin-top: -24px;">
         <% @courses.each do |course| %>
-        <div class="container" style="background-color: rgb(238, 245, 255);   width: 30%; margin-bottom: 20px">
+        <div class="container" style=" width: 30%; margin-bottom: 20px">
             <div class="subscription-plan">
                 <div class="plan-header">
                    <!-- <img src="./assets/dsa" alt="Avatar" > -->
@@ -454,7 +481,7 @@ textarea#registration_message {
                     <div class="d-flex align-items-center"><span class="badge me-2" style="background-color: rgb(127 199 217 / 97%); color: white; font-weight: bold;">Intern</span>&nbsp;&nbsp;<span class="badge me-2" style="background-color:  rgb(127 199 217 / 97%);color: white; font-weight: bold;">Students</span>&nbsp;&nbsp;<span class="badge me-2" style="background-color:  rgb(127 199 217 / 97%);color: white; font-weight: bold;">SDE-1/2/3</span>
                     </div>
                     <p>&nbsp;</p>
-                    <ul>
+                    <!-- <ul> -->
                         <div class="live" style="font-weight: bold;">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="red" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: red;"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M9 10v8l7-4zm12-4h-7.58l3.29-3.29L16 2l-4 4h-.03l-4-4-.69.71L10.56 6H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 14H3V8h18v12z"></path>
                             </svg>&nbsp;&nbsp;&nbsp;<%= course.live_classes %>&nbsp;
@@ -474,7 +501,8 @@ textarea#registration_message {
                         <div class="live" style="font-weight: bold;">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="red" font-size="1.5rem" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: red;"><path d="M12 11.16c.887-.933 1.813-1.865 2.78-2.6C15.952 7.668 17.267 7 18.75 7 21.657 7 24 9.615 24 12.25s-2.343 5.25-5.25 5.25c-1.483 0-2.798-.668-3.97-1.56-.967-.735-1.893-1.667-2.78-2.6-.887.933-1.813 1.865-2.78 2.6-1.172.892-2.487 1.56-3.97 1.56C2.343 17.5 0 14.885 0 12.25S2.343 7 5.25 7c1.483 0 2.798.667 3.97 1.56.967.735 1.893 1.667 2.78 2.6ZM5.25 8.5c-2.032 0-3.75 1.895-3.75 3.75S3.218 16 5.25 16c1.017 0 2.014-.457 3.062-1.253.89-.678 1.758-1.554 2.655-2.497-.897-.943-1.765-1.82-2.655-2.497C7.264 8.957 6.267 8.5 5.25 8.5Zm7.783 3.75c.897.943 1.765 1.82 2.655 2.497C16.736 15.543 17.733 16 18.75 16c2.032 0 3.75-1.895 3.75-3.75S20.782 8.5 18.75 8.5c-1.017 0-2.014.457-3.062 1.253-.89.678-1.758 1.554-2.655 2.497Z"></path></svg>&nbsp;&nbsp;&nbsp;<%= course.lifetime_access %>&nbsp;
                         </div>
-                    </ul>
+                    <!-- </ul> -->
+                    <br>
                     <div class="live" style="color: red;">(60% OFF)</div>
 
                     <span class="Home_actual__18qzZ" style="color: black; margin: 10px; font-weight: bold;">
@@ -561,13 +589,18 @@ textarea#registration_message {
 
 
 
-    <h1>Companies behind top notch instructor</h1>
+    <h1 class="companies" style="color: black; font-size: 32px;">Companies behind top notch instructor</h1>
+    <br>
     <div class="container" style="display: flex; flex-direction: column;">
         <!-- <img alt="companies" src="https://i.postimg.cc/h4X98SXk/Screenshot-2023-07-08-150931.png"> -->
-        <div class="text-center"><img alt="companies" src="./assets/pixoaticsol" width="200">
-            <img alt="companies" src="./assets/infotech" width="200">
-            <img alt="companies" src="./assets/datazen" width="200">
-            <img alt="companies" src="./assets/down" width="200">
+        <div class="text-center" style="background-color: white;">
+            <div class="com" style="background-color: white;">
+                <img alt="companies" src="./assets/pixoaticsol" width="200">
+                <img alt="companies" src="./assets/infotech" width="200">
+                <img alt="companies" src="./assets/datazen" width="200">
+                <img alt="companies" src="./assets/down" width="200">
+                <img alt="companies" src="./assets/down" width="200">
+            </div>
         </div>
 
     </div>
@@ -575,7 +608,7 @@ textarea#registration_message {
 
 
 
-    <h1>Frequently Asked Questions</h1>
+    <h1 class="companies" style="color: black; font-size: 32px;">Frequently Asked Questions</h1>
     <% @faqs.each do |faq| %>
     <div class='faq-container'>
         <div class="faq">
@@ -596,6 +629,10 @@ textarea#registration_message {
     </div>
     <% end %>
 
+
+
+
+
  
 
 
@@ -604,7 +641,7 @@ textarea#registration_message {
    <%= render "recommendation" %>
 
     
-    <h1 id="Request Callback">Contact Us</h1>
+    <h1 id="Request Callback">Submit the form for enduiry</h1>
     <%= render "contact" %>
 
     <%= render "footer" %>

@@ -144,7 +144,7 @@ ActiveRecord::Schema.define(version: 2024_02_06_164550) do
   create_table "syllabuses", force: :cascade do |t|
     t.bigint "course_id", null: false
     t.string "course_name"
-    t.text "description"
+    t.text "title"
     t.string "database"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
