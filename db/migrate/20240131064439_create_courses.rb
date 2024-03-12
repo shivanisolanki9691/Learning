@@ -1,6 +1,6 @@
 class CreateCourses < ActiveRecord::Migration[6.1]
   def change
-    unless table_exists?(:users)
+    unless table_exists?(:courses)
     create_table :courses do |t|
       t.string :course_name
       t.text :description
